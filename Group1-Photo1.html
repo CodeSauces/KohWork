@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working Theme</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="container-fluid noPadding">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style=" width: 200px;padding-top: 10px;">
+                    <img src="assets/logo-lg.svg" alt="ME" class="mypic">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">제휴업체</a></li>
+                    <li><a href="#">관리자정보</a></li>
+                    <li><a href="#">데이터분석</a></li>
+                    <li><a class="red-color" href="#">로그아웃</a></li>
+                </ul>
+            </div>
+            <div class="app-datetime"><span class="app-date">2018-08-24</span> 19:23</div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <ul class="nav nav-tabs faq-cat-tabs">
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a href="#faq-cat-1"
+                    data-toggle="tab">주문관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-3" data-toggle="tab">공지/이벤트</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-4" data-toggle="tab">게시판관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-5" data-toggle="tab">회원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-6" data-toggle="tab">직원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-7" data-toggle="tab">매출관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-8" data-toggle="tab">실시간상담</a></li>
+
+            <span class="searchicon">
+                <div class="form-group">
+
+                    <select class="form-control" id="sel1">
+                        <option>직원번호</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="input-group stylish-input-group pull-right">
+                    <input type="text" class="form-control" placeholder="직원 검색">
+                    <span class="input-group-addon">
+                        <a type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
+                    </span>
+                </div>
+            </span>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content faq-cat-content">
+            <div class="tab-pane active in fade" id="faq-cat-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb noPadding-right">
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">직원등록</p>
+                        </li>
+                        <div class="option-buttons-container">
+                            <button class="option-button">
+                                메세지전송
+                            </button>
+                            <button class="option-button">
+                                세탁증출력
+                            </button>
+                            <button class="option-button">
+                                주문수정
+                            </button>
+                        </div>
+                        <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                    </ol>
+                </nav>
+
+
+                <div class="col-md-12 noPadding">
+                    <div class="col-md-6 noPadding-left">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="bg-gray text-center white">주문번호</th>
+                                    <td>180824006</td>
+                                    <td class="bg-gray text-center white">주문일시</td>
+                                    <td>2018-08-24 17:00</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bg-gray text-center white">고 객 명</td>
+                                    <td>닭칼국수</td>
+                                    <td class="bg-gray text-center white">고객번호</td>
+                                    <td class="underline">170000018</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" class="bg-gray text-center white">주 소</td>
+                                    <td>제주 제주시 광양13길 6-18</td>
+                                    <td class="bg-gray text-center white">연 락 처</td>
+                                    <td>010-2343-0238</td>
+                                </tr>
+                                <tr>
+                                    <td>아띠빌 201호</td>
+                                    <td class="bg-gray text-center white">상 태</td>
+                                    <td class="noPadding">
+                                        <div class="form-group width-70p margin-8-auto margin-left-0">
+                                            <select class="form-control border-radius-5 width-0" id="sel1">
+                                                <option>직원번호</option>
+                                                <option>주문대기</option>
+                                                <option>주문접수</option>
+                                                <option>수거완료</option>
+                                                <option class="bold" selected="selected">세탁작업 </option>
+                                                <option>배달출발</option>
+                                                <option>배달완료</option>
+                                            </select>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="bg-gray text-center white">요청사항</td>
+                                    <td colspan="3"></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 noPadding-right">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td class="bg-gray text-center white">수거일시</td>
+                                    <td>
+                                        <div class="form-group width-70p no-margin">
+                                            <select class="form-control border-radius-5 width-0" id="sel1">
+                                                <option>09:00~11:00</option>
+                                                <option>11:00~13:00</option>
+                                                <option class="bold" selected="selected">13:00~15:00 </option>
+                                                <option>15:00~17:00</option>
+                                                <option>17:00~19:00</option>
+                                                <option>19:00~21:00</option>
+                                                <option>21:00~23:00</option>
+                                                <option>23:00~24:00</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td class="bg-gray text-center white">주문금액</td>
+                                    <td class="text-right">37,000</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bg-gray text-center white">수거방법</td>
+                                    <td>주소지방문</td>
+                                    <td class="bg-gray text-center white">쿠 폰</td>
+                                    <td class="text-right">없음</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray text-center white">배송일시</td>
+                                    <td>
+                                        <div class="form-group width-70p no-margin">
+                                            <select class="form-control border-radius-5 width-0" id="sel1">
+                                                <option>09:00~11:00</option>
+                                                <option class="bold" selected="selected">11:00~13:00</option>
+                                                <option>13:00~15:00 </option>
+                                                <option>15:00~17:00</option>
+                                                <option>17:00~19:00</option>
+                                                <option>19:00~21:00</option>
+                                                <option>21:00~23:00</option>
+                                                <option>23:00~24:00</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td class="bg-gray text-center white">적 립 금</td>
+                                    <td class="text-right">3,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray text-center white">수거방법</td>
+                                    <td>문앞보관</td>
+                                    <td class="bg-gray text-center white">예 치 금</td>
+                                    <td class="text-right"> 0</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray text-center white">결제방식</td>
+                                    <td>카드 자동결제</td>
+                                    <td class="bg-gray text-center white">접수방식</td>
+                                    <td class="text-right">온라인</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-12 noPadding flex-400">
+                    <div class="col-md-4 col-sm-4 noPadding border-black border-top0">
+                        <ul class="nav nav-tabs faq-cat-tabs custom">
+                            <li class="active"><a href="#faq-cat2-1" data-toggle="tab">상/하의</a></li>
+                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-2"
+                                    data-toggle="tab">신발/가방</a></li>
+                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-3"
+                                    data-toggle="tab">침구류</a></li>
+                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-4"
+                                    data-toggle="tab">기타</a></li>
+                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-5"
+                                    data-toggle="tab" class="search-icon red-color">품목검색</a></li>
+
+                        </ul>
+                        <div class="tab-pane fade" id="faq-cat2-1">
+                            <div class="container-fluid margin-top-20 ">
+                                <div class="row no-pad">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">교복 상의</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">정장 상의(여)</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">정장 상의(남)</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="row no-pad">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">교복 하의</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">정장 하의(여)</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">정장 하의(남)</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <div class="row no-pad">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">교복 와이셔츠</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">블라우스</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">와이셔츠</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <div class="row no-pad">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">교복 조끼</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">티셔츠(1/2)</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">티셔츠</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <div class="row no-pad">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">코트[봄/가을]</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">코트[겨울]</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <button class="tab1-button right-icon">
+                                            <span class="float-left margin-left-10">롱코트</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <div class="row no-pad">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">가디건</span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">자켓</span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">자켓(롱)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+
+                                <div class="row no-pad">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">폴라티</span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">스웨터</span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">스웨터(롱)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+
+                                <div class="row no-pad">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">패딩점퍼</span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">오리털패딩</span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">오리털패딩(롱)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+
+                                <div class="row no-pad">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">나시</span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">남방(1/2)</span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <button class="tab1-button right-icon">
+                                                <span class="float-left margin-left-10">남방</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row no-pad">
+                                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <button class="tab1-button right-icon">
+                                                    <span class="float-left margin-left-10">text1</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <button class="tab1-button right-icon">
+                                                    <span class="float-left margin-left-10">text 2</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <button class="tab1-button right-icon">
+                                                    <span class="float-left margin-left-10">text 3</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade hide" id="faq-cat2-2">
+                            TAb2 content
+                        </div>
+                        <div class="tab-pane fade hide" id="faq-cat2-3">
+                            TAb2 content
+                        </div>
+                        <div class="tab-pane fade hide" id="faq-cat2-4">
+                            TAb2 content
+                        </div>
+                        <div class="tab-pane fade hide" id="faq-cat2-5">
+                            TAb2 content
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 overflow-auto">
+                        <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
+                            <table class="table table-bordered" style="
+        /* height: 100%; */
+        margin: 0;
+    ">
+                                <thead>
+                                    <tr>
+                                        <th class="bg-light-blue white">
+                                            <label class="checkbox grid-checkbox">
+                                                <input type="checkbox" checked="checked"><span></span>
+                                            </label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-28">처리</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-20">No.</label>
+                                        </th>
+                                        <th class="bg-light-blue white" class="width-20">
+                                            <label class="width-85" >품목</label>    
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-50">세탁</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-50">정가</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label>수량</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-100">세탁메모</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label>택번호</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-70">입고일자</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label style="width: 56px;">출고예정</label>
+                                        </th>
+                                      
+                                        <th class="bg-light-blue white">
+
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label class="checkbox grid-checkbox">
+                                                <input class="form-input-field" type="checkbox" checked="checked"><span></span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <span class="red-tick">✔</span>
+                                        </td>
+                                        <td>1</td>
+                                        <td>교복 상의(여)</td>
+                                        <td>드라이</td>
+                                        <td>
+                                                6,000
+                                        </td>
+                                        <td>
+                                            <input style="width:40px; text-align:right;" data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field"
+                                                value="1" id="45">
+                                        </td>
+                                        
+                                        <td>
+                                            <input width="150px" data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field"
+                                                value="" id="45">
+                                        </td>
+                                        <td>
+                                            <input  data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block width-85 form-input-field"
+                                                value="" id="45">
+                                        </td>
+                                        <td>18-08-24</td>
+                                        
+                                    
+                                         <td>18-08-24</td>
+                                       
+                                        
+                                        <td>
+                                            <label class="checkbox grid-checkbox">
+                                                <input type="checkbox" checked="checked"><span></span>
+                                            </label>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-12 noPadding" style="height: 25%;">
+                            <div class="col-md-8 noPadding fullheight">
+                                <div class="col-md-10 noPadding-left fullheight">
+                                    <table class="table table-bordered" style="margin: 0;height: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th class="bg-light-blue white">
+                                                    <label class="width-100">합    계</label>
+                                                </th>
+                                                <th style="border: 0;"><label class="width-100"><select class="form-control"
+                                                            id="sel1">
+                                                            <option>직원번호</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select></label><label class="width-100" style="margin-left: 4px;"><select
+                                                            class="form-control" id="sel1">
+                                                            <option>직원번호</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select></label><span style="float: right;line-height: 2;">
+                                                        <label class="checkbox no-margin" style="margin-left: 26px !important;">
+                                                            <input type="checkbox" checked="checked"><span> 마스터</span>
+                                                        </label><label class="checkbox no-margin" style=" margin-left: 26px !important;">
+                                                            <input type="checkbox" checked="checked"><span> 마스터</span>
+                                                        </label></span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="bg-light-blue white"> <label class="width-100">Firs</label></td>
+
+                                                <td style="padding-top: 0;padding-bottom: 0;"><span style="padding-right: 10px;"><input
+                                                            data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                                            value="" id="45"><span class="padding-10px inline-block">년</span></span><span
+                                                        style="padding-right: 10px;">
+                                                        <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                                            value="" id="45"><span class="padding-10px inline-block">년</span></span><span
+                                                        style="float: right;line-height: 3;"><label class="checkbox no-margin"
+                                                            style="margin-left: 26px !important;">
+                                                            <input type="checkbox" checked="checked"><span> 마스터</span>
+                                                        </label><label class="checkbox no-margin" style="margin-left: 26px !important;">
+                                                            <input type="checkbox" checked="checked"><span> 마스터</span>
+                                                        </label></span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-2 noPadding fullheight item-center bg-light-blue white" >
+                                    <span>asdadasd</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 noPadding-right fullheight">
+                                <textarea class="form-control fullheight" rows="2" id="comment"></textarea>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-2 noPadding" style="
+        /* height: 75%; */
+        padding-bottom: 10px;
+    ">
+                        <div class="col-md-12 noPadding" style="  height: 80%;;
+                        padding-bottom: 5px !important;">
+                            <table class=" table-bordered width-100p" >
+                                <thead>
+                                    <tr>
+                                        <th class="bg-red white">
+                                            <label class="width-100 text-center margin-8-auto">합    계</label>
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="noPadding"> 
+                                            
+                                               <div class="sum-boxes">
+                                                   <div class="sum-box-row1">수량</div>
+                                                   <div class="sum-box-row2">12</div>
+                                               </div>
+                                               <div class="sum-boxes">
+                                                    <div class="sum-box-row1">주문금액</div>
+                                                    <div class="sum-box-row2">37,000</div>
+                                                </div>
+                                                <div class="sum-boxes">
+                                                        <div class="sum-box-row1">할인금액</div>
+                                                        <div class="sum-box-row2">- 3,000</div>
+                                                    </div>
+                                                    <div class="sum-boxes">
+                                                            <div class="sum-box-row1">미납금액</div>
+                                                            <div class="sum-box-row2">30,000</div>
+                                                        </div>
+                                                        <div class="sum-boxes noBorder">
+                                                                <div class="sum-box-row1">총결제</div>
+                                                                <div class="sum-box-row2">64,000</div>
+                                                            </div>
+                                        </td>
+
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-12 noPadding item-center bg-red white" style="height: 20%; ">
+                            <span>접수완료</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade hide" id="faq-cat-2">
+                TAb2 content
+            </div>
+            <div class="tab-pane fade hide" id="faq-cat-3">
+                TAb3 content
+            </div>
+            <div class="tab-pane fade hide" id="faq-cat-4">
+                TAb4 content
+            </div>
+            <div class="tab-pane fade hide" id="faq-cat-5">
+                TAb5 content
+            </div>
+            <div class="tab-pane fade hide" id="faq-cat-6">
+                TAb6 content
+            </div>
+            <div class="tab-pane fade hide" id="faq-cat-7">
+                TAb7 content
+            </div>
+            <div class="tab-pane fade hide" id="faq-cat-8">
+                TAb8 content
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        var AssessoriesFunction = function () {
+
+            var tabsClick = function (event, $that) {
+                var thatElement = $($that);
+                var Container = thatElement.find('[href]').attr('href');
+                Container.toggle('hide');
+            }
+
+            return {
+                handleTabsClick: function (event, $that) {
+                    tabsClick(event, $that)
+                }
+            }
+
+        }();
+    </script>
+</body>
+
+</html>

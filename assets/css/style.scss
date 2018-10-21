@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Noto Sans CJK KR';
+    src: url(/assets//fonts/NotoSansCJKkr-Regular.otf);
+}
+
+body{
+    color: #707070;
+    font-family: 'Noto Sans CJK KR' !important;
+}
+
+.faq-cat-content {
+    margin-top: 25px;
+}
+
+.faq-cat-tabs li a {
+    padding:5px 15px 8px 15px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    color: #777777;
+}
+
+.nav-tabs li a:focus,
+.panel-heading a:focus {
+    outline: none;
+}
+
+.panel-heading a,
+.panel-heading a:hover,
+.panel-heading a:focus {
+    text-decoration: none;
+    color: #777777;
+}
+
+.faq-cat-content .panel-heading:hover {
+    background-color: #efefef;
+}
+
+.active-faq {
+    border-left: 5px solid #888888;
+}
+
+.panel-faq .panel-heading .panel-title span {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+nav.navbar.navbar-inverse {
+    background: transparent;
+    border: transparent;
+    margin: 0;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background: transparent;
+    color: #E20000;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #E20000;
+}
+
+
+/*APP CSS*/
+div.app-datetime {
+    padding: 15px;
+    text-align: right;
+    font-size: 20px;
+  }
+  span.app-date{
+    text-decoration: underline;
+  }
+  .nav-tabs {
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-tabs > li > a {
+    background: #F0F0F0;
+    border-color: #CBCBCB;
+  }
+  
+  .nav-tabs > li > a {
+    border-bottom: 0px !important;
+  }
+  
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background: white;
+    border-color: black;
+  }
+  
+  .nav-tabs li.active > a {
+    border-bottom: 1px solid white !important;
+  }
+  
+  span.searchicon {
+    width: 440px;
+    display: inline-block;
+    float: right;
+  }
+  
+  span.searchicon input.form-control {
+    border-right: 0;
+    height: 30px;
+    border-color: black;
+  }
+  span.searchicon span.input-group-addon {
+    background: transparent;
+    border-color: black;
+}
+  span.searchicon span.input-group-addon > a {
+    color: inherit;
+  }
+  
+  span.searchicon .input-group.stylish-input-group.pull-right {
+    width: 69%;
+}
+  span.searchicon .form-group {
+    width: 29%;
+    display: inline-block;
+    margin: 0;
+   
+}
+span.searchicon .form-group select{
+    height: 30px;
+    border-color: black;
+}
+
+
+
+
+form.box-body.form-horizontal {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 10px !important;
+}
+form.box-body.form-horizontal label.control-label {
+    text-align: left;
+    font-weight: normal;
+    padding-top: 0;
+}
+.box-body.form-horizontal .form-group {
+    border-bottom: 1px solid gainsboro;
+    margin: 0;
+    padding:3px 0;
+}
+
+
+
+input[type='checkbox'] {
+	/* Hide the checkbox input ui */
+	opacity: 0;
+}
+input[type='checkbox'] + span{
+	background: url(/assets/uncheck.svg) no-repeat center left;
+	padding-left: 23px;
+	margin-left: -18px;
+}
+input[type='checkbox']:checked + span{
+	background: url(/assets/check.svg) no-repeat center left;
+}
+label.checkbox {
+    display: inline-block;
+    margin-left: 26px;
+    font-weight: normal;
+    padding-top: 0 !important;
+    min-height: auto !important;
+}
+
+.input-group.inline-block span.btn.btn-default {
+    border-color: transparent;
+}
+.custmbtn {
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+    margin: 3px !important;
+    padding: 3px !important;
+    margin-left: 7px !important;
+    margin-top: 1px !important;
+    height: 28px !important;
+}
+.gray-box-angle{
+    background-color: #eee !important;
+    margin-bottom: -10px;
+    position: relative;
+}
+.gray-box-angle span{
+    font-size: 17px;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    color: #a4a4a4;
+}
+/*
+Accessories
+*/
+.width-20{
+    width: 20px;
+}
+.width-50 {
+    width: 50px !important;
+}
+.width-70 {
+    width: 70px !important;
+}
+.width-100 {
+    width: 100px !important;
+}
+.width-250 {
+    width: 250px !important;
+}
+.width-300 {
+    width: 300px !important;
+}
+.width-400 {
+    width: 400px !important;
+}
+
+
+.height-40{
+    height: 40px !important;
+}
+.padding-10px{
+    padding:10px 0px; 
+}
+.padding-6px{
+    padding:6px 0px; 
+}
+.padding-4px{
+    padding:4px 0px; 
+}
+.padding-9px{
+    padding:9px 0px; 
+}
+.inline-block{
+    display: inline-block;
+}
+.text-center{
+    text-align: center;
+}
+.btn{
+    padding: 3px 10px;
+}
+.btn-save {
+    background: #606060;
+    color: white;
+    border-color: #606060;
+}
+.btn-cancel {
+    background: #EAEAEA;
+    border-color: #707070;
+}
+.breadcrumb {
+    background: transparent;
+    border-radius: 0;
+    padding-left: 0;
+    margin: 0;
+}
+
+li.breadcrumb-item a {
+    color: #707070;
+}
+.modal-footer.text-center {
+    border: 0;
+}
+.form-control {
+    height: 30px;
+    box-shadow: none !important;
+    border-radius: 0;
+    border-color: #ADADAD;
+    margin: 0px 6px;
+}
+span.searchicon .form-control {
+    border-radius: 4px;
+}
+.noPadding{
+    padding: 0 !important;
+}
+.noPadding-left{
+    padding-left: 0 !important;
+}
+.noPadding-right{
+    padding-right: 0 !important;
+}
+.noPadding-top{
+    padding-top: 0 !important;
+}
+.no-margin{
+    margin: 0 !important;
+}
+.flex-400 {
+    height: 400px;
+    display: flex;
+}
+ul.nav-tabs.custom {
+    margin-left: -1px;
+    margin-right: -1px;
+    background: white;
+}
+.border-black{
+    border: 1px solid black;
+}
+.border-top0{
+    border-top: 0 !important
+}
+.border-btm{
+    border-bottom: 1px solid gainsboro;
+}
+.noBorder{
+    border:0 !important;
+}
+.overflow-auto{
+    overflow: auto;
+}
+.fullheight{
+    height: 100% !important;
+}
+.item-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-half{
+    position: relative;
+    top: 1.5px;
+}
+
+
+//Grid Css
+.grid-checkbox {
+    margin: 0 !important;
+}
+.grid-checkbox input[type="checkbox"] {
+    margin: 0 !important;
+}
+.grid-checkbox span {
+    margin: 0 !important;
+    padding-left: 18px !important;
+}
+.red-tick{
+    font-size: 16px;
+    color: red;
+}
