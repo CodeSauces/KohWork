@@ -554,3 +554,10 @@ table.table.table-bordered th, table.table.table-bordered td {
 .gray{
  color:  #707070
 }
+
+.datepicker-days table.table-condensed td:last-child, .datepicker-days table.table-condensed th:last-child:not(.next) {
+  color: #8292e0;
+}
+.datepicker-days table.table-condensed td:first-child, .datepicker-days table.table-condensed th:first-child:not(.next) {
+  color: red;
+}
