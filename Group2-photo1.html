@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working Theme</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container-fluid">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style=" width: 200px;padding-top: 10px;">
+                    <img src="assets/logo-lg.svg" alt="ME" class="mypic">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">제휴세탁소</a></li>
+                    <li><a href="#">관리자정보</a></li>
+                    <li><a href="#">데이터분석</a></li>
+                    <li><a class="red-color" href="#">로그아웃</a></li>
+                </ul>
+            </div>
+            <div class="app-datetime"><span class="app-date">2018-08-24</span> 19:23</div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <ul class="nav nav-tabs faq-cat-tabs">
+            <li class="active"><a href="#faq-cat-1" data-toggle="tab">주문관리</a></li>
+            <li><a href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
+            <li><a href="#faq-cat-3" data-toggle="tab">공지/이벤트</a></li>
+            <li><a href="#faq-cat-4" data-toggle="tab">게시판관리</a></li>
+            <li><a href="#faq-cat-5" data-toggle="tab">회원관리</a></li>
+            <li><a href="#faq-cat-6" data-toggle="tab">직원관리</a></li>
+            <li><a href="#faq-cat-7" data-toggle="tab">매출관리</a></li>
+            <li><a href="#faq-cat-8" data-toggle="tab">실시간상담</a></li>
+
+            <span class="searchicon">
+                <div class="form-group">
+
+                    <select class="form-control" id="sel1">
+                        <option>직원번호</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="input-group stylish-input-group pull-right">
+                    <input type="text" class="form-control" placeholder="직원 검색">
+                    <span class="input-group-addon">
+                        <a type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
+                    </span>
+                </div>
+            </span>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content faq-cat-content">
+            <div class="tab-pane active in fade" id="faq-cat-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">비회원접수</a></li>
+                        <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                    </ol>
+                </nav>
+
+                <form class="box-body form-horizontal inline-block">
+                    <div class="row no-margin">
+                        <div class="form-group col-md-6">
+                            <label for="Password" class="col-sm-2 control-label">주문일시</label>
+                            <div class="col-sm-10">
+                                <label class="checkbox padding-left-5 no-margin">
+                                    2018-08-24 17:00
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="First Name" class="col-sm-2 control-label">직원번호</label>
+                            <div class="col-sm-10 padding-left-20">
+                                180824006
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-margin">
+                        <div class="form-group col-md-6">
+                            <label for="First Name" class="col-sm-2 control-label">고객명</label>
+                            <div class="col-sm-10">
+                                <input data-elemttype="Textbox" type="text" class="form-control ams-item-parts-text width-250"
+                                    value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="First Name" class="col-sm-2 control-label">고객번호</label>
+                            <div class="col-sm-10 padding-left-20">
+                                170000018
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-margin">
+                        <div class="form-group col-md-6">
+                            <label for="Last Name" class="col-sm-2 control-label">생년월일</label>
+                            <div class="col-sm-10">
+                                <select class="form-control width-70 inline-block border-radius-5" id="sel1">
+                                    <option>010</option>
+                                    <option>011</option>
+                                    <option>012</option>
+                                    <option>013</option>
+                                </select>
+                                <span class="padding-4px inline-block gray">-</span>
+                                <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                    value="" id="45">
+                                <span class="padding-4px inline-block gray">-</span>
+                                <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                    value="" id="45">
+
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="First Name" class="col-sm-2 control-label">상태</label>
+                            <div class="col-sm-10">
+                                    <select class="form-control width-70 inline-block border-radius-5 width-100" id="sel1">
+                                            <option>세탁작업</option>
+                                            <option>text</option>
+                                            <option>text</option>
+                                            <option>text</option>
+                                        </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-margin">
+                        <div class="form-group col-md-6">
+                            <label for="e-mail" class="col-sm-2 control-label">주소</label>
+                            <div class="col-sm-10">
+                                <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                    value="" id="45">
+                                <span class="padding-10px inline-block">-</span>
+                                <span data-elemttype="Textbox" style="background-color: #eee !important;" class="form-control width-100 gray-box-angle ams-item-parts-text inline-block"
+                                    value="" id="45">우편번호<span>›</span></span>
+                                <div class="input-group inline-block">
+                                    <input class="form-control width-250">
+                                    <span class="input-group-btn"> <span class="btn btn-default">기본주소</span>
+                                    </span>
+                                </div>
+                                <div class="input-group inline-block">
+                                    <input class="form-control width-250">
+                                    <span class="input-group-btn"> <span class="btn btn-default">나머지주소</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Industry" class="col-sm-2 control-label">요청사항</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control width-400" rows="5" id="comment"></textarea>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="Last Name" class="col-sm-2 control-label">수거일시</label>
+                        <div class="col-sm-10">
+                            <select class="form-control width-100 inline-block top-half" id="sel1">
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                            </select> <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                value="" id="45">
+                            <span class="padding-4px inline-block">월</span>
+                            <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                value="" id="45">
+                            <span class="padding-4px inline-block">일</span>
+                            <select class="form-control width-120 inline-block top-half" id="sel1">
+                                <option>19:00~21:00</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                            <label for="Last Name" class="col-sm-2 control-label">수거일시</label>
+                            <div class="col-sm-10">
+                                <select class="form-control width-100 inline-block top-half" id="sel1">
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                </select> <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                    value="" id="45">
+                                <span class="padding-4px inline-block">월</span>
+                                <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                    value="" id="45">
+                                <span class="padding-4px inline-block">일</span>
+                                <select class="form-control width-120 inline-block top-half" id="sel1">
+                                    <option>19:00~21:00</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="First Name" class="col-sm-2 control-label">수거지</label>
+                        <div class="col-sm-10">
+                            <select class="form-control width-120 inline-block border-radius-5 top-half" id="sel1">
+                                <option>주소지방문</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="First Name" class="col-sm-2 control-label">배송지</label>
+                        <div class="col-sm-10">
+                            <select class="form-control width-120 inline-block border-radius-5 top-half" id="sel1">
+                                <option>문앞보관</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-6 height-40">
+                        <label for="First Name" class="col-sm-2 control-label">주문금액</label>
+                        <div class="col-sm-10">
+                            <div class="input-group inline-block">
+                                <input class="form-control width-100">
+                                <span class="input-group-btn"> <span class="btn btn-default">원</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 height-40">
+                        <label for="First Name" class="col-sm-2 control-label">쿠폰</label>
+                        <div class="col-sm-10">
+                                없음
+                        </div>
+                    </div>
+
+
+                    <div class="form-group col-md-6 height-40">
+                        <label for="First Name" class="col-sm-2 control-label">적립금</label>
+                        <div class="col-sm-10">
+                                3,000원
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 height-40">
+                        <label for="First Name" class="col-sm-2 control-label">예치금</label>
+                        <div class="col-sm-10">
+                                0원
+                        </div>
+                    </div>
+                    <div class="col-md-12 noPadding border-btm">
+                        <div class="form-group col-md-6 noBorder">
+                            <label for="First Name" class="col-sm-2 control-label">결제방식</label>
+                            <div class="col-sm-10">
+                                    <select class="form-control width-120 inline-block border-radius-5 top-half" id="sel1">
+                                        <option>카드 자동결제</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                        </div>
+                    </div>
+
+
+
+                </form>
+                <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-default btn-save form-input-field padding-10 width-100" data-dismiss="modal">등록하기</button>
+                        <button type="button" class="btn btn-default btn-cancel btn-bg-border padding-10 width-100" data-dismiss="modal">취소</button>
+                    </div>
+            </div>
+            <div class="tab-pane fade" id="faq-cat-2">
+                TAb2 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-3">
+                TAb3 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-4">
+                TAb4 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-5">
+                TAb5 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-6">
+                TAb6 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-7">
+                TAb7 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-8">
+                TAb8 content
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
