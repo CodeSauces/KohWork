@@ -219,6 +219,9 @@ Accessories
 .width-85{
   width: 85px;
 }
+.width-110 {
+  width: 110px !important;
+}
 .width-100 {
   width: 100px !important;
 }
@@ -504,6 +507,9 @@ table.table.table-bordered th, table.table.table-bordered td {
 
 .float-left{
   float: left;
+}
+.float-right{
+  float: right;
 }
 
 .bg-light-blue{
