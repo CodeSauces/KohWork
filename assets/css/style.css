@@ -505,6 +505,10 @@ table.table.table-bordered th, table.table.table-bordered td {
 .right-icon::after {
   content: "\25b6";
   float: right;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-size: 10px;
 }
 
 .float-left{
@@ -556,10 +560,50 @@ table.table.table-bordered th, table.table.table-bordered td {
 .gray{
  color:  #707070
 }
-
+/*Datepicker*/
+.datepicker {
+  width: 196px !important;
+}
 .datepicker-days table.table-condensed td:last-child, .datepicker-days table.table-condensed th:last-child:not(.next) {
   color: #8292e0;
 }
 .datepicker-days table.table-condensed td:first-child, .datepicker-days table.table-condensed th:first-child:not(.next) {
   color: red;
+}
+.datepicker-days .prev:after{
+  transform: rotate(-61deg) !important;
+}
+.datepicker-days .next:after,.datepicker-days .prev:after{
+  content: "\25b6";
+    float: right;
+    font-size: 17px;
+    color: black;
+}
+.datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active {
+  color: #fff !important;
+  background-color: #8292e0;
+  border-color: #8292e0;
+}
+.datepicker-dropdown.datepicker-orient-bottom:after,.datepicker-dropdown.datepicker-orient-bottom:before{
+  display:none;
+}
+.datepicker.dropdown-menu {
+  margin: 0;
+  margin-top: 1px;
+  border: 1px solid;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.datepicker-open {
+  border: 1px solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+}
+.form-control.datepicker{
+  margin: 0;
+  margin-right: 3px;
+  padding: 0px 25px;
+  text-align: center;
+  padding-right: 25px;
 }
