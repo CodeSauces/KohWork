@@ -13,7 +13,7 @@ body {
 }
 
 .faq-cat-tabs li a {
-  padding: 5px 15px 8px 15px;
+  padding: 5px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   color: #777777;
@@ -152,13 +152,13 @@ input[type='checkbox'] {
 }
 
 input[type='checkbox'] + span {
-  background: url(../uncheck.svg) no-repeat center left !important;
+  background: url(/assets/uncheck.svg) no-repeat center left;
   padding-left: 23px;
   margin-left: -18px;
 }
 
 input[type='checkbox']:checked + span {
-  background: url(../check.svg) no-repeat center left !important;
+  background: url(/assets/check.svg) no-repeat center left;
 }
 
 label.checkbox {
@@ -219,14 +219,8 @@ Accessories
 .width-85{
   width: 85px;
 }
-.width-110 {
-  width: 110px !important;
-}
 .width-100 {
   width: 100px !important;
-}
-.width-120 {
-  width: 120px !important;
 }
 .width-100p{
   width: 100% !important;
@@ -247,15 +241,11 @@ Accessories
 .height-40 {
   height: 40px !important;
 }
-.padding-5-vertical{
-  padding: 5px 0px !important;
-}
+
 .padding-10px {
   padding: 10px 0px;
 }
-.padding-10 {
-  padding: 10px !important;
-}
+
 .padding-6px {
   padding: 6px 0px;
 }
@@ -264,19 +254,20 @@ Accessories
   padding: 4px 0px;
 }
 
+.padding-5px {
+  padding: 5px;
+}
 .padding-9px {
   padding: 9px 0px;
 }
-.padding-left-20{
-  padding-left: 20px
-}
-.padding-left-5{
-padding-left: 5px;
-}
+
+
 .inline-block {
   display: inline-block;
 }
-
+.inline-flex{
+  display: inline-flex;
+}
 .text-center {
   text-align: center;
 }
@@ -483,8 +474,8 @@ display: inline-block;
     margin-bottom: 8px;
     font-size: 0.9vw;
 }
-table.table.table-bordered th, table.table.table-bordered td {
-  padding: 5px 4px;
+table.table-textcenter th, table.table-textcenter td {
+  padding:8px 8px !important;
   text-align: center;
 }
 
@@ -502,14 +493,12 @@ table.table.table-bordered th, table.table.table-bordered td {
 }
 .right-icon::after {
   content: "\25b6";
-  float: right;
+  position: absolute;
+  right: 8px;
 }
 
 .float-left{
   float: left;
-}
-.float-right{
-  float: right;
 }
 
 .bg-light-blue{
@@ -544,13 +533,14 @@ table.table.table-bordered th, table.table.table-bordered td {
   color: black;
 }
 
-.btn-bg-border {
-  background: #F8F8F8 !important;
-  border: 1px solid #707070 !important;
+
+/*Datepicker*/
+.datepicker {
+  width: 218px !important;
 }
-.black{
-  color: black;
+.datepicker-days table.table-condensed td:last-child, .datepicker-days table.table-condensed th:last-child:not(.next) {
+  color: #8292e0;
 }
-.gray{
- color:  #707070
+.datepicker-days table.table-condensed td:first-child, .datepicker-days table.table-condensed th:first-child:not(.next) {
+  color: red;
 }
