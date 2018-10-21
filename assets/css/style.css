@@ -13,7 +13,7 @@ body {
 }
 
 .faq-cat-tabs li a {
-  padding: 5px 15px 8px 15px;
+  padding: 5px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   color: #777777;
@@ -263,7 +263,9 @@ Accessories
 .padding-4px {
   padding: 4px 0px;
 }
-
+.padding-5px {
+  padding: 5px;
+}
 .padding-9px {
   padding: 9px 0px;
 }
