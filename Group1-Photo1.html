@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Working Theme</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -61,7 +63,7 @@
                 </div>
                 <div class="input-group stylish-input-group pull-right">
                     <input type="text" class="form-control" placeholder="직원 검색">
-                    <span class="input-group-addon">
+                    <span class="input-group-addon padding-5px">
                         <a type="submit">
                             <span class="glyphicon glyphicon-search"></span>
                         </a>
@@ -96,7 +98,7 @@
 
                 <div class="col-md-12 noPadding">
                     <div class="col-md-6 noPadding-left">
-                        <table class="table table-bordered">
+                        <table class="table table-bordered ">
                             <thead>
                                 <tr>
                                     <th class="bg-gray text-center white">주문번호</th>
@@ -151,7 +153,8 @@
                                 <tr>
                                     <td class="bg-gray text-center white">수거일시</td>
                                     <td>
-                                        <div class="form-group width-70p no-margin">
+                                        <div class="form-group no-margin inline-flex">
+                                                <input class="form-control datepicker "  placeholder="MM/DD/YYY" type="text"/>
                                             <select class="form-control border-radius-5 width-0" id="sel1">
                                                 <option>09:00~11:00</option>
                                                 <option>11:00~13:00</option>
@@ -162,6 +165,7 @@
                                                 <option>21:00~23:00</option>
                                                 <option>23:00~24:00</option>
                                             </select>
+                                            
                                         </div>
                                     </td>
                                     <td class="bg-gray text-center white">주문금액</td>
@@ -214,9 +218,9 @@
                 </div>
 
                 <div class="col-md-12 noPadding flex-400">
-                    <div class="col-md-4 col-sm-4 noPadding border-black border-top0">
+                    <div class="col-md-3  noPadding border-black border-top0">
                         <ul class="nav nav-tabs faq-cat-tabs custom">
-                            <li class="active"><a href="#faq-cat2-1" data-toggle="tab">상/하의</a></li>
+                            <li class="active"><a href="#faq-cat2-1" onclick="AssessoriesFunction.handleTabsClick(event,this)" data-toggle="tab">상/하의</a></li>
                             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-2"
                                     data-toggle="tab">신발/가방</a></li>
                             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-3"
@@ -227,8 +231,8 @@
                                     data-toggle="tab" class="search-icon red-color">품목검색</a></li>
 
                         </ul>
-                        <div class="tab-pane fade" id="faq-cat2-1">
-                            <div class="container-fluid margin-top-20 ">
+                        <div class="tab-pane fade in" id="faq-cat2-1">
+                            <div class="margin-top-20 ">
                                 <div class="row no-pad">
                                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                         <button class="tab1-button right-icon">
@@ -430,9 +434,9 @@
                             TAb2 content
                         </div>
                     </div>
-                    <div class="col-md-7 col-sm-6 overflow-auto">
+                    <div class="col-md-8  overflow-auto">
                         <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
-                            <table class="table table-bordered" style="
+                            <table class="table table-bordered table-textcenter" style="
         /* height: 100%; */
         margin: 0;
     ">
@@ -531,7 +535,7 @@
                                         <thead>
                                             <tr>
                                                 <th class="bg-light-blue white">
-                                                    <label class="width-100">합    계</label>
+                                                    <label >합    계</label>
                                                 </th>
                                                 <th style="border: 0;"><label class="width-100"><select class="form-control"
                                                             id="sel1">
@@ -555,7 +559,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="bg-light-blue white"> <label class="width-100">Firs</label></td>
+                                                <td class="bg-light-blue white"> <label>Firs</label></td>
 
                                                 <td style="padding-top: 0;padding-bottom: 0;"><span style="padding-right: 10px;"><input
                                                             data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
@@ -666,7 +670,24 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+
     <script>
+         $(document).ready(function(){
+            $.fn.datepicker.dates['es'] = {
+        days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],
+        daysShort: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+        daysMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"],
+        months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+        monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+        today: "Hoy"
+    };
+
+$('.datepicker').datepicker({
+    language: "es"
+});
+ 
+    })
         var AssessoriesFunction = function () {
 
             var tabsClick = function (event, $that) {
@@ -682,6 +703,9 @@
             }
 
         }();
+      
+   
+
     </script>
 </body>
 
