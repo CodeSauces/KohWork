@@ -391,6 +391,14 @@ ul.nav-tabs.custom {
   top: 1.5px;
 }
 
+.flex{
+  display: flex;
+}
+.inline-flex{
+  display: inline-flex;
+}
+
+
 .grid-checkbox {
   margin: 0 !important;
 }
@@ -485,7 +493,7 @@ display: inline-block;
     margin-bottom: 8px;
     font-size: 0.9vw;
 }
-table.table.table-bordered th, table.table.table-bordered td {
+table.table-textcenter th, table.table-textcenter td {
   padding: 5px 4px;
   text-align: center;
 }
@@ -570,10 +578,10 @@ table.table.table-bordered th, table.table.table-bordered td {
 .datepicker-days table.table-condensed td:first-child, .datepicker-days table.table-condensed th:first-child:not(.next) {
   color: red;
 }
-.datepicker-days .prev:after{
+.datepicker-days .prev:after,.datepicker-container > span.prev:after{
   transform: rotate(-61deg) !important;
 }
-.datepicker-days .next:after,.datepicker-days .prev:after{
+.datepicker-days .next:after,.datepicker-days .prev:after,.datepicker-container > span:after{
   content: "\25b6";
     float: right;
     font-size: 17px;
@@ -606,4 +614,19 @@ table.table.table-bordered th, table.table.table-bordered td {
   padding: 0px 25px;
   text-align: center;
   padding-right: 25px;
+}
+.datepicker-container {
+  position: relative;
+}
+.datepicker-container > span:after{
+  position: absolute;
+}
+.datepicker-container > span.prev:after {
+  left: 9px;
+  top: 1px;
+}
+
+.datepicker-container > span.next:after {
+  right: 9px;
+  top: 1px;
 }
