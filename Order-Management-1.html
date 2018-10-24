@@ -40,9 +40,9 @@
 
     <div class="container-fluid">
         <ul class="nav nav-tabs faq-cat-tabs">
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a href="#faq-cat-1"
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a href="#faq-cat-1"
                     data-toggle="tab">주문관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
+            <li class="active" onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-3" data-toggle="tab">공지/이벤트</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-4" data-toggle="tab">게시판관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-5" data-toggle="tab">회원관리</a></li>
@@ -107,7 +107,6 @@
                             </ol>
                         </nav>
         
-
                         <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
                             <div class="row">
                                 <div class="col-sm-6">
@@ -287,11 +286,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-            </div>
-            <div class="tab-pane fade hide" id="faq-cat-2">
-                TAb2 content
             </div>
             <div class="tab-pane fade hide" id="faq-cat-3">
                 TAb3 content
@@ -371,83 +365,6 @@
             }
 
         }();
-    </script>
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        head.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() ==
-                            "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date()
-                                .valueOf());
-                        }
-                        head.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        } else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-    </script>
-
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        head.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() ==
-                            "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date()
-                                .valueOf());
-                        }
-                        head.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        } else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
     </script>
 
 </body>
