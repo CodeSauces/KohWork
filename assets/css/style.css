@@ -466,6 +466,9 @@ ul.nav-tabs.custom {
 .font-weight-100{
   font-weight: 100;
 }
+.font-12{
+  font-size: 12px;
+}
 .no-margin{
   margin: 0 !important;
 }
@@ -498,7 +501,9 @@ ul.nav-tabs.custom {
 }
 .width-348px{
   width: 348px;
-
+}
+.width-87{
+width: 87px;
 }
 .width-0{
   width: auto !important;
