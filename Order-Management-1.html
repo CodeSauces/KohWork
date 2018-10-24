@@ -40,9 +40,9 @@
 
     <div class="container-fluid">
         <ul class="nav nav-tabs faq-cat-tabs">
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a href="#faq-cat-1"
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a href="#faq-cat-1"
                     data-toggle="tab">주문관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
+            <li class="active" onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-3" data-toggle="tab">공지/이벤트</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-4" data-toggle="tab">게시판관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-5" data-toggle="tab">회원관리</a></li>
@@ -73,223 +73,222 @@
 
         <!-- Tab panes -->
         <div class="tab-content faq-cat-content">
-            <div class="tab-pane active in fade" id="faq-cat-1">
+            <div class="tab-pane fade hide" id="faq-cat-1">
 
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb noPadding-right">
-                        <li class="breadcrumb-item">
-                            <p class="bold no-margin">직원등록</p>
-
-                        </li>
-                        <li class="breadcrumb-item">
-                            <p class="bold no-margin">직원등록</p>
-
-                        </li>
-                        <li class="breadcrumb-item">
-                            <p class="bold no-margin">직원등록</p>
-
-                        </li>
-                        <li class="breadcrumb-item">
-                            <p class="bold no-margin">직원등록</p>
-
-                        </li>
-                        <div class="option-buttons-container">
-                            <label class="checkbox">
-                                <input type="checkbox" checked="checked"><span> 일반사원</span>
-                            </label>
-                        </div>
-                        <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
-                    </ol>
-                </nav>
-
-
-                <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="dataTables_length" id="example_length"><label><select name="example_length"
-                                        aria-controls="example" class="form-control input-sm">
-                                        <option value="10">10</option>
-                                        <option value="25">25</option>
-                                        <option value="50">50</option>
-                                        <option value="100">100</option>
-                                    </select></label>
-                                <div class="table-filter-checkbox">
-                                    <label class="checkbox">
-                                        <input type="checkbox" checked="checked"><span> 일반사원</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="option-buttons-container" style="
-    display: flex;
-    justify-content: flex-end;
-">
-                                <button class="option-button">
-                                    메세지전송
-                                </button>
-                                <button class="option-button">
-                                    세탁증출력
-                                </button>
-                                <button class="option-button">
-                                    주문수정
-                                </button><button class="option-button">
-                                    주문수정
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <table class="table table-bordered table-textcenter">
-                        <thead>
-                            <tr>
-                                <th class="bg-light-blue white">
-                                    <label class="checkbox grid-checkbox">
-                                        <input type="checkbox" checked="checked"><span></span>
-                                    </label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-28">처리</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-20">No.</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-85">품목</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-50">세탁</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-50">정가</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label>수량</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-100">세탁메모</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label>택번호</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-70">입고일자</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label style="width: 56px;">출고예정</label>
-                                </th>
-
-                                <th class="bg-light-blue white">
-
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label class="checkbox grid-checkbox">
-                                        <input class="form-input-field" type="checkbox" checked="checked"><span></span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <span class="red-tick">✔</span>
-                                </td>
-                                <td>1</td>
-                                <td>교복 상의(여)</td>
-                                <td>드라이</td>
-                                <td>
-                                    6,000
-                                </td>
-                                <td>
-                                    <input style="width:40px;/* text-align:right; */" data-elemttype="Textbox" type="text"
-                                        class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field"
-                                        value="1" id="45">
-                                </td>
-
-                                <td>
-                                    <input width="150px" data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field"
-                                        value="" id="45">
-                                </td>
-                                <td>
-                                    <input data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block width-85 form-input-field"
-                                        value="" id="45">
-                                </td>
-                                <td>18-08-24</td>
-
-
-                                <td>18-08-24</td>
-
-
-                                <td>
-                                    <label class="checkbox grid-checkbox">
-                                        <input type="checkbox" checked="checked"><span></span>
-                                    </label>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                    <div class="row">
-                        <div class="col-sm-3 flex-start">
-                            <div class="dataTables_length" id="example_length"><label><select name="example_length"
-                                        aria-controls="example" class="form-control input-sm">
-                                        <option value="10">10</option>
-                                        <option value="25">25</option>
-                                        <option value="50">50</option>
-                                        <option value="100">100</option>
-                                    </select></label>
-                                <div class="table-filter-checkbox">
-                                    <label class="checkbox">
-                                        <input type="checkbox" checked="checked"><span> 일반사원</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 flex-center">
-                            <ul class="pagination no-margin">
-                                <li class="paginate_button previous disabled" id="example_previous"><a href="#"
-                                        aria-controls="example" data-dt-idx="0" tabindex="0">&#xab;</a></li>
-                                <li class="paginate_button previous disabled" id="example_previous"><a href="#"
-                                        aria-controls="example" data-dt-idx="0" tabindex="0">&#x2039;</a></li>
-                                <li class="paginate_button active"><a href="#" aria-controls="example" data-dt-idx="1"
-                                        tabindex="0">1</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="2"
-                                        tabindex="0">2</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="3"
-                                        tabindex="0">3</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="4"
-                                        tabindex="0">4</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="5"
-                                        tabindex="0">5</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="6"
-                                        tabindex="0">6</a></li>
-                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"
-                                        data-dt-idx="7" tabindex="0">&#x203A;</a></li>
-                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"
-                                        data-dt-idx="7" tabindex="0">&#xbb;</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="option-buttons-container flex-end">
-                                <button class="option-button">
-                                    메세지전송
-                                </button>
-                                <button class="option-button">
-                                    세탁증출력
-                                </button>
-                                <button class="option-button">
-                                    주문수정
-                                </button><button class="option-button">
-                                    주문수정
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                 tab 1 
+        
 
             </div>
-            <div class="tab-pane fade hide" id="faq-cat-2">
-                TAb2 content
+            <div class=" tab-pane active in fade" id="faq-cat-2">
+                    <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb noPadding-right">
+                                <li class="breadcrumb-item">
+                                    <p class="bold no-margin">직원등록</p>
+        
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <p class="bold no-margin">직원등록</p>
+        
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <p class="bold no-margin">직원등록</p>
+        
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <p class="bold no-margin">직원등록</p>
+        
+                                </li>
+                                <div class="option-buttons-container">
+                                    <label class="checkbox">
+                                        <input type="checkbox" checked="checked"><span> 일반사원</span>
+                                    </label>
+                                </div>
+                                <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                            </ol>
+                        </nav>
+        
+                        <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="dataTables_length" id="example_length"><label><select name="example_length"
+                                                aria-controls="example" class="form-control input-sm">
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select></label>
+                                        <div class="table-filter-checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox" checked="checked"><span> 일반사원</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="option-buttons-container" style="
+            display: flex;
+            justify-content: flex-end;
+        ">
+                                        <button class="option-button">
+                                            메세지전송
+                                        </button>
+                                        <button class="option-button">
+                                            세탁증출력
+                                        </button>
+                                        <button class="option-button">
+                                            주문수정
+                                        </button><button class="option-button">
+                                            주문수정
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table table-bordered table-textcenter">
+                                <thead>
+                                    <tr>
+                                        <th class="bg-light-blue white">
+                                            <label class="checkbox grid-checkbox">
+                                                <input type="checkbox" checked="checked"><span></span>
+                                            </label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-28">처리</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-20">No.</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-85">품목</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-50">세탁</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-50">정가</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label>수량</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-100">세탁메모</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label>택번호</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label class="width-70">입고일자</label>
+                                        </th>
+                                        <th class="bg-light-blue white">
+                                            <label style="width: 56px;">출고예정</label>
+                                        </th>
+        
+                                        <th class="bg-light-blue white">
+        
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label class="checkbox grid-checkbox">
+                                                <input class="form-input-field" type="checkbox" checked="checked"><span></span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <span class="red-tick">✔</span>
+                                        </td>
+                                        <td>1</td>
+                                        <td>교복 상의(여)</td>
+                                        <td>드라이</td>
+                                        <td>
+                                            6,000
+                                        </td>
+                                        <td>
+                                            <input style="width:40px;/* text-align:right; */" data-elemttype="Textbox" type="text"
+                                                class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field"
+                                                value="1" id="45">
+                                        </td>
+        
+                                        <td>
+                                            <input width="150px" data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field"
+                                                value="" id="45">
+                                        </td>
+                                        <td>
+                                            <input data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block width-85 form-input-field"
+                                                value="" id="45">
+                                        </td>
+                                        <td>18-08-24</td>
+        
+        
+                                        <td>18-08-24</td>
+        
+        
+                                        <td>
+                                            <label class="checkbox grid-checkbox">
+                                                <input type="checkbox" checked="checked"><span></span>
+                                            </label>
+                                        </td>
+                                    </tr>
+        
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-sm-3 flex-start">
+                                    <div class="dataTables_length" id="example_length"><label><select name="example_length"
+                                                aria-controls="example" class="form-control input-sm">
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select></label>
+                                        <div class="table-filter-checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox" checked="checked"><span> 일반사원</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 flex-center">
+                                    <ul class="pagination no-margin">
+                                        <li class="paginate_button previous disabled" id="example_previous"><a href="#"
+                                                aria-controls="example" data-dt-idx="0" tabindex="0">&#xab;</a></li>
+                                        <li class="paginate_button previous disabled" id="example_previous"><a href="#"
+                                                aria-controls="example" data-dt-idx="0" tabindex="0">&#x2039;</a></li>
+                                        <li class="paginate_button active"><a href="#" aria-controls="example" data-dt-idx="1"
+                                                tabindex="0">1</a></li>
+                                        <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="2"
+                                                tabindex="0">2</a></li>
+                                        <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="3"
+                                                tabindex="0">3</a></li>
+                                        <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="4"
+                                                tabindex="0">4</a></li>
+                                        <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="5"
+                                                tabindex="0">5</a></li>
+                                        <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="6"
+                                                tabindex="0">6</a></li>
+                                        <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"
+                                                data-dt-idx="7" tabindex="0">&#x203A;</a></li>
+                                        <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"
+                                                data-dt-idx="7" tabindex="0">&#xbb;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="option-buttons-container flex-end">
+                                        <button class="option-button">
+                                            메세지전송
+                                        </button>
+                                        <button class="option-button">
+                                            세탁증출력
+                                        </button>
+                                        <button class="option-button">
+                                            주문수정
+                                        </button><button class="option-button">
+                                            주문수정
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
             </div>
             <div class="tab-pane fade hide" id="faq-cat-3">
                 TAb3 content
@@ -369,83 +368,6 @@
             }
 
         }();
-    </script>
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        head.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() ==
-                            "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date()
-                                .valueOf());
-                        }
-                        head.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        } else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-    </script>
-
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        head.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() ==
-                            "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date()
-                                .valueOf());
-                        }
-                        head.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        } else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
     </script>
 
 </body>
