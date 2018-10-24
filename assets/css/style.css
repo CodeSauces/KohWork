@@ -93,7 +93,7 @@ span.app-date {
 }
 
 span.searchicon {
-  width: 440px;
+  width: 370px;
   display: inline-block;
   float: right;
 }
@@ -107,6 +107,7 @@ span.searchicon input.form-control {
 span.searchicon span.input-group-addon {
   background: transparent;
   border-color: black;
+  padding: 5px 6px;
 }
 
 span.searchicon span.input-group-addon > a {
@@ -243,9 +244,14 @@ Accessories
 .width-400 {
   width: 400px !important;
 }
-
+.height-100p{
+  height: 100%;
+}
 .height-40 {
   height: 40px !important;
+}
+.padding-right-0{
+  padding-right: 0px !important;
 }
 .padding-5-vertical{
   padding: 5px 0px !important;
@@ -424,7 +430,18 @@ ul.nav-tabs.custom {
   margin: 0 !important;
   padding-left: 18px !important;
 }
-
+.letter-spacing-6{
+  letter-spacing: 6px;
+}
+.vertical-align-middle{
+  vertical-align: middle !important;
+}
+.relative{
+  position: relative !important;
+}
+.bottom-5{
+  bottom: 5px;
+}
 .red-tick {
   font-size: 16px;
   color: red;
@@ -468,6 +485,10 @@ ul.nav-tabs.custom {
 }
 .margin-top-20{
   margin-top: 20px;
+}
+.width-348px{
+  width: 348px;
+
 }
 .width-0{
   width: auto !important;
@@ -519,7 +540,6 @@ table.table-textcenter th, table.table-textcenter td {
 table label{
   margin: 0 !important;
 }
-
 .search-icon{
   font-family: 'Glyphicons Halflings';
     font-style: normal;
