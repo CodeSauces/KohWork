@@ -711,8 +711,17 @@ div#faq-cat-1 .breadcrumb>li+li:before {
   padding: 3px 8px;
   margin-bottom: 10px;
   
-}.bordered[aria-label="breadcrumb"] label.checkbox {
+}
+.bordered[aria-label="breadcrumb"] label.checkbox {
   padding-right: 5px;
+}
+nav.relative.bordered li.breadcrumb-item {
+  position: relative;
+  padding: 0px 12px;
+}
+nav.relative.bordered .breadcrumb>li+li:before {
+  position: absolute;
+  left: -1px;
 }
 .table-filter-checkbox{
   display: inline-block;
