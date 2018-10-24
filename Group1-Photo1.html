@@ -40,17 +40,17 @@
 
     <div class="container-fluid">
         <ul class="nav nav-tabs faq-cat-tabs">
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a href="#faq-cat-1"
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active "><a  class="no-margin" href="#faq-cat-1"
                     data-toggle="tab">주문관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-3" data-toggle="tab">공지/이벤트</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-4" data-toggle="tab">게시판관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-5" data-toggle="tab">회원관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-6" data-toggle="tab">직원관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-7" data-toggle="tab">매출관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-8" data-toggle="tab">실시간상담</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-3" data-toggle="tab">공지/이벤트</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-4" data-toggle="tab">게시판관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin"  href="#faq-cat-5" data-toggle="tab">회원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-6" data-toggle="tab">직원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-7" data-git clean -dftoggle="tab">매출관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-8" data-toggle="tab">실시간상담</a></li>
 
-            <span class="searchicon">
+            <span class="searchicon relative bottom-5">
                 <div class="form-group">
 
                     <select class="form-control" id="sel1">
@@ -60,7 +60,7 @@
                         <option>4</option>
                     </select>
                 </div>
-                <div class="input-group stylish-input-group pull-right">
+                <div class="input-group pull-right stylish-input-group width-250 ">
                     <input type="text" class="form-control" placeholder="직원 검색">
                     <span class="input-group-addon padding-5px">
                         <a type="submit">
@@ -96,7 +96,7 @@
 
 
                 <div class="col-md-12 noPadding">
-                    <div class="col-md-6 noPadding-left">
+                    <div class="col-md-6 noPadding">
                         <table class="table table-bordered ">
                             <thead>
                                 <tr>
@@ -113,15 +113,17 @@
                                     <td class="bg-gray text-center white">고객번호</td>
                                     <td class="underline">170000018</td>
                                 </tr>
-                                <tr>
-                                    <td rowspan="2" class="bg-gray text-center white">주 소</td>
+                                <tr >
+                                    <td rowspan="2" class="bg-gray text-center white vertical-align-middle noPadding letter-spacing-6">
+                                주 소
+                                    </td>
                                     <td>제주 제주시 광양13길 6-18</td>
                                     <td class="bg-gray text-center white">연 락 처</td>
                                     <td>010-2343-0238</td>
                                 </tr>
                                 <tr>
                                     <td>아띠빌 201호</td>
-                                    <td class="bg-gray text-center white">상 태</td>
+                                    <td class="bg-gray text-center white vertical-align-middle">상 태</td>
                                     <td class="noPadding">
                                         <div class="form-group width-70p margin-8-auto margin-left-0">
                                             <select class="form-control border-radius-5 width-0" id="sel1">
@@ -146,16 +148,16 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-md-6 noPadding-right">
+                    <div class="col-md-6  padding-left-5 padding-right-0">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <td class="bg-gray text-center white">수거일시</td>
-                                    <td>
+                                    <td class="bg-gray text-center white vertical-align-middle ">수거일시</td>
+                                    <td class="width-348px">
                                         <div class="form-group no-margin inline-flex">
                                             <div class="datepicker-container">
                                                 <span class="prev"></span>
-                                                    <input class="form-control datepicker pull-left"  placeholder="MM/DD/YYY" type="text"/>
+                                                    <input class="form-control datepicker pull-left black"  placeholder="2018-08-24" type="text"/>
                                                     <span class="next"></span>
                                             </div>
                                                
@@ -172,7 +174,7 @@
                                             
                                         </div>
                                     </td>
-                                    <td class="bg-gray text-center white">주문금액</td>
+                                    <td class="bg-gray text-center white vertical-align-middle">주문금액</td>
                                     <td class="text-right">37,000</td>
                                 </tr>
                             </thead>
@@ -180,13 +182,19 @@
                                 <tr>
                                     <td class="bg-gray text-center white">수거방법</td>
                                     <td>주소지방문</td>
-                                    <td class="bg-gray text-center white">쿠 폰</td>
+                                    <td class="bg-gray text-center white vertical-align-middle noPadding letter-spacing-6">쿠 폰</td>
                                     <td class="text-right">없음</td>
                                 </tr>
                                 <tr>
-                                    <td class="bg-gray text-center white">배송일시</td>
+                                    <td class="bg-gray text-center white vertical-align-middle">배송일시</td>
                                     <td>
-                                        <div class="form-group width-70p no-margin">
+                                        
+                                        <div class="form-group inline-flex no-margin">
+                                                <div class="datepicker-container">
+                                                        <span class="prev"></span>
+                                                            <input class="form-control datepicker pull-left black"  placeholder="2018-08-24" type="text"/>
+                                                            <span class="next"></span>
+                                                    </div>
                                             <select class="form-control border-radius-5 width-0" id="sel1">
                                                 <option>09:00~11:00</option>
                                                 <option class="bold" selected="selected">11:00~13:00</option>
@@ -199,7 +207,7 @@
                                             </select>
                                         </div>
                                     </td>
-                                    <td class="bg-gray text-center white">적 립 금</td>
+                                    <td class="bg-gray text-center white vertical-align-middle">적 립 금</td>
                                     <td class="text-right">3,000</td>
                                 </tr>
                                 <tr>
@@ -222,7 +230,7 @@
                 </div>
 
                 <div class="col-md-12 noPadding flex-400">
-                    <div class="col-md-3  noPadding border-black border-top0">
+                    <div class="col-md-3  height-100p noPadding border-black border-top0">
                         <ul class="nav nav-tabs faq-cat-tabs custom">
                             <li class="active"><a href="#faq-cat2-1" onclick="AssessoriesFunction.handleTabsClick(event,this)" data-toggle="tab">상/하의</a></li>
                             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-2"
@@ -235,7 +243,7 @@
                                     data-toggle="tab" class="search-icon red-color">품목검색</a></li>
 
                         </ul>
-                        <div class="tab-pane fade in" id="faq-cat2-1">
+                        <div class="tab-pane fade in" id="faq-cat2-1" style="overflow: auto; height: calc(100% - 32px);">
                             <div class="margin-top-20 ">
                                 <div class="row no-pad">
                                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -676,8 +684,8 @@
          $(document).ready(function(){
             $.fn.datepicker.dates['en'] = {
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-    daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    daysShort: ["일", "월", "화", "수", "목", "금", "토"],
+    daysMin: ["일", "월", "화", "수", "목", "금", "토"],
     months: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
     monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     today: "Today",
