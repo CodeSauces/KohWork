@@ -356,6 +356,19 @@ span.searchicon .form-control {
   display: flex;
 }
 
+.flex-start{
+  display: flex;
+  justify-content: flex-start;
+}
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
 ul.nav-tabs.custom {
   margin-left: -1px;
   margin-right: -1px;
@@ -481,8 +494,8 @@ ul.nav-tabs.custom {
   width: auto !important;
 }
 .option-buttons-container{
-display: inline-block;
-    float: right;
+  display: flex;
+  justify-content: flex-end;
   width: auto;
   height: 100%;
 }
@@ -495,6 +508,9 @@ display: inline-block;
     height: 30px;
     margin-bottom: 5px;
    
+}
+.option-buttons-container label {
+  margin: 0;
 }
 .row.no-pad {
   margin-right:0;
@@ -518,7 +534,9 @@ table.table-textcenter th, table.table-textcenter td {
   padding: 5px 4px;
   text-align: center;
 }
-
+table label{
+  margin: 0 !important;
+}
 
 .search-icon{
   font-family: 'Glyphicons Halflings';
@@ -650,4 +668,26 @@ table.table-textcenter th, table.table-textcenter td {
 .datepicker-container > span.next:after {
   right: 9px;
   top: 1px;
+}
+div#faq-cat-1 .breadcrumb>li{
+  display: inline-block;
+  position: relative;
+}
+div#faq-cat-1 li.breadcrumb-item p {
+  padding: 0px 10px;
+}
+
+div#faq-cat-1 .breadcrumb>li+li:before {
+  position: absolute;
+  left: -7px;
+}
+/*breadcrumb*/
+[aria-label="breadcrumb"]{
+  border: 1px solid;
+  padding: 3px 8px;
+  margin-bottom: 10px;
+}
+.table-filter-checkbox{
+  display: inline-block;
+    padding: 0 22px;
 }
