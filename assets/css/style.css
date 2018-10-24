@@ -658,6 +658,8 @@ table label{
 }
 .datepicker-container {
   position: relative;
+  display: inline-block;
+  float: left;
 }
 .datepicker-container > span:after{
   position: absolute;
@@ -692,4 +694,9 @@ div#faq-cat-1 .breadcrumb>li+li:before {
 .table-filter-checkbox{
   display: inline-block;
     padding: 0 22px;
+}
+.table-dropdown-container{
+  position: relative;
+  padding: 3px;
+  display: inline-block;
 }
