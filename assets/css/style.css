@@ -254,6 +254,10 @@ Accessories
   padding-left:5px;
   text-align: left 
 }
+.padding-top-bottom-0{
+  padding-top:0; 
+  padding-bottom:0; 
+}
 .padding-0-10-0-0{
   padding: 0 10px 0 0 !important;
 }
@@ -389,6 +393,9 @@ ul.nav-tabs.custom {
 .border-black {
   border: 1px solid black;
 }
+.border-light-gray{
+  border: 1px solid #707070;
+}
 
 .border-top0 {
   border-top: 0 !important;
@@ -491,6 +498,9 @@ ul.nav-tabs.custom {
 .width-70p{
   width: 70% !important;
 }
+.margin-v-5{
+margin: 5px 0px !important;
+}
 .margin-8-auto{
   margin: 8px auto !important;
 }
@@ -503,12 +513,18 @@ ul.nav-tabs.custom {
 .margin-top-20{
   margin-top: 20px;
 }
+.margin-top-4{
+margin-top: 4px;
+}
 .width-348px{
   width: 348px;
 }
 .width-87{
 width: 87px;
 }
+.width-140{
+  width: 140px;
+  }
 .width-0{
   width: auto !important;
 }
@@ -735,4 +751,13 @@ nav.relative.bordered .breadcrumb>li+li:before {
   position: relative;
   padding: 3px;
   display: inline-block;
+}
+.img-svg{
+  background: url(../upload-img.svg) no-repeat;
+  width: 25px;
+  height: 25px;
+  z-index: 100;
+  position: absolute;
+  top: 70px;
+  right: 0;
 }

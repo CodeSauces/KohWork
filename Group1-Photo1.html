@@ -125,7 +125,7 @@
                                     <td class="bg-gray text-center white vertical-align-middle">상 태</td>
                                     <td class="noPadding">
                                         <div class="form-group width-70p  table-dropdown-container no-margin">
-                                            <select class="form-control border-radius-5 width-0" id="sel1">
+                                            <select class="form-control border-radius-5 width-0 padding-top-bottom-0" id="sel1">
                                                 <option>직원번호</option>
                                                 <option>주문대기</option>
                                                 <option>주문접수</option>
@@ -443,7 +443,7 @@
                         </div>
                     </div>
                     <div class="col-md-8  overflow-auto">
-                        <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
+                        <div class="col-md-12 noPadding border-light-gray" style="height: 74%;padding-bottom: 15px !important;">
                             <table class="table table-bordered table-textcenter" >
                                 <thead>
                                     <tr>
@@ -530,60 +530,71 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-md-12 noPadding" style="height: 25%;">
-                            <div class="col-md-8 noPadding fullheight">
-                                <div class="col-md-10 noPadding-left fullheight">
-                                    <table class="table table-bordered" style="margin: 0;height: 100%;">
-                                        <thead>
-                                            <tr>
-                                                <th class="bg-light-blue white width-87 vertical-align-middle">
-                                                    <label>담당세탁소</label>
-                                                </th>
-                                                <th style="border: 0;"><label class="width-100"><select class="form-control form-input-field pad-left-align-left" id="sel1">
-                                                            <option>직원번호</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                        </select></label><label class="width-100" style="margin-left: 4px;"><select class="form-control form-input-field pad-left-align-left margin-left-10" id="sel1">
-                                                            <option>직원번호</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                        </select></label><span class="font-12" style="float: right;line-height: 2;">
-                                                        <label class="checkbox no-margin " style="margin-left: 26px !important;">
-                                                            <input type="checkbox" checked="checked"><span> 마스터</span>
-                                                        </label><label class="checkbox no-margin " style=" margin-left: 26px !important;">
-                                                            <input type="checkbox" checked="checked"><span> 마스터</span>
-                                                        </label></span></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="bg-light-blue white vertical-align-middle text-center"> <label>할인</label></td>
-
-                                                <td style="padding-top: 0;padding-bottom: 0;">
-                                                    <span style="padding-right: 10px;">
-                                                        <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block form-input-field" value="" id="45"><span class="padding-10px inline-block">%</span></span><span style="padding-right: 10px;">
-                                                        <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block form-input-field" value="" id="45"><span class="padding-10px inline-block">원</span></span><span class="font-12" style="float: right;line-height: 3;"><label class="checkbox no-margin" style="margin-left: 26px !important;">
-                                                            <input type="checkbox" checked="checked"><span> 마스터</span>
-                                                        </label><label class="checkbox no-margin" style="margin-left: 26px !important;">
-                                                            <input type="checkbox" checked="checked"><span> 마스터</span>
-                                                        </label></span></td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                        <div class="col-md-12 noPadding margin-top-4" style="height: 25%;">
+                                <div class="col-md-9 noPadding fullheight">
+                                    <div class="col-md-10 noPadding-left fullheight">
+                                        <table class="table table-bordered" style="margin: 0;height: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th class="bg-light-blue white width-87 vertical-align-middle">
+                                                        <label>담당세탁소</label>
+                                                    </th>
+                                                    <th style="border: 0;">
+                                                        <label class="width-100">
+                                                            <select class="form-control form-input-field pad-left-align-left padding-top-bottom-0 font-weight-100" id="sel1">
+                                                                <option>직원번호</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                            </select>
+                                                        </label>
+                                                        <label class="width-100" style="margin-left: 4px;">
+                                                            <select placeholder="신발/가방 선택" class="form-control form-input-field pad-left-align-left margin-left-10 width-140 padding-top-bottom-0 font-weight-100" id="sel1">
+                                                                    <option value="" disabled="" selected="">신발/가방 선택</option>
+                                                                    <option>직원번호</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                            </select></label><span class="font-12" style="float: right;line-height: 2;">
+                                                            <label class="checkbox no-margin " style="margin-left: 26px !important;">
+                                                                <input type="checkbox" checked="checked"><span> 마스터</span>
+                                                            </label><label class="checkbox no-margin " style=" margin-left: 26px !important;">
+                                                                <input type="checkbox" checked="checked"><span> 마스터</span>
+                                                            </label></span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="bg-light-blue white vertical-align-middle text-center"> <label>할인</label></td>
+    
+                                                    <td style="padding-top: 0;padding-bottom: 0;">
+                                                        <span style="padding-right: 10px;">
+                                                            <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block form-input-field" value="" id="45"><span class="padding-10px inline-block">%</span></span><span style="padding-right: 10px;">
+                                                            <input data-elemttype="Textbox" type="text" class="form-control width-100 ams-item-parts-text inline-block form-input-field" value="" id="45"><span class="padding-10px inline-block">원</span></span><span class="font-12" style="float: right;line-height: 3;"><label class="checkbox no-margin" style="margin-left: 26px !important;">
+                                                                <input type="checkbox" checked="checked"><span> 마스터</span>
+                                                            </label><label class="checkbox no-margin" style="margin-left: 26px !important;">
+                                                                <input type="checkbox" checked="checked"><span> 마스터</span>
+                                                            </label></span></td>
+                                                            
+                                                </tr>
+    
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-2 noPadding fullheight item-center bg-light-blue white">
+                                        <span>적용</span>
+                                    </div>
                                 </div>
-                                <div class="col-md-2 noPadding fullheight item-center bg-light-blue white">
-                                    <span>적용</span>
+                                
+                                <div class="col-md-3 noPadding-right fullheight relative">
+                                    <textarea  rows="4" cols="50"  placeholder="메모 입력" style="resize: none;" class="form-control fullheight form-input-field " rows="2" id="comment"></textarea>
+                                    <span class="img-svg"></span>
+
+
                                 </div>
+    
+    
                             </div>
-                            <div class="col-md-4 noPadding-right fullheight">
-                                <textarea class="form-control fullheight" rows="2" id="comment"></textarea>
-                            </div>
-
-
-                        </div>
                     </div>
                     <div class="col-md-1 col-sm-2 noPadding" style="padding-bottom: 10px;">
                         <div class="col-md-12 noPadding" style="  height: 80%;;
