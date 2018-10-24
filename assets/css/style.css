@@ -417,7 +417,18 @@ ul.nav-tabs.custom {
   margin: 0 !important;
   padding-left: 18px !important;
 }
-
+.letter-spacing-6{
+  letter-spacing: 6px;
+}
+.vertical-align-middle{
+  vertical-align: middle !important;
+}
+.relative{
+  position: relative !important;
+}
+.bottom-5{
+  bottom: 5px;
+}
 .red-tick {
   font-size: 16px;
   color: red;
