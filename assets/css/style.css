@@ -368,6 +368,10 @@ span.searchicon .form-control {
   display: flex;
   justify-content: center;
 }
+.item-center{
+  justify-content: center;
+    align-items: center;
+}
 
 ul.nav-tabs.custom {
   margin-left: -1px;
@@ -698,6 +702,9 @@ div#faq-cat-1 .breadcrumb>li+li:before {
   border: 1px solid;
   padding: 3px 8px;
   margin-bottom: 10px;
+  
+}.bordered[aria-label="breadcrumb"] label.checkbox {
+  padding-right: 5px;
 }
 .table-filter-checkbox{
   display: inline-block;
