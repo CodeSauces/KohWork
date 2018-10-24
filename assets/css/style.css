@@ -439,6 +439,9 @@ ul.nav-tabs.custom {
 .relative{
   position: relative !important;
 }
+.absolute{
+  position: absolute !important;
+}
 .bottom-5{
   bottom: 5px;
 }
@@ -498,6 +501,11 @@ ul.nav-tabs.custom {
   justify-content: flex-end;
   width: auto;
   height: 100%;
+}
+.option-buttons-container.absolute {
+  display: inline-flex;
+  top: 0;
+  right: 0;
 }
 .option-buttons-container button {
   margin: 0 3px;
@@ -686,7 +694,7 @@ div#faq-cat-1 .breadcrumb>li+li:before {
   left: -7px;
 }
 /*breadcrumb*/
-[aria-label="breadcrumb"]{
+.bordered[aria-label="breadcrumb"]{
   border: 1px solid;
   padding: 3px 8px;
   margin-bottom: 10px;
