@@ -40,17 +40,24 @@
 
     <div class="container-fluid">
         <ul class="nav nav-tabs faq-cat-tabs">
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a href="#faq-cat-1"
-                    data-toggle="tab">주문관리</a></li>
-            <li class="active" onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-3" data-toggle="tab">공지/이벤트</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-4" data-toggle="tab">게시판관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-5" data-toggle="tab">회원관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-6" data-toggle="tab">직원관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-7" data-toggle="tab">매출관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat-8" data-toggle="tab">실시간상담</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a class="no-margin" href="#faq-cat-1"
+                    data-toggle="tab" aria-expanded="true">주문관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class=""><a class="no-margin" href="#faq-cat-2"
+                    data-toggle="tab" aria-expanded="false">일정관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-3"
+                    data-toggle="tab">공지/이벤트</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-4"
+                    data-toggle="tab">게시판관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-5"
+                    data-toggle="tab">회원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-6"
+                    data-toggle="tab">직원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-7"
+                    data-git="" clean="" -dftoggle="tab">매출관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-8"
+                    data-toggle="tab">실시간상담</a></li>
 
-            <span class="searchicon">
+            <span class="searchicon relative bottom-5">
                 <div class="form-group">
 
                     <select class="form-control" id="sel1">
@@ -60,7 +67,7 @@
                         <option>4</option>
                     </select>
                 </div>
-                <div class="input-group stylish-input-group pull-right">
+                <div class="input-group pull-right stylish-input-group width-250 ">
                     <input type="text" class="form-control" placeholder="직원 검색">
                     <span class="input-group-addon padding-5px">
                         <a type="submit">
@@ -73,33 +80,37 @@
 
         <!-- Tab panes -->
         <div class="tab-content faq-cat-content">
-            <div class="tab-pane hide fade" id="faq-cat-1">
+            <div class="tab-pane active in  fade" id="faq-cat-1">
 
-
-
-            </div>
-            <div class="tab-pane fade active in " id="faq-cat-2">
                 <nav aria-label="breadcrumb" class="relative bordered ">
                     <ol class="breadcrumb noPadding-right">
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">직원등록</p>
+                            <p class="bold no-margin">주문번호순</p>
 
                         </li>
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">직원등록</p>
+                            <p class="bold no-margin">주문일시순</p>
 
                         </li>
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">직원등록</p>
+                            <p class="bold no-margin">수거일시순</p>
 
                         </li>
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">직원등록</p>
+                            <p class="bold no-margin">배송일시순</p>
+
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">주소순</p>
+
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">담당직원순</p>
 
                         </li>
                         <div class="option-buttons-container absolute item-center">
                             <label class="checkbox">
-                                <input type="checkbox" checked="checked"><span> 일반사원</span>
+                                <input type="checkbox"><span>역순</span>
                             </label>
                         </div>
                         <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
@@ -111,15 +122,30 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="dataTables_length" id="example_length"><label><select name="example_length"
-                                        aria-controls="example" class="form-control input-sm">
+                                        aria-controls="example" class="form-control input-sm border-radius-5">
                                         <option value="10">10</option>
-                                        <option value="25">25</option>
+                                        <option selected="selected" value="25">25</option>
                                         <option value="50">50</option>
                                         <option value="100">100</option>
                                     </select></label>
                                 <div class="table-filter-checkbox">
                                     <label class="checkbox">
-                                        <input type="checkbox" checked="checked"><span> 일반사원</span>
+                                        <input type="checkbox"><span> 미수거</span>
+                                    </label>
+                                </div>
+                                <div class="table-filter-checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span> 미배송</span>
+                                    </label>
+                                </div>
+                                <div class="table-filter-checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span> 배송완료</span>
+                                    </label>
+                                </div>
+                                <div class="table-filter-checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span> 미수금</span>
                                     </label>
                                 </div>
                             </div>
@@ -127,15 +153,19 @@
                         <div class="col-sm-6">
                             <div class="option-buttons-container">
                                 <button class="option-button">
-                                    메세지전송
-                                </button>
-                                <button class="option-button">
                                     세탁증출력
                                 </button>
                                 <button class="option-button">
-                                    주문수정
-                                </button><button class="option-button">
-                                    주문수정
+                                    수거/배송
+                                </button>
+                                <button class="option-button">
+                                    직원배정
+                                </button>
+                                <button class="option-button">
+                                    상태변경
+                                </button>
+                                <button class="option-button">
+                                    메세지전송
                                 </button>
                             </div>
                         </div>
@@ -143,44 +173,50 @@
                     <table class="table table-bordered table-textcenter">
                         <thead>
                             <tr>
-                                <th class="bg-light-blue white">
+                                <th class="bg-gray  white">
                                     <label class="checkbox grid-checkbox">
                                         <input type="checkbox" checked="checked"><span></span>
                                     </label>
                                 </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-28">처리</label>
+                                <th class="bg-gray  white">
+                                    <label class="width-28">주문번호</label>
                                 </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-20">No.</label>
+                                <th class="bg-gray  white">
+                                    <label class="width-20">주문일시</label>
                                 </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-85">품목</label>
+                                <th class="bg-gray  white">
+                                    <label class="width-85">상태</label>
                                 </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-50">세탁</label>
+                                <th class="bg-gray  white">
+                                    <label class="width-50">닉네임</label>
                                 </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-50">정가</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label>수량</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-100">세탁메모</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label>택번호</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label class="width-70">입고일자</label>
-                                </th>
-                                <th class="bg-light-blue white">
-                                    <label style="width: 56px;">출고예정</label>
+                                <th class="bg-gray  white">
+                                    <label class="width-50">수거일시</label>
                                 </th>
 
-                                <th class="bg-light-blue white">
-
+                                <th class="bg-gray  white">
+                                    <label class="width-100">배송일시</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label>주소</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label class="width-70">수거</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label style="width: 56px;">배송</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label style="width: 56px;">연락처</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label style="width: 56px;">수량</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label style="width: 56px;">금액</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label style="width: 56px;">담당직원</label>
                                 </th>
                             </tr>
                         </thead>
@@ -192,38 +228,73 @@
                                     </label>
                                 </td>
                                 <td>
-                                    <span class="red-tick">✔</span>
-                                </td>
-                                <td>1</td>
-                                <td>교복 상의(여)</td>
-                                <td>드라이</td>
-                                <td>
-                                    6,000
+                                    <div>
+                                        180824009
+                                    </div>
                                 </td>
                                 <td>
-                                    <input style="width:40px;/* text-align:right; */" data-elemttype="Textbox" type="text"
-                                        class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field"
-                                        value="1" id="45">
+                                    <div>
+                                        2018-08-24 17:00
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        주문완료
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        하라하라
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="red-color">
+                                        08-25 <span class="underline">19:00</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="red-color">
+                                        08-25 <span class="underline">08-28 21:00</span>
+                                    </div>
                                 </td>
 
                                 <td>
-                                    <input width="150px" data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field"
-                                        value="" id="45">
+                                    <div>
+                                        제주 제주시 광양13길 6-18 아띠빌 201호
+                                    </div>
                                 </td>
                                 <td>
-                                    <input data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block width-85 form-input-field"
-                                        value="" id="45">
+                                    <div>
+                                        문앞보관
+                                    </div>
                                 </td>
-                                <td>18-08-24</td>
-
-
-                                <td>18-08-24</td>
+                                <td>
+                                    <div>
+                                        문앞보관
+                                    </div>
+                                </td>
 
 
                                 <td>
-                                    <label class="checkbox grid-checkbox">
-                                        <input type="checkbox" checked="checked"><span></span>
-                                    </label>
+                                    <div>
+                                        010-8392-3045
+                                    </div>
+                                </td>
+                              
+                                <td>
+                                    <div>
+                                            12
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                            38,000원 +
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                            김한누리
+                                    </div>
                                 </td>
                             </tr>
 
@@ -231,18 +302,19 @@
                     </table>
                     <div class="row">
                         <div class="col-sm-3 flex-start">
-                            <div class="dataTables_length" id="example_length"><label><select name="example_length"
-                                        aria-controls="example" class="form-control input-sm">
-                                        <option value="10">10</option>
+
+                            <div class="dataTables_length" id="example_length">
+
+                                <div class="col-sm-10 noPadding">
+                                    <select class="form-control padding-left-5 inline-block border-radius-5 width-100 padding-top-bottom-0"
+                                        id="sel1">
+                                        <option value="주문관리">주문관리</option>
                                         <option value="25">25</option>
                                         <option value="50">50</option>
                                         <option value="100">100</option>
-                                    </select></label>
-                                <div class="table-filter-checkbox">
-                                    <label class="checkbox">
-                                        <input type="checkbox" checked="checked"><span> 일반사원</span>
-                                    </label>
+                                    </select>
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-sm-6 flex-center">
@@ -271,22 +343,19 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="option-buttons-container flex-end">
-                                <button class="option-button">
-                                    메세지전송
+                                <button class="option-button bg-gray white border-radius-5">
+                                        비회원접수
                                 </button>
-                                <button class="option-button">
-                                    세탁증출력
-                                </button>
-                                <button class="option-button">
-                                    주문수정
-                                </button><button class="option-button">
-                                    주문수정
-                                </button>
+
                             </div>
                         </div>
                     </div>
                 </div>
 
+            </div>
+            <div class="tab-pane fade hide " id="faq-cat-2">
+
+                tab2
             </div>
             <div class="tab-pane fade hide" id="faq-cat-3">
                 TAb3 content

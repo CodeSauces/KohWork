@@ -484,7 +484,7 @@ ul.nav-tabs.custom {
   margin: 0 !important;
 }
 .bg-gray{
-  background-color: #656565;
+  background-color: #656565 !important;
 }
 .white{
   color: white;
@@ -727,7 +727,7 @@ div#faq-cat-1 .breadcrumb>li+li:before {
 }
 /*breadcrumb*/
 .bordered[aria-label="breadcrumb"]{
-  border: 1px solid;
+  border: 1px solid #707070;
   padding: 3px 8px;
   margin-bottom: 10px;
   
@@ -745,7 +745,7 @@ nav.relative.bordered .breadcrumb>li+li:before {
 }
 .table-filter-checkbox{
   display: inline-block;
-    padding: 0 22px;
+    padding: 0 5px;
 }
 .table-dropdown-container{
   position: relative;
