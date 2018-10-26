@@ -516,6 +516,9 @@ margin: 5px 0px !important;
 .margin-top-4{
 margin-top: 4px;
 }
+.margin-bottom-5{
+  margin-bottom: 5px !important;
+}
 .width-348px{
   width: 348px;
 }
@@ -760,4 +763,19 @@ nav.relative.bordered .breadcrumb>li+li:before {
   position: absolute;
   top: 70px;
   right: 0;
+}
+
+.txt-area-btn-container{
+  /* for Group1-Photo2 */
+  margin: 0 auto;
+  height: auto;
+  width: 450px;
+}
+.txt-area-btn-container textarea{
+  resize: none;
+}
+.txt-area-btn-container button{
+  float: right;
+  height: 38px;
+    margin-left: 8px
 }
