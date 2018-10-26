@@ -229,6 +229,9 @@ Accessories
 .width-120 {
   width: 120px !important;
 }
+.width-140 {
+  width: 140px !important;
+}
 .width-100p{
   width: 100% !important;
 }
@@ -427,7 +430,9 @@ ul.nav-tabs.custom {
   position: relative;
   top: 1.5px;
 }
-
+.top--6{
+  top: -6px;
+}
 .flex{
   display: flex;
 }
@@ -778,4 +783,7 @@ nav.relative.bordered .breadcrumb>li+li:before {
   float: right;
   height: 38px;
     margin-left: 8px
+}
+.translateY-200p{
+  transform: translateY(200%) !important;
 }
