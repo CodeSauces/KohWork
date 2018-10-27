@@ -201,6 +201,21 @@ label.checkbox {
 /*
 Accessories
 */
+.width-70p{
+  width: 70% !important;
+}
+.width-348px{
+  width: 348px;
+}
+.width-87{
+width: 87px;
+}
+.width-140{
+  width: 140px;
+  }
+.width-0{
+  width: auto !important;
+}
 .width-20 {
   width: 20px;
 }
@@ -257,6 +272,16 @@ Accessories
   padding-left:5px;
   text-align: left 
 }
+.padding-0-8{
+  padding: 0px 8px !important;
+}
+.padding-5-10{
+  padding: 5px 10px !important;
+}
+.padding-10-5{
+
+padding: 10px 5px;
+}
 .padding-top-bottom-0{
   padding-top:0; 
   padding-bottom:0; 
@@ -270,6 +295,7 @@ Accessories
 .padding-5-vertical{
   padding: 5px 0px !important;
 }
+
 .padding-10px {
   padding: 10px 0px;
 }
@@ -500,9 +526,7 @@ ul.nav-tabs.custom {
 .border-radius-5{
   border-radius: 5px !important;
 }
-.width-70p{
-  width: 70% !important;
-}
+
 .margin-v-5{
 margin: 5px 0px !important;
 }
@@ -524,18 +548,7 @@ margin-top: 4px;
 .margin-bottom-5{
   margin-bottom: 5px !important;
 }
-.width-348px{
-  width: 348px;
-}
-.width-87{
-width: 87px;
-}
-.width-140{
-  width: 140px;
-  }
-.width-0{
-  width: auto !important;
-}
+
 .option-buttons-container{
   display: flex;
   justify-content: flex-end;
@@ -786,4 +799,7 @@ nav.relative.bordered .breadcrumb>li+li:before {
 }
 .translateY-200p{
   transform: translateY(200%) !important;
+}
+.resize-none{
+  resize: none !important;
 }

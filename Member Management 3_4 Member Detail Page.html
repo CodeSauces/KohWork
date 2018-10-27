@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working Theme</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container-fluid">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style=" width: 200px;padding-top: 10px;">
+                    <img src="assets/logo-lg.svg" alt="ME" class="mypic">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">제휴업체</a></li>
+                    <li><a href="#">관리자정보</a></li>
+                    <li><a href="#">데이터분석</a></li>
+                    <li><a class="red-color" href="#">로그아웃</a></li>
+                </ul>
+            </div>
+            <div class="app-datetime"><span class="app-date">2018-08-24</span> 19:23</div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <ul class="nav nav-tabs faq-cat-tabs">
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-1"
+                    data-toggle="tab" aria-expanded="true">주문관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-2"
+                    data-toggle="tab">일정관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-3"
+                    data-toggle="tab">공지/이벤트</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-4"
+                    data-toggle="tab">게시판관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a class="no-margin padding-5-10"
+                    href="#faq-cat-5" data-toggle="tab">회원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-6"
+                    data-toggle="tab" aria-expanded="false">직원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-7"
+                    data-toggle="tab" clean="" -dftoggle="tab">매출관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-8"
+                    data-toggle="tab">실시간상담</a></li>
+
+            <span class="searchicon relative bottom-5">
+                <div class="form-group ">
+
+                    <select class="form-control padding-top-bottom-0" id="sel1">
+                        <option>회원번호</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="input-group pull-right stylish-input-group width-250 ">
+                    <input type="text" class="form-control" placeholder="회원 검색">
+                    <span class="input-group-addon padding-5px">
+                        <a type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
+                    </span>
+                </div>
+            </span>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content faq-cat-content">
+            <div class="tab-pane  fade" id="faq-cat-1">
+                tab 1
+            </div>
+            <div class="tab-pane fade" id="faq-cat-2">
+                TAb2 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-3">
+                TAb3 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-4">
+                TAb4 content
+            </div>
+            <div class="tab-pane active in fade" id="faq-cat-5">
+                <div class="col-md-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">회원상세정보</a></li>
+
+                            <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <div class="option-buttons-container">
+                        <button class="option-button">
+                            메세지전송
+                        </button>
+                        <button class="option-button">
+                            정보수정
+                        </button>
+
+                    </div>
+                </div>
+                <form class="box-body form-horizontal inline-block">
+                    <div class="margin-v-5 no-margin row">
+                        <div class="form-group col-md-6">
+                            <label for="Password" class="col-sm-3 control-label">회원구분</label>
+                            <div class="col-sm-9">
+                                <label class="checkbox padding-left-5 no-margin">
+                                    개인
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="First Name" class="col-sm-3 control-label">회원번호</label>
+                            <div class="col-sm-9 padding-left-20">
+                                170005758
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-v-5 no-margin row">
+                        <div class="form-group col-md-6">
+                            <label for="First Name" class="col-sm-3 control-label">가입일시</label>
+                            <div class="col-sm-9 padding-left-20">
+                                2018-08-05 17:33
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="First Name" class="col-sm-3 control-label">최종접속일시</label>
+                            <div class="col-sm-9 padding-left-20">
+                                2018-08-24 12:10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-v-5 no-margin row">
+                        <div class="form-group col-md-6">
+                            <label for="Last Name" class="col-sm-3 control-label">닉네임</label>
+                            <div class="col-sm-9 padding-left-20">
+                                닭칼국수
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Last Name" class="col-sm-3 control-label">최근주문</label>
+                            <div class="col-sm-9 padding-left-20">
+                                2018-08-24 13:15
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 form-group margin-v-5">
+                        <label for="Last Name" class="col-sm-3 control-label">그룹</label>
+                        <div class="col-sm-9 padding-left-20">
+                            설정안함
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group margin-v-5">
+                        <label for="Last Name" class="col-sm-3 control-label">회원등급</label>
+                        <div class="col-sm-9 padding-left-20">
+                            플래티넘
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 form-group margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">연락처</label>
+                        <div class="col-sm-9">
+                            010-8131-3679
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">이메일</label>
+                        <div class="col-sm-9">
+                            klz-00-b@naver.com
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 form-group height-40 margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">주소</label>
+                        <div class="col-sm-9">
+                            제주 제주시 광양13길 6-18
+                            아띠빌 201호
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group height-40 margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">메모</label>
+                        <div class="col-sm-9">
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 form-group height-40 margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">포인트</label>
+                        <div class="col-sm-9">
+                            3,000P
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group height-40 margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">생년월일</label>
+                        <div class="col-sm-9">
+                            1993년 9월 29일
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 form-group height-40 margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">쿠폰</label>
+                        <div class="col-sm-9">
+                            3개
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 form-group height-40 margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">총주문수</label>
+                        <div class="col-sm-9">
+                            43
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group height-40 margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">예치금</label>
+                        <div class="col-sm-9">
+                            0 원 <button class="bg-gray white border-radius-5 noBorder padding-0-8">수정</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group height-40 margin-v-5">
+                        <label for="First Name" class="col-sm-3 control-label">총항목수</label>
+                        <div class="col-sm-9">
+                            196
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group height-40 margin-v-5 noBorder">
+                        <label for="First Name" class="col-sm-3 control-label">미수금</label>
+                        <div class="col-sm-9">
+                            42,000 원
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group height-40 margin-v-5 noBorder">
+                        <label for="First Name" class="col-sm-3 control-label ">총결제액</label>
+                        <div class="col-sm-9 ">
+                            733,000
+                        </div>
+                    </div>
+
+
+
+
+                </form> 
+                <div class="modal-footer text-center noPadding relative bottom-5">
+                        <div class="option-buttons-container">
+                                <button class="option-button bg-gray white ">
+                                        탈퇴처리
+                                </button>
+                                
+        
+                            </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="faq-cat-6">
+                TAb6 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-7">
+                TAb7 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-8">
+                TAb8 content
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
