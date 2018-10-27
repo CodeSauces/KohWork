@@ -548,6 +548,9 @@ margin-top: 4px;
 .margin-bottom-5{
   margin-bottom: 5px !important;
 }
+.margin-right-50{
+  margin-right: 50px;
+}
 
 .option-buttons-container{
   display: flex;
@@ -745,6 +748,7 @@ div#faq-cat-1 li.breadcrumb-item p {
 div#faq-cat-1 .breadcrumb>li+li:before {
   position: absolute;
   left: -7px;
+  content: "|";
 }
 /*breadcrumb*/
 .bordered[aria-label="breadcrumb"]{
@@ -802,4 +806,46 @@ nav.relative.bordered .breadcrumb>li+li:before {
 }
 .resize-none{
   resize: none !important;
+}
+
+/*
+Pagination 
+*/
+ul.pagination.no-margin li a {
+  background: transparent;
+  border: 0 !important;
+  margin: 0 2px;
+  font-size: 13px;
+    font-weight: bold;
+}
+ul.pagination.no-margin li.paginate_button.active a {
+  color: black;
+  font-weight: bold;
+}
+ul.pagination.no-margin li.paginate_button.previous.disabled a {
+  background: #e6e6e6;
+  color: white;
+}
+ul.pagination.no-margin li.paginate_button.next a {
+  background: #656565 !important;
+  color: white;
+}
+.table-btm-btn{
+  position: relative;
+    top: -13px;
+    /* right: -4px; */
+    margin-right: 0;
+}
+tr.active td {
+  background: #8292e0 !important;
+  color: white;
+}
+.searched:before {
+  font-size: 49px;
+  content: '\2022';
+  /* background: rebeccapurple; */
+  color: red;
+  position: absolute;
+  right: 3px;
+  top: -17px;
 }

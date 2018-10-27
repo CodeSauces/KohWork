@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
-
 <body class="container-fluid noPadding">
 
     <nav class="navbar navbar-inverse">
@@ -40,22 +39,14 @@
 
     <div class="container-fluid">
         <ul class="nav nav-tabs faq-cat-tabs">
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a class="no-margin" href="#faq-cat-1"
-                    data-toggle="tab" aria-expanded="true">주문관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class=""><a class="no-margin" href="#faq-cat-2"
-                    data-toggle="tab" aria-expanded="false">일정관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-3"
-                    data-toggle="tab">공지/이벤트</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-4"
-                    data-toggle="tab">게시판관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-5"
-                    data-toggle="tab">회원관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-6"
-                    data-toggle="tab">직원관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-7"
-                    data-git="" clean="" -dftoggle="tab">매출관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-8"
-                    data-toggle="tab">실시간상담</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a class="no-margin" href="#faq-cat-1" data-toggle="tab" aria-expanded="true">주문관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class=""><a class="no-margin" href="#faq-cat-2" data-toggle="tab" aria-expanded="false">일정관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-3" data-toggle="tab">공지/이벤트</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-4" data-toggle="tab">게시판관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-5" data-toggle="tab">회원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-6" data-toggle="tab">직원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-7" data-git="" clean="" -dftoggle="tab">매출관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-8" data-toggle="tab">실시간상담</a></li>
 
             <span class="searchicon relative bottom-5">
                 <div class="form-group">
@@ -119,10 +110,17 @@
 
 
                 <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
-                    <div class="row">
+    <div class="col-md-12" style="
+    text-align: center;
+"><label class="margin-top-20">직원번호<select class="form-control padding-left-5 inline-block border-radius-5 width-100 padding-top-bottom-0" id="sel1">
+                                        <option value="주문관리">1800</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+    </select></label><div class="col-md-12 margin-top-20"><button class="option-button bg-gray white">직원배정</button><button class="option-button margin-left-10">취소</button></div>
+</div>          <div class="row">
                         <div class="col-sm-6">
-                            <div class="dataTables_length" id="example_length"><label><select name="example_length"
-                                        aria-controls="example" class="form-control input-sm border-radius-5">
+                            <div class="dataTables_length" id="example_length"><label><select name="example_length" aria-controls="example" class="form-control input-sm border-radius-5">
                                         <option value="10">10</option>
                                         <option selected="selected" value="25">25</option>
                                         <option value="50">50</option>
@@ -221,7 +219,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="active">
                                 <td>
                                     <label class="checkbox grid-checkbox">
                                         <input class="form-input-field" type="checkbox" checked="checked"><span></span>
@@ -306,8 +304,7 @@
                             <div class="dataTables_length" id="example_length">
 
                                 <div class="col-sm-10 noPadding">
-                                    <select class="form-control padding-left-5 inline-block border-radius-5 width-100 padding-top-bottom-0"
-                                        id="sel1">
+                                    <select class="form-control padding-left-5 inline-block border-radius-5 width-100 padding-top-bottom-0" id="sel1">
                                         <option value="주문관리">주문관리</option>
                                         <option value="25">25</option>
                                         <option value="50">50</option>
@@ -319,26 +316,16 @@
                         </div>
                         <div class="col-sm-6 flex-center">
                             <ul class="pagination no-margin">
-                                <li class="paginate_button previous disabled" id="example_previous"><a href="#"
-                                        aria-controls="example" data-dt-idx="0" tabindex="0">&#xab;</a></li>
-                                <li class="paginate_button previous disabled" id="example_previous"><a href="#"
-                                        aria-controls="example" data-dt-idx="0" tabindex="0">&#x2039;</a></li>
-                                <li class="paginate_button active"><a href="#" aria-controls="example" data-dt-idx="1"
-                                        tabindex="0">1</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="2"
-                                        tabindex="0">2</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="3"
-                                        tabindex="0">3</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="4"
-                                        tabindex="0">4</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="5"
-                                        tabindex="0">5</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="6"
-                                        tabindex="0">6</a></li>
-                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"
-                                        data-dt-idx="7" tabindex="0">&#x203A;</a></li>
-                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"
-                                        data-dt-idx="7" tabindex="0">&#xbb;</a></li>
+                                <li class="paginate_button previous disabled" id="example_previous"><a href="#" aria-controls="example" data-dt-idx="0" tabindex="0">«</a></li>
+                                <li class="paginate_button previous disabled" id="example_previous"><a href="#" aria-controls="example" data-dt-idx="0" tabindex="0">‹</a></li>
+                                <li class="paginate_button active"><a href="#" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="2" tabindex="0">2</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="3" tabindex="0">3</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="4" tabindex="0">4</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="5" tabindex="0">5</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="6" tabindex="0">6</a></li>
+                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example" data-dt-idx="7" tabindex="0">›</a></li>
+                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example" data-dt-idx="7" tabindex="0">»</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-3">
@@ -428,8 +415,6 @@
             }
         }();
     </script>
-
-
 </body>
 
 </html>
