@@ -772,6 +772,7 @@ nav.relative.bordered li.breadcrumb-item {
 nav.relative.bordered .breadcrumb>li+li:before {
   position: absolute;
   left: -1px;
+  content: "|";
 }
 .table-filter-checkbox{
   display: inline-block;
