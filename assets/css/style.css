@@ -725,6 +725,11 @@ table label{
   display: inline-block;
   float: left;
 }
+.datepicker-container-normal {
+  float: inherit;
+  position: relative;
+  top: 9px;
+}
 .datepicker-container > span:after{
   position: absolute;
 }
@@ -735,7 +740,7 @@ table label{
 
 .datepicker-container > span.next:after {
   right: 9px;
-  top: 1px;
+  top: 2px;
 }
 div#faq-cat-1 .breadcrumb>li{
   display: inline-block;
