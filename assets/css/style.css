@@ -92,39 +92,39 @@ span.app-date {
   border-bottom: 1px solid white !important;
 }
 
-span.searchicon {
+div.searchicon {
   width: 370px;
   display: inline-block;
   float: right;
 }
 
-span.searchicon input.form-control {
+div.searchicon input.form-control {
   border-right: 0;
   height: 30px;
   border-color: black;
 }
 
-span.searchicon span.input-group-addon {
+div.searchicon span.input-group-addon {
   background: transparent;
   border-color: black;
   padding: 5px 6px;
 }
 
-span.searchicon span.input-group-addon > a {
+div.searchicon span.input-group-addon > a {
   color: inherit;
 }
 
-span.searchicon .input-group.stylish-input-group.pull-right {
+div.searchicon .input-group.stylish-input-group.pull-right {
   width: 69%;
 }
 
-span.searchicon .form-group {
+div.searchicon .form-group {
   width: 29%;
   display: inline-block;
   margin: 0;
 }
 
-span.searchicon .form-group select {
+div.searchicon .form-group select {
   height: 30px;
   border-color: black;
 }
@@ -284,6 +284,9 @@ width: 87px;
   padding-left:5px;
   text-align: left 
 }
+.padding-h-25p{
+  padding: 0px 25% !important;
+}
 .padding-0-8{
   padding: 0px 8px !important;
 }
@@ -293,6 +296,9 @@ width: 87px;
 .padding-10-5{
 
 padding: 10px 5px;
+}
+.margin-top-10{
+  margin-top: 10px !important;
 }
 .padding-top-bottom-0{
   padding-top:0; 
@@ -387,7 +393,7 @@ li.breadcrumb-item a {
   margin: 0px 6px;
 }
 
-span.searchicon .form-control {
+div.searchicon .form-control {
   border-radius: 4px;
 }
 
@@ -655,6 +661,9 @@ table label{
 }
 .float-right{
   float: right;
+}
+.float-none{
+  float: none !important;
 }
 
 .bg-light-blue{
