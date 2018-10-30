@@ -152,51 +152,64 @@
         </div>
     </div>
 
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        head.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() ==
-                            "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date()
-                                .valueOf());
-                        }
-                        head.appendChild(elem);
-                    }
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+    <script>
+         $(document).ready(function(){
+            $.fn.datepicker.dates['en'] = {
+    days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    daysShort: ["일", "월", "화", "수", "목", "금", "토"],
+    daysMin: ["일", "월", "화", "수", "목", "금", "토"],
+    months: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+    monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    today: "Today",
+    clear: "Clear",
+    format: "yyyy-mm-dd",
+    titleFormat: "yyyy-MM", /* Leverages same syntax as 'format' */
+    weekStart: 0
+};
+
+$('.datepicker').datepicker({
+    language: "en",
+    
+});
+$('.datepicker').datepicker()
+    .on('show', function(e) {
+      $('.datepicker-days .next,.datepicker-days .prev').html('');
+      var prev = $('.datepicker-days .prev');
+      prev.attr('colspan',2);
+      prev.next().attr('colspan',3);
+      $('.form-control.datepicker').addClass('datepicker-open')
+      
+    });
+
+    $('.datepicker').datepicker()
+    .on('hide', function(e) {
+      $('.form-control.datepicker').removeClass('datepicker-open')
+      
+    });
+    })
+        var AssessoriesFunction = function () {
+
+            var tabsClick = function (event, $that) {
+                var thatElement = $($that);
+                var Container = thatElement.find('[href]').attr('href');
+                Container.toggle('hide');
+            }
+
+            return {
+                handleTabsClick: function (event, $that) {
+                    tabsClick(event, $that)
                 }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        } else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
+            }
+
+        }();
+      
+   
+
     </script>
 
 </body>
-<div id="coupertcontainerstore" style="width: 360px; position: fixed; top: 15px; right: 15px; height: 621px; background-color: rgb(255, 255, 255); z-index: 2147483647; box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 6px; display: none;">
-    <div class="allbox" id="allboxcontainer"><input type="hidden" name="coupertfrmshowstore" id="coupertfrmshowstore"
-            value="0"><iframe src="chrome-extension://mfidniedemcgceagapgdekdbmanojomk/store.html?domain=127.0.0.1:5500&amp;checkout=0&amp;tabid=773939136&amp;url=undefined&amp;pos=1&amp;showtips=no&amp;homeflag=true"
-            id="frm" style="display:block;width:360px;height:620px;padding:0px;border:none;" frameborder="0" scrolling="no"></div></iframe>
-</div>
-</div>
-
 </html>

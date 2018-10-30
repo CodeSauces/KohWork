@@ -1,0 +1,225 @@
+<html lang="en" coupert-item="mfidniedemcgceagapgdekdbmanojomk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working Theme</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css?_cacheOverride=1540809569852">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/assets/css/style.css?_cacheOverride=1540809569852">
+</head>
+
+<body class="container-fluid">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style=" width: 200px;padding-top: 10px;">
+                    <img src="assets/logo-lg.svg" alt="ME" class="mypic">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">제휴세탁소</a></li>
+                    <li><a href="#">관리자정보</a></li>
+                    <li><a href="#">데이터분석</a></li>
+                    <li><a class="red-color" href="#">로그아웃</a></li>
+                </ul>
+            </div>
+            <div class="app-datetime"><span class="app-date">2018-08-24</span> 19:23</div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <ul class="nav nav-tabs faq-cat-tabs">
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-1"
+                    data-toggle="tab">주문관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class=""><a class="no-margin" href="#faq-cat-2"
+                    data-toggle="tab" aria-expanded="false">일정관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-3"
+                    data-toggle="tab">공지/이벤트</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a class="no-margin" href="#faq-cat-4"
+                    data-toggle="tab">게시판관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-5"
+                    data-toggle="tab">회원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-6"
+                    data-toggle="tab">직원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-7"
+                    data-git="">매출관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-8"
+                    data-toggle="tab">실시간상담</a></li>
+
+            <div class="searchicon relative bottom-5">
+                <div class="form-group">
+
+                    <select class="form-control" id="sel1">
+                        <option>직원번호</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="input-group pull-right stylish-input-group width-250 ">
+                    <input type="text" class="form-control" placeholder="직원 검색">
+                    <span class="input-group-addon padding-5px">
+                        <a type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content faq-cat-content">
+            <div class="tab-pane " id="faq-cat-1">
+                tab 1
+            </div>
+            <div class="tab-pane fade" id="faq-cat-2">
+                TAb2 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-3">
+                TAb3 content
+            </div>
+            <div class="tab-pane  active fade in" id="faq-cat-4">
+                <nav aria-label="breadcrumb" class="relative">
+                    <ol class="breadcrumb noPadding-right">
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">가격표수정</p>
+                        </li>
+                        <div class="option-buttons-container absolute">
+                            <button class="option-button">미리보기</button><button class="option-button">임시저장</button>
+
+
+                        </div>
+                        <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                    </ol>
+                </nav>
+
+                <form class="box-body form-horizontal">
+
+                    <div class="form-group">
+                        <label for="Password" class="col-sm-2 control-label">구분</label>
+                        <div class="col-sm-10">
+
+                            <input data-elemttype="Textbox" type="text" class="form-control ams-item-parts-text width-250"
+                                value="" id="45">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="First Name" class="col-sm-2 control-label">항목</label>
+                        <div class="col-sm-10 padding-left-20">
+                            <div class="list-container">
+                                <div class="list-item-container relative">
+                                    <div class="row no-margin active" style="padding: 5px;">
+                                        <div class="col-sm-6 border-top"><span class="block">카펫 Double
+                                            </span><span class="block">카펫 Queen</span> </div>
+                                        <div class="col-sm-6 border-top"><span class="block text-right">50,000 원 ~
+                                            </span><span class="block text-right">70,000 원 ~</span> </div>
+                                    </div>
+                                </div>
+                                <div class="list-btn-container" style=" position: absolute;bottom: 0;"><input
+                                        data-elemttype="Textbox" type="text" class="form-control width-87 ams-item-parts-text inline-block"
+                                        value="" id="45"><input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block"
+                                        value="" id="45"><button type="button" class="btn btn-default btn-save form-input-field btn-btm-sm"
+                                        data-dismiss="modal">+</button><button type="button" class="btn btn-default btn-save form-input-field btn-btm-sm"
+                                        data-dismiss="modal">/</button><button type="button" class="btn btn-default btn-save form-input-field btn-btm-sm bold"">/</button><button type="
+                                        button" class="btn btn-default btn-save form-input-field btn-btm-sm"
+                                        data-dismiss="modal">삭제</button></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-default btn-save form-input-field padding-10 width-100"
+                        data-dismiss="modal">수정하기</button>
+                    <button type="button" class="btn btn-default btn-cancel btn-bg-border padding-10 width-100"
+                        data-dismiss="modal">취소</button>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="faq-cat-5">
+                TAb5 content
+            </div>
+            <div class="tab-pane hide fade" id="faq-cat-6">
+
+            </div>
+            <div class="tab-pane fade" id="faq-cat-7">
+                TAb7 content
+            </div>
+            <div class="tab-pane fade" id="faq-cat-8">
+                TAb8 content
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+    <script>
+         $(document).ready(function(){
+            $.fn.datepicker.dates['en'] = {
+    days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    daysShort: ["일", "월", "화", "수", "목", "금", "토"],
+    daysMin: ["일", "월", "화", "수", "목", "금", "토"],
+    months: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+    monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    today: "Today",
+    clear: "Clear",
+    format: "yyyy-mm-dd",
+    titleFormat: "yyyy-MM", /* Leverages same syntax as 'format' */
+    weekStart: 0
+};
+
+$('.datepicker').datepicker({
+    language: "en",
+    
+});
+$('.datepicker').datepicker()
+    .on('show', function(e) {
+      $('.datepicker-days .next,.datepicker-days .prev').html('');
+      var prev = $('.datepicker-days .prev');
+      prev.attr('colspan',2);
+      prev.next().attr('colspan',3);
+      $('.form-control.datepicker').addClass('datepicker-open')
+      
+    });
+
+    $('.datepicker').datepicker()
+    .on('hide', function(e) {
+      $('.form-control.datepicker').removeClass('datepicker-open')
+      
+    });
+    })
+        var AssessoriesFunction = function () {
+
+            var tabsClick = function (event, $that) {
+                var thatElement = $($that);
+                var Container = thatElement.find('[href]').attr('href');
+                Container.toggle('hide');
+            }
+
+            return {
+                handleTabsClick: function (event, $that) {
+                    tabsClick(event, $that)
+                }
+            }
+
+        }();
+      
+   
+
+    </script>
+</body>
+
+
+</html>
