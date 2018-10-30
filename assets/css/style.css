@@ -929,3 +929,16 @@ div.list-container {
   background: #295ED5;
   color: white;
 }
+/*
+Board Management Writing
+*/
+.b-mngt-writing-bdy{
+  height: 320px;
+  overflow-y: scroll;
+}
+
+.b-mngt-writing-modal-info{
+  border: 1px solid gray;
+  background: gainsboro;
+  padding: 10px;
+}
