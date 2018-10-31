@@ -297,8 +297,14 @@ width: 87px;
 
 padding: 10px 5px;
 }
+.padding-10{
+  padding: 10px;
+}
 .margin-top-10{
   margin-top: 10px !important;
+}
+.margin-btm-4{
+margin-bottom: 4px;
 }
 .padding-top-bottom-0{
   padding-top:0; 
@@ -317,7 +323,7 @@ padding: 10px 5px;
 .padding-10px {
   padding: 10px 0px;
 }
-.padding-10 {
+.padding-10-all {
   padding: 10px !important;
 }
 .padding-6px {
@@ -702,11 +708,20 @@ table label{
   background: #F8F8F8 !important;
   border: 1px solid #707070 !important;
 }
+.bg-gainsboro{
+  background: gainsboro;
+}
+.bg-light-gray{
+    background: #f0f0f0;
+}
 .black{
   color: black;
 }
 .gray{
- color:  #707070
+  color: #BDBDBD;
+}
+.gainsboro{
+  color: #b4b1b1;
 }
 /*Datepicker*/
 .datepicker {
@@ -941,4 +956,19 @@ Board Management Writing
   border: 1px solid gray;
   background: gainsboro;
   padding: 10px;
+}
+
+/*
+Bulletin Board Management
+*/
+.custom-heading p {
+  padding: 0 10px;
+}
+.custom-heading li:before{
+  display: none;
+}
+.bull-content-container{
+  height: 450px;
+  border-top: 2px solid gainsboro;
+  border-bottom: 2px solid gainsboro;
 }
