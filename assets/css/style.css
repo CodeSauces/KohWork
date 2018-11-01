@@ -977,3 +977,61 @@ Bulletin Board Management
   border-top: 2px solid gainsboro;
   border-bottom: 2px solid gainsboro;
 }
+
+/*
+Custom Dropdown
+*/
+.cstm-timepicker {
+  display: inline-block;
+  position: relative;
+}
+.selected-itm {
+  background: white;
+  padding: 5px;
+  width: 130px;
+  border: 1px solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+.cstm-timepicker ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background: white;
+  box-shadow: 0px 3px 1px 0px #d7d7d7;
+  border: 1px solid;
+  position: absolute;
+  width: 100%;
+  top: 31px;
+}
+.cstm-timepicker ul span:nth-child(1) {
+  padding: 5px;
+  display: inline-block;
+  width: 50%;
+}
+.cstm-timepicker ul span:nth-child(2) {
+  padding: 5px;
+  display: inline-block;
+  width: 50%;
+  float: right;
+}
+.selected-itm:after {
+  content: '\0025BC';
+  font-size: 11px;
+  position: absolute;
+  right: 4px;
+  top: 9px;
+}
+.selected-itm:active + ul,.selected-itm:focus + ul,.selected-itm:hover + ul{
+  display: block;
+}
+.cstm-timepicker ul span.active {
+  font-weight: bold;
+}
+.cstm-timepicker ul span.active:after {
+  content: '\2713';
+  left: 6px;
+  position: relative;
+}
