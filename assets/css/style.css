@@ -256,6 +256,9 @@ width: 87px;
 .width-100p{
   width: 100% !important;
 }
+.width-220{
+  width: 220 !important;
+}
 
 .width-250 {
   width: 250px !important;
@@ -272,7 +275,9 @@ width: 87px;
   width: 800px !important;
 }
 
-
+.height-auto{
+  height:auto !important;
+}
 
 .height-100p{
   height: 100%;
@@ -948,7 +953,7 @@ div.list-container {
 Board Management Writing
 */
 .b-mngt-writing-bdy{
-  height: 320px;
+  height: 360px;
   overflow-y: scroll;
 }
 
