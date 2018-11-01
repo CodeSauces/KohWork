@@ -40,7 +40,7 @@
 
     <div class="container-fluid">
         <ul class="nav nav-tabs faq-cat-tabs">
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a class="no-margin" href="#faq-cat-1"
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-1"
                     data-toggle="tab" aria-expanded="true">주문관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class=""><a class="no-margin" href="#faq-cat-2"
                     data-toggle="tab" aria-expanded="false">일정관리</a></li>
@@ -53,14 +53,14 @@
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-6"
                     data-toggle="tab">직원관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-7"
-                data-toggle="tab" >매출관리</a></li>
+                    data-toggle="tab">매출관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-8"
                     data-toggle="tab">실시간상담</a></li>
 
             <div class="searchicon relative bottom-5">
                 <div class="form-group">
 
-                    <select class="form-control noPadding" id="sel1">
+                    <select class="form-control padding-top-bottom-0" id="sel1">
                         <option>직원번호</option>
                         <option>2</option>
                         <option>3</option>
@@ -82,7 +82,7 @@
         <div class="tab-content faq-cat-content">
             <div class="tab-pane fade hide" id="faq-cat-1">
 
-             tab1
+                tab1
 
             </div>
             <div class="tab-pane fade hide " id="faq-cat-2">
@@ -141,64 +141,70 @@
 
                 <div class="row">
                     <div class="txt-area-btn-container">
-                        <select class="form-control relative top-2 padding-left-5 inline-block border-radius-5 width-120 padding-top-bottom-0" id="sel1">
-                            <option>선택된회원</option>
-                            <option>text</option>
-                            <option>text</option>
-                            <option>text</option>
-                        </select>
-                        <input type="text" class="width-250 border-radius-5 form-control inline-block">
-                        <div class="row padding-h-25p margin-top-10">
-                                <button type="button" class="btn btn-default btn-cancel btn-bg-border padding-10 width-100" data-dismiss="modal">취소</button>
-                                <button type="button" class="btn btn-default btn-save form-input-field padding-10 width-100" data-dismiss="modal">메세지전송</button>
 
+                        <div class="row margin-8-auto">
+                            <select class="form-control relative top-2 padding-left-5 border-radius-5 width-120 padding-top-bottom-0 margin-0-auto"
+                                id="sel1">
+                                <option>그룹1</option>
+                                <option>text</option>
+                                <option>text</option>
+                                <option>text</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="margin-0-25p">
+                            
+                            <button type="button" class="btn btn-default btn-save form-input-field padding-10 width-100 float-none"
+                                data-dismiss="modal">그룹이동</button>
+                                <button type="button" class="btn btn-default btn-cancel btn-bg-border padding-10 width-100 float-none"
+                                data-dismiss="modal">취소</button>
+                            </div>
                         </div>
                     </div>
-                   
-                       
-                    
+
+
                 </div>
 
                 <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="dataTables_length" id="example_length"><label>
-                                <select name="example_length"
-                                        aria-controls="example" class="form-control input-sm border-radius-5">
+                                    <select name="example_length" aria-controls="example" class="form-control input-sm border-radius-5">
                                         <option value="10">10</option>
                                         <option selected="selected" value="25">25</option>
                                         <option value="50">50</option>
                                         <option value="100">100</option>
                                     </select></label>
-                                    <select class="form-control relative top-2 padding-left-5 inline-block border-radius-5 width-100 padding-top-bottom-0" id="sel1">
-                                            <option>전체그룹</option>
-                                            <option>text</option>
-                                            <option>text</option>
-                                            <option>text</option>
-                                        </select>
+                                <select class="form-control relative top-2 padding-left-5 inline-block border-radius-5 width-100 padding-top-bottom-0"
+                                    id="sel1">
+                                    <option>전체그룹</option>
+                                    <option>text</option>
+                                    <option>text</option>
+                                    <option>text</option>
+                                </select>
                                 <div class="table-filter-checkbox">
                                     <label class="checkbox">
                                         <input type="checkbox"><span> 미수금</span>
                                     </label>
                                 </div>
-                               
+
                             </div>
                         </div>
                         <div class="col-md-6">
-                          
+
                         </div>
                         <div class="col-sm-3">
                             <div class="option-buttons-container">
                                 <button class="option-button">
-                                        그룹이동
+                                    그룹이동
                                 </button>
                                 <button class="option-button">
-                                        포인트지급
+                                    포인트지급
                                 </button>
                                 <button class="option-button">
-                                        메세지전송
+                                    메세지전송
                                 </button>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -241,7 +247,7 @@
                                 <th class="bg-gray  white">
                                     <label class="width-85">최근주문</label>
                                 </th>
-                            
+
                             </tr>
                         </thead>
                         <tbody>
@@ -277,7 +283,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <div >
+                                    <div>
                                         200P
                                     </div>
                                 </td>
@@ -304,9 +310,9 @@
                                         2018-08-01
                                     </div>
                                 </td>
-                              
+
                             </tr>
-                            <tr >
+                            <tr>
                                 <td>
                                     <label class="checkbox grid-checkbox">
                                         <input class="form-input-field" type="checkbox"><span></span>
@@ -338,7 +344,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <div >
+                                    <div>
                                         200P
                                     </div>
                                 </td>
@@ -365,7 +371,7 @@
                                         2018-08-01
                                     </div>
                                 </td>
-                              
+
                             </tr>
 
                         </tbody>
@@ -403,7 +409,7 @@
                                         tabindex="0">4</a></li>
                                 <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="5"
                                         tabindex="0">5</a></li>
-                             
+
                                 <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"
                                         data-dt-idx="7" tabindex="0">&#x203A;</a></li>
                                 <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"

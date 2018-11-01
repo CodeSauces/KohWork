@@ -277,6 +277,9 @@ width: 87px;
 .height-100p{
   height: 100%;
 }
+.height-100{
+  height: 100px !important;
+}
 .height-40 {
   height: 40px !important;
 }
@@ -299,6 +302,12 @@ padding: 10px 5px;
 }
 .padding-10{
   padding: 10px;
+}
+.margin-0-25p{
+  margin: 0 25% !important;
+}
+.margin-0-auto{
+  margin: 0 auto !important;
 }
 .margin-top-10{
   margin-top: 10px !important;
@@ -552,6 +561,9 @@ ul.nav-tabs.custom {
 .no-margin{
   margin: 0 !important;
 }
+.bg-td-light-blue{
+  background-color: #8292e03b;
+}    
 .bg-gray{
   background-color: #656565 !important;
 }
@@ -648,6 +660,24 @@ table label{
 }
 .search-icon:before {
   content: "\e003";
+}
+.searched-red:before {
+  font-size: 40px;
+  content: '\2022';
+  /* background: rebeccapurple; */
+  color: red;
+  position: absolute;
+  right: 70px;
+  top: -21px;
+}
+.searched-green:before {
+  font-size: 40px;
+  content: '\2022';
+  /* background: rebeccapurple; */
+  color: #71e640;
+  position: absolute;
+  right: 70px;
+  top: -21px;
 }
 .right-icon{
   font-family: 'Glyphicons Halflings';
