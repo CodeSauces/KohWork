@@ -39,7 +39,9 @@
     </nav>
 
     <div class="container-fluid">
-        <ul class="nav nav-tabs faq-cat-tabs">
+
+  <div class="relative">
+  <ul class="nav nav-tabs faq-cat-tabs">
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active "><a class="no-margin" href="#faq-cat-1" data-toggle="tab">주문관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-2" data-toggle="tab">일정관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-3" data-toggle="tab">공지/이벤트</a></li>
@@ -48,8 +50,10 @@
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-6" data-toggle="tab">직원관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-7" data-toggle="tab" >매출관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-8" data-toggle="tab">실시간상담</a></li>
+         
+        </ul>
 
-            <div class="searchicon relative bottom-5">
+            <div class="searchicon absolute bottom-5">
                 <div class="form-group">
 
                     <select class="form-control padding-top-bottom-0" id="sel1">
@@ -68,7 +72,8 @@
                     </span>
                 </div>
             </div>
-        </ul>
+    </div>
+   
         <!-- Tab panes -->
         <div class="tab-content faq-cat-content">
             <div class="tab-pane active in fade" id="faq-cat-1">

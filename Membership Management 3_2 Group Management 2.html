@@ -39,7 +39,8 @@
     </nav>
 
     <div class="container-fluid">
-        <ul class="nav nav-tabs faq-cat-tabs">
+     <div class="relative">
+  <ul class="nav nav-tabs faq-cat-tabs">
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-1"
                     data-toggle="tab" aria-expanded="false">주문관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-2"
@@ -56,19 +57,20 @@
                     data-toggle="tab" >매출관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-8"
                     data-toggle="tab" aria-expanded="false">실시간상담</a></li>
+        </ul>
 
-            <div class="searchicon relative bottom-5">
-                <div class="form-group ">
+            <div class="searchicon absolute bottom-5">
+                <div class="form-group">
 
                     <select class="form-control padding-top-bottom-0" id="sel1">
-                        <option>글제목</option>
+                        <option>직원번호</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
                     </select>
                 </div>
                 <div class="input-group pull-right stylish-input-group width-250 ">
-                    <input type="text" class="form-control" placeholder="글 검색">
+                    <input type="text" class="form-control" placeholder="직원 검색">
                     <span class="input-group-addon padding-5px">
                         <a type="submit">
                             <span class="glyphicon glyphicon-search"></span>
@@ -76,7 +78,8 @@
                     </span>
                 </div>
             </div>
-        </ul>
+    </div>
+   
         <!-- Tab panes -->
         <div class="tab-content faq-cat-content">
             <div class="tab-pane fade" id="faq-cat-1">

@@ -39,7 +39,8 @@
     </nav>
 
     <div class="container-fluid">
-        <ul class="nav nav-tabs faq-cat-tabs">
+    <div class="relative">
+  <ul class="nav nav-tabs faq-cat-tabs">
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a class="no-margin" href="#faq-cat-1"
                     data-toggle="tab" aria-expanded="true">주문관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class=""><a class="no-margin" href="#faq-cat-2"
@@ -57,7 +58,10 @@
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-8"
                     data-toggle="tab">실시간상담</a></li>
 
-            <div class="searchicon relative bottom-5">
+         
+        </ul>
+
+       <div class="searchicon absolute bottom-5">
                 <div class="form-group">
 
                     <select class="form-control" id="sel1">
@@ -76,8 +80,8 @@
                     </span>
                 </div>
             </div>
-        </ul>
-
+    </div>
+      
         <!-- Tab panes -->
         <div class="tab-content faq-cat-content">
             <div class="tab-pane active in  fade" id="faq-cat-1">
@@ -108,13 +112,14 @@
                             <p class="bold no-margin">담당직원순</p>
 
                         </li>
-                        <div class="option-buttons-container absolute item-center">
+                   
+                        <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                    </ol>
+                         <div class="option-buttons-container absolute item-center">
                             <label class="checkbox">
                                 <input type="checkbox"><span>역순</span>
                             </label>
                         </div>
-                        <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
-                    </ol>
                 </nav>
 
 
