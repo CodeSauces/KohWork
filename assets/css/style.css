@@ -1034,6 +1034,8 @@ Custom Dropdown
   position: absolute;
   width: 100%;
   top: 29px;
+  border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .cstm-timepicker ul span:nth-child(1) {
   padding: 5px;
