@@ -1007,8 +1007,7 @@ Bulletin Board Management
   border-top: 2px solid gainsboro;
   border-bottom: 2px solid gainsboro;
 }
-
-/*
+  /*
 Custom Dropdown
 */
 .cstm-timepicker {
@@ -1034,7 +1033,7 @@ Custom Dropdown
   border: 1px solid;
   position: absolute;
   width: 100%;
-  top: 31px;
+  top: 29px;
 }
 .cstm-timepicker ul span:nth-child(1) {
   padding: 5px;
@@ -1054,8 +1053,11 @@ Custom Dropdown
   right: 4px;
   top: 9px;
 }
-.selected-itm:active + ul,.selected-itm:focus + ul,.selected-itm:hover + ul{
+.selected-itm.active + ul{
   display: block;
+}
+.cstm-timepicker ul span{
+  cursor: pointer;
 }
 .cstm-timepicker ul span.active {
   font-weight: bold;

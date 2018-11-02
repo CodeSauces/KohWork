@@ -10,9 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- 
-    
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/assets/css/style.css">
 </head>
 
 <body class="container-fluid">
@@ -56,7 +54,7 @@
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-6"
                     data-toggle="tab">직원관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-7"
-                    data-toggle="tab">매출관리</a></li>
+                    data-git="">매출관리</a></li>
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin" href="#faq-cat-8"
                     data-toggle="tab">실시간상담</a></li>
 
@@ -119,55 +117,55 @@
 
                 <div class="col-md-12 bull-content-container noPadding">
                     <div class="cstm-timepicker">
-                        <div class="selected-itm">19:00</div>
+                        <div class="selected-itm" data-val="19">19:00</div>
                         <ul>
                             <li>
-                                <span>01:00</span>
-                                <span>13:00</span>
+                                <span data-val="1">01:00</span>
+                                <span data-val="13">13:00</span>
                             </li>
                             <li>
-                                <span>02:00</span>
-                                <span>14:00</span>
+                                <span data-val="2">02:00</span>
+                                <span data-val="14">14:00</span>
                             </li>
                             <li>
-                                <span>03:00</span>
-                                <span>15:00</span>
+                                <span data-val="3">03:00</span>
+                                <span data-val="15">15:00</span>
                             </li>
                             <li>
-                                <span>04:00</span>
-                                <span>16:00</span>
+                                <span data-val="4">04:00</span>
+                                <span data-val="16">16:00</span>
                             </li>
                             <li>
-                                <span>05:00</span>
-                                <span>17:00</span>
+                                <span data-val="05">05:00</span>
+                                <span data-val="17">17:00</span>
                             </li>
                             <li>
-                                <span>06:00</span>
-                                <span>18:00</span>
+                                <span data-val="06">06:00</span>
+                                <span data-val="18">18:00</span>
                             </li>
                             <li>
-                                <span>07:00</span>
-                                <span class="active">19:00</span>
+                                <span data-val="07">07:00</span>
+                                <span data-val="19" class="active">19:00</span>
                             </li>
                             <li>
-                                <span>08:00</span>
-                                <span>20:00</span>
+                                <span data-val="08">08:00</span>
+                                <span data-val="20">20:00</span>
                             </li>
                             <li>
-                                <span>09:00</span>
-                                <span>21:00</span>
+                                <span data-val="09">09:00</span>
+                                <span data-val="21">21:00</span>
                             </li>
                             <li>
-                                <span>10:00</span>
-                                <span>22:00</span>
+                                <span data-val="10">10:00</span>
+                                <span data-val="22">22:00</span>
                             </li>
                             <li>
-                                <span>11:00</span>
-                                <span>23:00</span>
+                                <span data-val="11">11:00</span>
+                                <span data-val="23">23:00</span>
                             </li>
                             <li>
-                                <span>12:00</span>
-                                <span>24:00</span>
+                                <span data-val="12">12:00</span>
+                                <span data-val="24">24:00</span>
                             </li>
                         </ul>
                     </div>
@@ -258,6 +256,26 @@
                     $('.form-control.datepicker').removeClass('datepicker-open')
 
                 });
+        
+        
+        $('.selected-itm').click(function(e){debugger
+            e.stopPropagation();
+                var thatElement = $(this);
+                thatElement.addClass('active')
+            $('body').click(function(){
+                thatElement.removeClass('active')
+
+            })
+            thatElement.next().find('span').click(function(){
+                e.stopPropagation();
+                var item = $(this);
+                item.parents('ul').find('.active').removeClass('active');
+                item.addClass('active');
+                thatElement.text(item.text())
+                thatElement.data('val',item.data().val)
+            });
+        })
+        
         })
         var AssessoriesFunction = function () {
 
