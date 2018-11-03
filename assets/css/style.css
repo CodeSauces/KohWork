@@ -1099,6 +1099,9 @@ Data Analyiss
   border-bottom: 1px solid gainsboro;
 }
 .table-cell{
-  width: 260px;
+  width: 177px;
     display: inline-block;
+}
+.data-analy table{
+  font-size: 13px;
 }
