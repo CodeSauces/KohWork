@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://127.0.0.1:5500/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="container-fluid">
@@ -90,31 +90,32 @@
                 TAb3 content
             </div>
             <div class="tab-pane  active fade in" id="faq-cat-4">
-                <nav aria-label="breadcrumb" class="relative">
-                    <ol class="breadcrumb noPadding-right custom-heading">
-                        <li class="breadcrumb-item">
-                            <p class="bold no-margin">공지사항</p>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <p class="bold no-margin">이벤트</p>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <p class="bold no-margin">쿠폰</p>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <p class="bold no-margin">상품권</p>
-                        </li>
-                        <div class="option-buttons-container absolute" style="
-    /* padding: 10px; */
-">
-                            <button class="option-button width-70">수정</button><button class="option-button width-70">삭제</button>
+                <div class="col-md-8 noPadding">
 
+                    <nav aria-label="breadcrumb" class="relative">
+                        <ol class="breadcrumb noPadding-right custom-heading">
+                            <li class="breadcrumb-item">
+                                <p class="bold no-margin">공지사항</p>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <p class="bold no-margin">이벤트</p>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <p class="bold no-margin">쿠폰</p>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <p class="bold no-margin">상품권</p>
+                            </li>
 
-                        </div>
-                        <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
-                    </ol>
-                </nav>
-
+                            <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <div class="option-buttons-container absolute">
+                        <button class="option-button width-70">수정</button><button class="option-button width-70">삭제</button>
+                    </div>
+                </div>
                 <div class="col-md-12 bull-content-container noPadding">
                     <div class="cstm-timepicker">
                         <div class="selected-itm" data-val="19">19:00</div>
@@ -218,7 +219,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+    <script src="./assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
     <script>
         $(document).ready(function () {
             $.fn.datepicker.dates['en'] = {
@@ -256,26 +257,27 @@
                     $('.form-control.datepicker').removeClass('datepicker-open')
 
                 });
-        
-        
-        $('.selected-itm').click(function(e){debugger
-            e.stopPropagation();
+
+
+            $('.selected-itm').click(function (e) {
+                debugger
+                e.stopPropagation();
                 var thatElement = $(this);
                 thatElement.addClass('active')
-            $('body').click(function(){
-                thatElement.removeClass('active')
+                $('body').click(function () {
+                    thatElement.removeClass('active')
 
+                })
+                thatElement.next().find('span').click(function () {
+                    e.stopPropagation();
+                    var item = $(this);
+                    item.parents('ul').find('.active').removeClass('active');
+                    item.addClass('active');
+                    thatElement.text(item.text())
+                    thatElement.data('val', item.data().val)
+                });
             })
-            thatElement.next().find('span').click(function(){
-                e.stopPropagation();
-                var item = $(this);
-                item.parents('ul').find('.active').removeClass('active');
-                item.addClass('active');
-                thatElement.text(item.text())
-                thatElement.data('val',item.data().val)
-            });
-        })
-        
+
         })
         var AssessoriesFunction = function () {
 
