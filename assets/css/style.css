@@ -527,6 +527,10 @@ ul.nav-tabs.custom {
 .top--6{
   top: -6px;
 }
+.top-105{
+  top: 105px !important;
+}
+
 .flex{
   display: flex;
 }
@@ -711,6 +715,9 @@ table label{
   position: absolute;
   right: 70px;
   top: -21px;
+}
+.right-30{
+  right: 30px !important;
 }
 .right-icon{
   font-family: 'Glyphicons Halflings';
