@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
+
 <body class="container-fluid noPadding">
 
     <nav class="navbar navbar-inverse">
@@ -43,76 +44,69 @@
         <div class="tab-content ">
             <div class="tab-pane active in  fade" id="faq-cat-1">
 
+                <h4 class="border-btm-black bold padding-btm">데이터분석</h4>
                 <nav aria-label="breadcrumb" class="relative bordered ">
                     <ol class="breadcrumb noPadding-right">
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">주문번호순</p>
+                            <p class="bold no-margin">전체보기</p>
 
                         </li>
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">주문일시순</p>
+                            <p class="bold no-margin">시간별분석</p>
 
                         </li>
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">수거일시순</p>
+                            <p class="bold no-margin">주간분석</p>
 
                         </li>
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">배송일시순</p>
+                            <p class="bold no-margin">월별분석</p>
 
                         </li>
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">주소순</p>
+                            <p class="bold no-margin">연별분석</p>
 
                         </li>
-                        <li class="breadcrumb-item">
-                            <p class="bold no-margin">담당직원순</p>
 
-                        </li>
-                      
+
                         <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
                     </ol>
-                      <div class="option-buttons-container absolute item-center">
-                            <label class="checkbox">
-                                <input type="checkbox"><span>역순</span>
-                            </label>
-                        </div>
+
                 </nav>
 
 
                 <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
-                    <div class="row">
+                    <div class="">
 
-                        <div class="col-sm-12 faq-cat-content">
+                        <div class="col-sm-12 faq-cat-content margin-btm-25">
                             <div class="option-buttons-container height-auto">
 
 
 
-                                <button class="option-button">
-                                    상태변경
-                                </button>
-                                <button class="option-button">
-                                    메세지전송
-                                </button>
+                                <button class="option-button">엑셀다운</button>
+                                <button class="option-button">인쇄</button>
                             </div>
                         </div>
-                        <div class="col-sm-12 faq-cat-content noPadding">
+                        <div class="col-sm-12 noPadding faq-cat-content data-analy-top-row">
                             <div class="col-md-4 col-sm-6">
-                                <div><h5>총 누적 판매금액</h5><h2><span class="blue bold">180,030,200</span> 원</h2></div>
-<table class="table table-bordered ">
+                                <div>
+                                    <h5>30,030,000 원</h5>
+                                    <h2 class="font-25"><span class="blue bold">180,030,200</span> 원</h2>
+                                </div>
+                                <table class="table table-bordered ">
                                     <thead>
                                         <tr>
-                                            <th class="bg-light-gray text-center width-85">주문번호</th>
-                                            <td>180824006</td>
-                                            <td class="">주문일시</td>
+                                            <th class="bg-light-gray text-center width-85">현금</th>
+                                            <td>8,023 건</td>
+                                            <td class="text-right">30,030,000 원</td>
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="bg-light-gray text-center">고 객 명</td>
-                                            <td>닭칼국수</td>
-                                            <td class="">고객번호</td>
+                                            <td class="bg-light-gray text-center">카드</td>
+                                            <td>153,305 건</td>
+                                            <td class="text-right">150,000,200 원</td>
 
                                         </tr>
 
@@ -122,20 +116,24 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="col-md-2 col-sm-6">
-                                <div><h5>총 누적 판매금액</h5><h2><span class="blue bold">180,030,200</span> 원</h2></div><table class="table table-bordered ">
+                            <div class="col-md-2 col-sm-6 padding-left-0">
+                                <div>
+                                    <h5>총 누적 주문수</h5>
+                                    <h2 class="font-25"><span class="blue bold">64,203,010</span> 건</h2>
+                                </div>
+                                <table class="table table-bordered ">
                                     <thead>
                                         <tr>
-                                            <th class="bg-light-gray text-center width-85">주문번호</th>
-                                            <td>180824006</td>
+                                            <th class="bg-light-gray text-center width-50">온라인</th>
+                                            <td class="text-right">623,324,320 원</td>
 
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="bg-light-gray text-center">고 객 명</td>
-                                            <td>닭칼국수</td>
+                                            <td class="bg-light-gray text-center">오프라인</td>
+                                            <td class="text-right">1,322,552 건</td>
 
 
                                         </tr>
@@ -146,20 +144,24 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="col-md-2 col-sm-6">
-                                <div><h5>총 누적 판매금액</h5><h2><span class="blue bold">180,030,200</span> 원</h2></div><table class="table table-bordered ">
+                            <div class="col-md-2 col-sm-6 noPadding">
+                                <div>
+                                    <h5>총 누적 회원수</h5>
+                                    <h2 class="font-25"><span class="blue bold">3,430,200</span> 명</h2>
+                                </div>
+                                <table class="table table-bordered ">
                                     <thead>
                                         <tr>
-                                            <th class="bg-light-gray text-center">주문번호</th>
-                                            <td>180824006</td>
+                                            <th class="bg-light-gray text-center">가입</th>
+                                            <td class="text-right">180824006</td>
 
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="bg-light-gray text-center width-85">고 객 명</td>
-                                            <td>닭칼국수</td>
+                                            <td class="bg-light-gray text-center width-28">탈퇴</td>
+                                            <td class="text-right">닭칼국수</td>
 
 
                                         </tr>
@@ -171,20 +173,24 @@
                                 </table>
                             </div>
                             <div class="col-md-4 col-sm-6">
-                                <div><h5>총 누적 판매금액</h5><h2><span class="blue bold">180,030,200</span> 원</h2></div><table class="table table-bordered ">
+                                <div>
+                                    <h5>베스트품목</h5>
+                                    <h2 class="font-25"><span class="blue bold">블라우스 342,000</span> 건</h2>
+                                </div>
+                                <table class="table table-bordered ">
                                     <thead>
                                         <tr>
-                                            <th class="bg-light-gray text-center width-85">주문번호</th>
-                                            <td>180824006</td>
-                                            <td class="">주문일시</td>
+                                            <th class="bg-light-gray text-center width-20">2위</th>
+                                            <td>정장 상의</td>
+                                            <td class="text-right">328,023 건</td>
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="bg-light-gray text-center">고 객 명</td>
-                                            <td>닭칼국수</td>
-                                            <td class="">고객번호</td>
+                                            <td class="bg-light-gray text-center width-28">3위</td>
+                                            <td class="width-110">명품신발</td>
+                                            <td class="text-right">313.502 건</td>
 
                                         </tr>
 
@@ -196,174 +202,533 @@
                             </div>
                         </div>
                     </div>
-                    <table class="table table-bordered table-textcenter">
-                        <thead>
-                            <tr>
-                                <th class="bg-gray  white">
-                                    <label class="checkbox grid-checkbox">
-                                        <input type="checkbox" checked="checked"><span></span>
-                                    </label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label class="">주문번호</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label class="">주문일시</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label class="width-85">상태</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label class="">닉네임</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label class="">수거일시</label>
-                                </th>
+                    <div class="col-sm-12 noPadding col-sm-12 noPadding faq-cat-content">
+                        <h5>매출분석</h5>
+                        <table class="table table-bordered table-textcenter width-auto">
+                            <thead>
+                                <tr>
+                                    <th class="bg-gray  white">
 
-                                <th class="bg-gray  white">
-                                    <label class="width-100">배송일시</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label>주소</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label class="width-70">수거</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label style="width: 56px;">배송</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label style="width: 56px;">연락처</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label style="width: 56px;">수량</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label style="width: 56px;">금액</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label style="width: 56px;">담당직원</label>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label class="checkbox grid-checkbox">
-                                        <input class="form-input-field" type="checkbox" checked="checked"><span></span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <div>
-                                        180824009
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        2018-08-24 17:00
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        주문완료
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        하라하라
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="red-color">
-                                        08-25 <span class="underline">19:00</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="red-color">
-                                        08-25 <span class="underline">08-28 21:00</span>
-                                    </div>
-                                </td>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">30,030,000 원</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">현금</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="width-85">카드</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">전 월 대비 증감율</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">전 년 대비 증감율</label>
+                                    </th>
 
-                                <td>
-                                    <div>
-                                        제주 제주시 광양13길 6-18 아띠빌 201호
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        문앞보관
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        문앞보관
-                                    </div>
-                                </td>
+                                    <th class="bg-gray  white">
+                                        <label class="width-100">운영비용</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label>순이익</label>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bg-gray  white">
+                                        온라인
+                                    </td>
+                                    <td>
+                                        <div>30,030,000 원<span class="width-85 inline-block">(60%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>30,030,000 원<span class="width-85 inline-block">(60%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>30,030,000 원<span class="width-85 inline-block">(60%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>123%</div>
+                                    </td>
+                                    <td>
+                                        <div>153%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>1130,000 원<span class="width-85 inline-block">(60%)</span>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div>1130,000 원<span class="width-85 inline-block">(60%)</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray  white">
+                                        온라인
+                                    </td>
+                                    <td>
+                                        <div>30,030,000 원<span class="width-85 inline-block">(40%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>30,030,000 원<span class="width-85 inline-block">(40%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>30,030,000 원<span class="width-85 inline-block">(40%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>123%</div>
+                                    </td>
+                                    <td>
+                                        <div>153%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>1130,000 원<span class="width-85 inline-block">(40%)</span>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div>1130,000 원<span class="width-85 inline-block">(40%)</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray  white">
+                                        온라인
+                                    </td>
+                                    <td>
+                                        <div>30,030,000 원<span class="width-85 inline-block">(100%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>30,030,000 원<span class="width-85 inline-block">(100%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>30,030,000 원<span class="width-85 inline-block">(100%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>123%</div>
+                                    </td>
+                                    <td>
+                                        <div>153%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>1130,000 원<span class="width-85 inline-block">(100%)</span>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div>1130,000 원<span class="width-85 inline-block">(100%)</span>
+                                        </div>
+                                    </td>
 
 
-                                <td>
-                                    <div>
-                                        010-8392-3045
-                                    </div>
-                                </td>
 
-                                <td>
-                                    <div>
-                                        12
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        38,000원 +
-                                    </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        김한누리
-                                    </div>
-                                </td>
-                            </tr>
 
-                        </tbody>
-                    </table>
-                    <div class="row">
-                        <div class="col-sm-3 flex-start">
 
-                            <div class="dataTables_length" id="example_length">
 
-                                <div class="col-sm-10 noPadding">
-                                    <select class="form-control padding-left-5 inline-block border-radius-5 width-100 padding-top-bottom-0" id="sel1">
-                                        <option value="주문관리">주문관리</option>
-                                        <option value="25">25</option>
-                                        <option value="50">50</option>
-                                        <option value="100">100</option>
-                                    </select>
-                                </div>
 
-                            </div>
+
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-12 noPadding col-sm-12 noPadding faq-cat-content">
+                        <h5>주문분석</h5>
+                        <table class="table table-bordered table-textcenter width-auto">
+                            <thead>
+                                <tr>
+                                    <th class="bg-gray  white">
+
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">총 누적 주문수</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">재주문</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label>전 월 대비 증감율</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">전 년 대비 증감율</label>
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bg-gray  white">온라인</td>
+                                    <td>
+                                        <div>2342340 건<span class="width-85 inline-block">(60%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>9523건<span class="width-85 inline-block">(60%)</span>
+                                        </div>
+                                    </td>
+                                    <td class="width-220">
+                                        123%
+                                    </td>
+                                    <td>
+                                        <div>123%</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray  white">오프라인</td>
+                                    <td>
+                                        <div>2342340 건<span class="width-85 inline-block">(40%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>9523건<span class="width-85 inline-block">(40%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        123%
+                                    </td>
+                                    <td>
+                                        <div>123%</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray  white">합계</td>
+                                    <td>
+                                        <div>2342340 건<span class="width-85 inline-block">(100%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>9523건<span class="width-85 inline-block">(100%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        123%
+                                    </td>
+                                    <td>
+                                        <div>123%</div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-12 noPadding col-sm-12 noPadding faq-cat-content">
+                        <h5>회원분석</h5>
+                        <div class="inline-block pull-left">
+                            <table class="table table-bordered table-textcenter width-auto">
+                                <thead>
+                                    <tr>
+                                        <th class="bg-gray  white">
+
+                                        </th>
+                                        <th class="bg-gray  white">
+                                            <label class="">총 회원수</label>
+                                        </th>
+                                        <th class="bg-gray  white">
+                                            <label class="">탈퇴 회원수</label>
+                                        </th>
+                                        <th class="bg-gray  white">
+                                            <label>재가입 회원수</label>
+                                        </th>
+                                        <th class="bg-gray  white">
+                                            <label class="">전 월 대비 증감율</label>
+                                        </th>
+                                        <th class="bg-gray  white">
+                                            <label class="">전 년 대비 증감율</label>
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="bg-gray  white">온라인</td>
+                                        <td>
+                                            <div>2342340 건<span class="width-85 inline-block">(60%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>2342340 건<span class="width-85 inline-block">(60%)</span>
+                                            </div>
+                                        </td>
+                                        <td class="width-220">
+                                            <div>2342340 건<span class="width-85 inline-block">(60%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>123%</div>
+                                        </td>
+                                        <td>
+                                            <div>123%</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray  white">오프라인</td>
+                                        <td>
+                                            <div>2342340 건<span class="width-85 inline-block">(40%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>2342340 건<span class="width-85 inline-block">(40%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>2342340 건<span class="width-85 inline-block">(40%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>123%</div>
+                                        </td>
+                                        <td>
+                                            <div>123%</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray  white">합계</td>
+                                        <td>
+                                            <div>2342340 건<span class="width-85 inline-block">(100%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>2342340 건<span class="width-85 inline-block">(100%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>2342340 건<span class="width-85 inline-block">(100%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>123%</div>
+                                        </td>
+                                        <td>
+                                            <div>123%</div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="col-sm-6 flex-center">
-                            <ul class="pagination no-margin">
-                                <li class="paginate_button previous disabled" id="example_previous"><a href="#" aria-controls="example" data-dt-idx="0" tabindex="0">«</a></li>
-                                <li class="paginate_button previous disabled" id="example_previous"><a href="#" aria-controls="example" data-dt-idx="0" tabindex="0">‹</a></li>
-                                <li class="paginate_button active"><a href="#" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="2" tabindex="0">2</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="3" tabindex="0">3</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="4" tabindex="0">4</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="5" tabindex="0">5</a></li>
-                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="6" tabindex="0">6</a></li>
-                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example" data-dt-idx="7" tabindex="0">›</a></li>
-                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example" data-dt-idx="7" tabindex="0">»</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="option-buttons-container flex-end">
-                                <button class="option-button bg-gray white border-radius-5 table-btm-btn">
-                                    비회원접수
-                                </button>
+                        <div class="inline-block pull-left padding-left-20">
+                            <table class="table table-bordered table-textcenter width-auto">
+                                <thead>
+                                    <tr>
+                                        <th class="bg-gray  white">
 
-                            </div>
+                                        </th>
+                                        <th class="bg-gray  white">
+                                            <label class="">10대</label>
+                                        </th>
+                                        <th class="bg-gray  white">
+                                            <label class="">20~30대</label>
+                                        </th>
+                                        <th class="bg-gray  white">
+                                            <label>40~50대</label>
+                                        </th>
+                                        <th class="bg-gray  white">
+                                            <label class="">60대 이상</label>
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="bg-gray  white">여성</td>
+                                        <td>
+                                            <div>1340 명<span class="width-85 inline-block">(60%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>9523건<span class="width-85 inline-block">(60%)</span>
+                                            </div>
+                                        </td>
+                                        <td class="width-220">
+                                            123%
+                                        </td>
+                                        <td>
+                                            <div>1340 명<span class="width-85 inline-block">(60%)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray  white">남성</td>
+                                        <td>
+                                            <div>340 명<span class="width-85 inline-block">(40%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>340 명<span class="width-85 inline-block">(40%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>340 명<span class="width-85 inline-block">(40%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>340 명<span class="width-85 inline-block">(40%)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray  white">합계</td>
+                                        <td>
+                                            <div>42340 명<span class="width-85 inline-block">(100%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>9523건<span class="width-85 inline-block">(100%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>42340 명<span class="width-85 inline-block">(100%)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>42340 명<span class="width-85 inline-block">(100%)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
+                    </div>
+                    <div class="col-sm-12 noPadding col-sm-12 noPadding faq-cat-content">
+                        <h5>품목분석</h5>
+                        <table class="table table-bordered table-textcenter width-auto">
+                            <thead>
+                                <tr>
+                                    <th class="bg-gray  white">
+
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">1위</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">2위</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="width-85">3위</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">4위</label>
+                                    </th>
+                                    <th class="bg-gray  white">
+                                        <label class="">5위</label>
+                                    </th>
+
+                                    
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bg-gray  white">온라인
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-120 inline-block text-right">42340 건</span><span class="width-50 inline-block text-right">(60%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-120 inline-block text-right">42340 건</span><span class="width-50 inline-block text-right">(60%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-120 inline-block text-right">42340 건</span><span class="width-50 inline-block text-right">(60%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-120 inline-block text-right">42340 건</span><span class="width-50 inline-block text-right">(60%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-120 inline-block text-right">42340 건</span><span class="width-50 inline-block text-right">(60%)</span>
+                                        </div>
+                                    </td>
+                                    
+
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray  white">
+                                        온라인
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">이불</span><span class="width-150 inline-block text-right">340 건</span><span class="width-50 inline-block text-right">(40%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">이불</span><span class="width-150 inline-block text-right">340 건</span><span class="width-50 inline-block text-right">(40%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">이불</span><span class="width-150 inline-block text-right">340 건</span><span class="width-50 inline-block text-right">(40%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">이불</span><span class="width-150 inline-block text-right">340 건</span><span class="width-50 inline-block text-right">(40%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">이불</span><span class="width-150 inline-block text-right">340 건</span><span class="width-50 inline-block text-right">(40%)</span>
+                                        </div>
+                                    </td>
+                                    
+
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="bg-gray  white">
+                                        온라인
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-100 inline-block text-right">642340 건</span><span class="width-70 inline-block text-right">(100%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-100 inline-block text-right">642340 건</span><span class="width-70 inline-block text-right">(100%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-100 inline-block text-right">642340 건</span><span class="width-70 inline-block text-right">(100%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-100 inline-block text-right">642340 건</span><span class="width-70 inline-block text-right">(100%)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell"><span class="inline-block pull-left">와이셔츠 </span><span class="width-100 inline-block text-right">642340 건</span><span class="width-70 inline-block text-right">(100%)</span>
+                                        </div>
+                                    </td>
+                                    
+
+                                    
+
+
+
+
+
+
+
+
+
+                                </tr>
+
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
@@ -429,7 +794,5 @@
         }();
     </script>
 
-
 </body>
-
 </html>

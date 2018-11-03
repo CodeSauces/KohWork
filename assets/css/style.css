@@ -203,6 +203,9 @@ label.checkbox {
 /*
 Accessories
 */
+.width-auto{
+  width: auto !important;
+}
 .width-70p{
   width: 70% !important;
 }
@@ -310,6 +313,9 @@ padding: 10px 5px;
 .padding-10{
   padding: 10px;
 }
+.padding-btm{
+  padding-bottom: 10px;
+}
 .margin-0-25p{
   margin: 0 25% !important;
 }
@@ -335,7 +341,9 @@ margin-bottom: 4px;
 .padding-5-vertical{
   padding: 5px 0px !important;
 }
-
+.margin-btm-25{
+  margin-bottom: 25px;
+  }
 .padding-10px {
   padding: 10px 0px;
 }
@@ -360,6 +368,9 @@ margin-bottom: 4px;
 }
 .padding-left-5{
 padding-left: 5px;
+}
+.padding-left-0 {
+ padding-left: 0 !important;
 }
 .inline-block {
   display: inline-block;
@@ -481,6 +492,9 @@ ul.nav-tabs.custom {
 .border-btm  {
   border-bottom: 1px solid gainsboro;
 }
+.border-btm-black{
+  border-bottom: 1px solid black;
+}
 .border-top  {
   border-top: 1px solid gainsboro;
 }
@@ -564,6 +578,9 @@ ul.nav-tabs.custom {
 }
 .font-12{
   font-size: 12px;
+}
+.font-25{
+  font-size: 25px;
 }
 .no-margin{
   margin: 0 !important;
@@ -1073,4 +1090,15 @@ Custom Dropdown
   content: '\2713';
   left: 6px;
   position: relative;
+}
+/*
+Data Analyiss
+*/
+.data-analy-top-row{
+  padding: 30px 0 !important;
+  border-bottom: 1px solid gainsboro;
+}
+.table-cell{
+  width: 260px;
+    display: inline-block;
 }
