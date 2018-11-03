@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Real-time consultation</title>
+    <title>chat</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -47,9 +47,9 @@
                       <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-3" data-toggle="tab" aria-expanded="false">공지/이벤트</a></li>
                       <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-4" data-toggle="tab" aria-expanded="false">게시판관리</a></li>
                       <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-5" data-toggle="tab" aria-expanded="false">회원관리</a></li>
-                      <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a class="no-margin padding-5-10" href="#faq-cat-6" data-toggle="tab" aria-expanded="true">직원관리</a></li>
+                      <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active "><a class="no-margin padding-5-10" href="#faq-cat-6" data-toggle="tab" aria-expanded="true">직원관리</a></li>
                       <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-7" data-toggle="tab">매출관리</a></li>
-                      <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active "><a class="no-margin padding-5-10" href="#faq-cat-8" data-toggle="tab" aria-expanded="false">실시간상담</a></li>
+                      <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-8" data-toggle="tab" aria-expanded="false">실시간상담</a></li>
                   </ul>
           
                       <div class="searchicon absolute bottom-5">
@@ -91,13 +91,7 @@
             <div class="tab-pane fade hide" id="faq-cat-5">
                 TAb5 content
             </div>
-            <div class="tab-pane fade  hide" id="faq-cat-6">
-               tab 6 content
-            </div>
-            <div class="tab-pane fade hide" id="faq-cat-7">
-                TAb7 content
-            </div>
-            <div class="tab-pane fade active in" id="faq-cat-8">
+            <div class="tab-pane fade  active in" id="faq-cat-6">
                 <nav aria-label="breadcrumb" class="relative bordered ">
                     <ol class="breadcrumb noPadding-right">
                         <li class="breadcrumb-item">
@@ -126,6 +120,8 @@
                         <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
                     </ol>
                 </nav>
+
+
                 <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
                     <div class="row">
                         <div class="col-sm-6">
@@ -336,6 +332,12 @@
                     </div>
                 </div>
             </div>
+            <div class="tab-pane fade hide" id="faq-cat-7">
+                TAb7 content
+            </div>
+            <div class="tab-pane fade hide" id="faq-cat-8">
+                TAb8 content
+            </div>
         </div>
     </div>
 
@@ -351,61 +353,59 @@
                 <div class="modal-content inline-block" style="border-top-left-radius: 0;border-top-right-radius: 0;">
                     <div class="modal-body" style="padding: 0px;">
                         <div class="contact-profile">
-                            <span style="height: 20px;display: block;background: #656565;"></span>
-                        <a href="#"    <span class="cross-icon"></span> </a>
-                            <img src="./assets/images/chat-dp.png" alt="">
-                            <p class="relative bottom-7">하라하라</p>
-                            <p class="font-11 ls-point-5">010-8392-3045</p>
+                            <span style="height: 7px;display: block;background: #656565;"></span>
+                            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="">
+                            <p>Harvey Specter</p>
+                            <div class="social-media">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </div>
                         </div>
                         <div class="mesgs">
                             <div class="msg_history">
                               <div class="incoming_msg">
-                                <div class="incoming_msg_img"> <img src="./assets/images/chat-dp.png" alt="sunil"> </div>
+                                <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
                                 <div class="received_msg">
                                   <div class="received_withd_msg">
-                                    <p>고객님의 세탁물이 출발하였습니다. </p>
+                                    <p>Test which is a new approach to have all
+                                      solutions</p>
                                     <span class="time_date"> 11:01</span></div>
                                 </div>
                               </div>
-                                <div class="outgoing_msg">
-                                <div class="sent_msg">
-                                  <p>문의문의문의문의
-                                  </p>
-                              </div>
-                            </div>
                               <div class="outgoing_msg">
                                 <div class="sent_msg">
-                                  <p>여기는 내가 말하는 페이지 <br>
-                                  배송 언제오나요 엄청기다림</p>
-                                  <span class="time_date"> 12:31</span> </div>
+                                  <p>Test which is a new approach to have all
+                                    solutions</p>
+                                  <span class="time_date"> 11:01</span> </div>
                               </div>
                               <div class="incoming_msg">
-                                <div class="incoming_msg_img"> <img src="./assets/images/chat-dp.png" alt="sunil"> </div>
+                                <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
                                 <div class="received_msg">
                                   <div class="received_withd_msg">
-                                    <p>고객님의 세탁물이 출발하였습니다. </p>
-                                 </div>
-                                 
+                                    <p>Test, which is a new approach to have</p>
+                                    <span class="time_date"> 11:01</span></div>
                                 </div>
-                         
+                              </div>
+                              <div class="outgoing_msg">
+                                <div class="sent_msg">
+                                  <p>Apollo University, Delhi, India Test</p>
+                                  <span class="time_date"> 11:01</span> </div>
                               </div>
                               <div class="incoming_msg">
-                                <div class="incoming_msg_img"> </div>
+                                <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
                                 <div class="received_msg">
                                   <div class="received_withd_msg">
-                                    <p>고객님의 세탁물이 출발하였습니다.  </p>
-                                    <span class="time_date">15:40</span>
-                                 </div>   
+                                    <p>We work directly with our designers and suppliers,
+                                      and sell direct to you, which means quality, exclusive
+                                      products, at a price anyone can afford.</p>
+                                    <span class="time_date"> 11:01 AM    |    Today</span></div>
                                 </div>
-
                               </div>
-                             
-                             
                             </div>
                             <div class="type_msg">
                               <div class="input_msg_write" style="padding: 10px;">
                                 <input type="text" class="write_msg">
-                               <a href="#" <span class="upload-img-icon"></span> </a>
                                 <button class="msg_send_btn" type="button">전송</button>
                               </div>
                             </div>

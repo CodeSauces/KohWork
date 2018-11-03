@@ -58,23 +58,24 @@ img{ max-width:100%;}
 }
 .inbox_chat { height: 550px; overflow-y: scroll;}
 
-.active_chat{ background:#ebebeb;}
+.active_chat{ background:#F3F3F3;}
 
 .incoming_msg_img {
   display: inline-block;
-  width: 35px;
+  width: 9%;
 }
 .incoming_msg {
     margin-bottom: 10px;
+    width: 100%;
 }
 .received_msg {
   display: inline-block;
   padding: 0 0 0 10px;
   vertical-align: top;
-  width: calc(100% - 104px);
+  width: 90%;
  }
  .received_withd_msg p {
-  background: #ebebeb none repeat scroll 0 0;
+  background: #F3F3F3 none repeat scroll 0 0;
   border-radius: 3px;
   color: #646464;
   font-size: 14px;
@@ -101,13 +102,15 @@ img{ max-width:100%;}
   margin: 0;
   color: black;
   padding: 7px;
+  padding-right: 16px;
   width:100%;
 }
 .outgoing_msg{overflow:hidden;margin-bottom: 10px;}
 .sent_msg {
   float: right;
   position: relative;
-  width: calc(100% - 104px);
+  width: auto;
+  /* padding-right: 10px; */
 }
 .input_msg_write input {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -115,12 +118,13 @@ img{ max-width:100%;}
   color: #4c4c4c;
   font-size: 15px;
   min-height: 48px;
-  width: 100%;
+  width: 77%;
+  PADDING: 10px;
 }
 
-.type_msg {border-top: 1px solid #c4c4c4;position: relative;}
+.type_msg {border-top: 1px solid #c4c4c4;position: relative;margin-top: 70px;}
 .msg_send_btn {
-  background: #ebebeb none repeat scroll 0 0;
+  background: #F3F3F3 none repeat scroll 0 0;
   border: medium none;
   color: black;
   cursor: pointer;
@@ -128,6 +132,7 @@ img{ max-width:100%;}
   /* height: 33px; */
   position: absolute;
   right: 3px;
+  border: 1px solid #70707036;
   top: 3px;
   width: 62px;
   height: 91%;
@@ -135,23 +140,53 @@ img{ max-width:100%;}
 }
 .messaging { padding: 0 0 50px 0;}
 .msg_history {
-  height: 516px;
+  height: auto;
   overflow-y: auto;
   padding: 10px;
+  width: 415px;
 }
 
 .contact-profile {
     width: 100%;
-    height: 60px;
+    height: 74px;
     line-height: 60px;
-    background: #f5f5f5;
+    /* background: #f5f5f5; */
+    border-bottom: 1px solid #7070704d;
 }
 .contact-profile img {
     width: 40px;
     border-radius: 50%;
     float: left;
-    margin: 9px 12px 0 9px;
+    margin: 7px 9px;
 }
 .contact-profile p {
-    float: left;
+       
+height: 10px;
+       
+display: block;
+       
+font-size: 14px;
+       
+margin: 0;
+}
+.upload-img-icon{
+  background-size: cover;
+  background: url(../images/upload-img-icon.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  background: cover;
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  right: 68px;
+}
+.cross-icon{
+  position:absolute;
+  background: url(../images/cross-icon.png) no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  right: 4px;
+  top: 24px;
 }
