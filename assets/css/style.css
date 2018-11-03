@@ -559,6 +559,9 @@ ul.nav-tabs.custom {
 .absolute{
   position: absolute !important;
 }
+.bottom-7{
+  bottom: 7px;
+}
 .bottom-5{
   bottom: 5px;
 }
@@ -576,11 +579,17 @@ ul.nav-tabs.custom {
 .font-weight-100{
   font-weight: 100;
 }
+.font-11{
+  font-size: 11px !important;
+}
 .font-12{
   font-size: 12px;
 }
 .font-25{
   font-size: 25px;
+}
+.ls-point-5{
+  letter-spacing: 0.5px !important;
 }
 .no-margin{
   margin: 0 !important;
