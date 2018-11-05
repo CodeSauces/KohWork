@@ -955,8 +955,7 @@ table label {
   margin: 0;
   margin-top: 1px;
   border: 1px solid;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 5px;
 }
 
 .datepicker-open {
@@ -1239,6 +1238,7 @@ Custom Dropdown
   position: absolute;
   width: 100%;
   top: 29px;
+  z-index: 100;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -1299,6 +1299,13 @@ Data Analyiss
 .data-analy table {
   font-size: 13px;
 }
+<<<<<<< HEAD
+.datepicker-switch{
+  text-align: center;
+}
+.table-condensed{
+  width: 100%;
+=======
 
 /*
 Invoice
@@ -1364,4 +1371,5 @@ div#invoice .form-group {
   .invoice>div:last-child {
     page-break-before: always
   }
+>>>>>>> 9ec8c0ebd55265a3b84ac34f40feffdedabb075c
 }
