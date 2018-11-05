@@ -1299,13 +1299,11 @@ Data Analyiss
 .data-analy table {
   font-size: 13px;
 }
-<<<<<<< HEAD
 .datepicker-switch{
   text-align: center;
 }
 .table-condensed{
   width: 100%;
-=======
 
 /*
 Invoice
@@ -1371,5 +1369,4 @@ div#invoice .form-group {
   .invoice>div:last-child {
     page-break-before: always
   }
->>>>>>> 9ec8c0ebd55265a3b84ac34f40feffdedabb075c
 }
