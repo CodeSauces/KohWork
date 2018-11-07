@@ -79,34 +79,30 @@
                 </div>
             </div>
         </div>
-
         <!-- Tab panes -->
         <div class="tab-content faq-cat-content">
-            <div class="tab-pane active in fade" id="faq-cat-1">
-                <div class="col-md-8 noPadding">
-                    <nav aria-label="breadcrumb" class="relative">
-                        <ol class="breadcrumb noPadding-right">
-                            <li class="breadcrumb-item">
-                                <p class="bold no-margin">직원등록</p>
-                            </li>
+            <div class="tab-pane active in fade relative" id="faq-cat-1">
+                <nav aria-label="breadcrumb" class="relative">
+                    <ol class="breadcrumb noPadding-right">
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">직원등록</p>
+                        </li>
 
-                            <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
-                        </ol>
-                    </nav>
+                        <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                    </ol>
+                </nav>
+                <div class="option-buttons-container margin-bottom-5 absolute inline-block">
+                    <button class="option-button">
+                        메세지전송
+                    </button>
+                    <button class="option-button">
+                        세탁증출력
+                    </button>
+                    <button class="option-button">
+                        주문수정
+                    </button>
                 </div>
-                <div class="col-md-4">
-                    <div class="option-buttons-container absolute">
-                        <button class="option-button">
-                            메세지전송
-                        </button>
-                        <button class="option-button">
-                            세탁증출력
-                        </button>
-                        <button class="option-button">
-                            주문수정
-                        </button>
-                    </div>
-                </div>
+
                 <div class="col-md-12 noPadding">
                     <div class="col-md-6 noPadding">
                         <table class="table table-bordered ">
@@ -632,8 +628,7 @@
                         </div>
                     </div>
                     <div class="col-md-1 col-sm-2 noPadding" style="padding-bottom: 10px;">
-                        <div class="col-md-12 noPadding" style="  height: calc(100% - 100px);
-                        padding-bottom: 5px !important;">
+                        <div class="col-md-12 noPadding" style="height: calc(100% - 100px);padding-bottom: 5px !important;">
                             <table class=" table-bordered width-100p">
                                 <thead>
                                     <tr>
@@ -667,6 +662,7 @@
                                                 <div class="sum-box-row1 red">총결제</div>
                                                 <div class="sum-box-row2 red">64,000</div>
                                             </div>
+                                            
                                         </td>
 
 
@@ -675,7 +671,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-md-12 noPadding item-center bg-red white" style="height: 100px; ">
+                        <div class="col-md-12 noPadding item-center bg-red white" style="height: 99px;">
                             <span>접수완료</span>
                         </div>
                     </div>
@@ -717,11 +713,14 @@
                 daysShort: ["일", "월", "화", "수", "목", "금", "토"],
                 daysMin: ["일", "월", "화", "수", "목", "금", "토"],
                 months: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
-                monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov",
+                    "Dec"
+                ],
                 today: "Today",
                 clear: "Clear",
                 format: "yyyy-mm-dd",
-                titleFormat: "yyyy-MM", /* Leverages same syntax as 'format' */
+                titleFormat: "yyyy-MM",
+                /* Leverages same syntax as 'format' */
                 weekStart: 0
             };
 
@@ -760,9 +759,6 @@
             }
 
         }();
-
-
-
     </script>
 </body>
 

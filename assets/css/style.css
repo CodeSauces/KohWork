@@ -870,7 +870,7 @@ table label {
 
 .sum-boxes {
   width: 100%;
-  height: 69px;
+  height: 51px;
   border-bottom: 1px solid #B1B1B1;
   padding-top: 5px;
 }
@@ -907,7 +907,9 @@ table label {
 .gray {
   color: #BDBDBD;
 }
-
+.red{
+  color: #F85454;
+}
 .blue {
   color: #2F48C3;
 }
