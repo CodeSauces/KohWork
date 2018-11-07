@@ -1372,3 +1372,14 @@ div#invoice .form-group {
     page-break-before: always
   }
 }
+
+/*
+Edit Frequently asked question
+*/
+.freq-container{
+  width: 690px;
+  border: 1px solid;
+  height: 450px;
+  overflow-y: scroll;
+  padding-bottom: 5px;
+}
