@@ -1383,3 +1383,11 @@ Edit Frequently asked question
   overflow-y: scroll;
   padding-bottom: 5px;
 }
+/*
+Charts
+*/
+.cstm-charts{
+  width:100% !important;
+    height:300px !important;
+    padding-left: 10px;
+}

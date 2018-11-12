@@ -1,0 +1,481 @@
+<html lang="en" coupert-item="mfidniedemcgceagapgdekdbmanojomk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working Theme</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="container-fluid noPadding data-analy">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style=" width: 200px;padding-top: 10px;">
+                    <img src="./assets/logo-lg.svg" alt="ME" class="mypic">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">제휴업체</a></li>
+                    <li><a href="#">관리자정보</a></li>
+                    <li><a href="#">데이터분석</a></li>
+                    <li><a class="red-color" href="#">로그아웃</a></li>
+                </ul>
+            </div>
+            <div class="app-datetime"><span class="app-date">2018-08-24</span> 19:23</div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+
+        <!-- Tab panes -->
+        <div class="tab-content ">
+            <div class="tab-pane active in  fade" id="faq-cat-1">
+
+                <h4 class="border-btm-black bold padding-btm">데이터분석</h4>
+                <nav aria-label="breadcrumb" class="relative bordered ">
+                    <ol class="breadcrumb noPadding-right">
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">전체보기</p>
+
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">시간별분석</p>
+
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">주간분석</p>
+
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">월별분석</p>
+
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">연별분석</p>
+
+                        </li>
+
+
+                        <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                    </ol>
+
+                </nav>
+                <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
+                    <div class="col-sm-12 faq-cat-content margin-btm-25">
+                            <div class="dataTables_length"><label>매출분석</label>
+                                <div class="table-filter-checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span>전체보기</span>
+                                    </label>
+                                </div>
+                                <div class="table-filter-checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span>온라인</span>
+                                    </label>
+                                </div>
+                                <div class="table-filter-checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span>오프라인</span>
+                                    </label>
+                                </div>
+                                <div class="table-filter-checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span>총합계</span>
+                                    </label>
+                                </div><div class="table-filter-checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span>총재주문</span>
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-12 noPadding data-analy-top-row" style="height:400px">
+                        <canvas id="myChart0" class="cstm-charts" width="400" height="400"></canvas>
+                    </div>
+                    <div class="col-sm-12 faq-cat-content margin-btm-25">
+                        <div class="dataTables_length"><label>매출분석</label>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>전체보기</span>
+                                </label>
+                            </div>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>온라인</span>
+                                </label>
+                            </div>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>오프라인</span>
+                                </label>
+                            </div>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>총합계</span>
+                                </label>
+                            </div><div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>총재주문</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 noPadding data-analy-top-row" style="height:400px">
+                        <canvas id="myChart1" class="cstm-charts" width="400" height="400"></canvas>
+                    </div>
+                    <div class="col-sm-12 faq-cat-content margin-btm-25">
+                        <div class="dataTables_length"><label>매출분석</label>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>전체보기</span>
+                                </label>
+                            </div>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>온라인</span>
+                                </label>
+                            </div>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>오프라인</span>
+                                </label>
+                            </div>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>총합계</span>
+                                </label>
+                            </div><div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>총재주문</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 noPadding data-analy-top-row" style="height:400px">
+                        <canvas id="myChart2" class="cstm-charts" width="400" height="400"></canvas>
+                    </div>
+                    <div class="col-sm-12 faq-cat-content margin-btm-25">
+
+                        <div class="dataTables_length"><label>매출분석</label>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>전체보기</span>
+                                </label>
+                            </div>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>여성</span>
+                                </label>
+                            </div>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>남성</span>
+                                </label>
+                            </div>
+                            <div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>10대</span>
+                                </label>
+                            </div><div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>20~30대</span>
+                                </label>
+                            </div><div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>40~50대</span>
+                                </label>
+                            </div><div class="table-filter-checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"><span>60대 이상</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 noPadding data-analy-top-row" style="height:400px">
+                        <canvas id="myChart3" class="cstm-charts" width="400" height="400"></canvas>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script>
+        var ctx0 = document.getElementById("myChart0");
+        var myChart0 = new Chart(ctx0, {
+            type: 'line',
+
+            data: {
+                labels: ["01:00", "02:00", "03:00", "04:00", "05:00", "06:00",
+                    "07:00", "08:00", "09:00", "10:00", "11:00", "12:00",
+                    "13:00", "14:00", "15:00", "16:00", "17:00", "18:00",
+                    "19:00", "20:00", "21:00", "22:00", "23:00", "24:00"
+                ],
+                datasets: [{
+                    "fill": false,
+                    label: '온라인',
+                    data: [4, 2, 5, 7, 4, 5, 7, 4, 11, 16, 17, 20],
+                    backgroundColor: '#AC3CFF',
+                    borderColor: '#AC3CFF',
+                    borderWidth: 1
+                }, {
+                    "fill": false,
+                    label: '오프라인',
+                    data: [3, 5, 7, 9, 4, 11, 12, 15, 9, 10, 7, 25],
+                    backgroundColor: '#FFA53C',
+                    borderColor: '#FFA53C',
+                    borderWidth: 1
+                }, {
+                    "fill": false,
+                    label: '총합계',
+                    data: [1, 4, 7, 3, 9, 12, 3, 7, 9, 11, 17, 22],
+                    backgroundColor: '#F04D4D',
+                    borderColor: '#F04D4D',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: {
+                    line: {
+                        tension: 0, // disables bezier curves
+                    }
+                },
+                legend: {
+                    position:'left',
+                    labels:{
+                        usePointStyle:true,
+                        boxWidth:5
+                    }
+
+                }
+            }
+        });       
+
+        var ctx1 = document.getElementById("myChart1");
+        var myChart1 = new Chart(ctx1, {
+            type: 'line',
+
+            data: {
+                labels: ["01:00", "02:00", "03:00", "04:00", "05:00", "06:00",
+                    "07:00", "08:00", "09:00", "10:00", "11:00", "12:00",
+                    "13:00", "14:00", "15:00", "16:00", "17:00", "18:00",
+                    "19:00", "20:00", "21:00", "22:00", "23:00", "24:00"
+                ],
+                datasets: [{
+                    "fill": false,
+                    label: '온라인',
+                    data: [4, 2, 5, 7, 4, 5, 7, 4, 11, 16, 17, 20],
+                    backgroundColor: '#AC3CFF',
+                    borderColor: '#AC3CFF',
+                    borderWidth: 1
+                }, {
+                    "fill": false,
+                    label: '오프라인',
+                    data: [3, 5, 7, 9, 4, 11, 12, 15, 9, 10, 7, 25],
+                    backgroundColor: '#FFA53C',
+                    borderColor: '#FFA53C',
+                    borderWidth: 1
+                }, {
+                    "fill": false,
+                    label: '총합계',
+                    data: [1, 4, 7, 3, 9, 12, 3, 7, 9, 11, 17, 22],
+                    backgroundColor: '#F04D4D',
+                    borderColor: '#F04D4D',
+                    borderWidth: 1
+                },{
+                    "fill": false,
+                    label: '총재주문',
+                    data: [1, 6, 3, 5, 11, 15, 3, 17, 15, 18, 20, 27],
+                    backgroundColor: '#4D60F0',
+                    borderColor: '#4D60F0',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: {
+                    line: {
+                        tension: 0, // disables bezier curves
+                    }
+                },
+                legend: {
+                    position:'left',
+                    labels:{
+                        usePointStyle:true,
+                        boxWidth:5
+                    }
+
+                }
+            }
+        });
+
+        var ctx2 = document.getElementById("myChart2");
+        var myChart2 = new Chart(ctx2, {
+            type: 'line',
+
+            data: {
+                labels: ["01:00", "02:00", "03:00", "04:00", "05:00", "06:00",
+                    "07:00", "08:00", "09:00", "10:00", "11:00", "12:00",
+                    "13:00", "14:00", "15:00", "16:00", "17:00", "18:00",
+                    "19:00", "20:00", "21:00", "22:00", "23:00", "24:00"
+                ],
+                datasets:  [{
+                    "fill": false,
+                    label: '온라인',
+                    data: [4, 2, 5, 7, 4, 5, 7, 4, 11, 16, 17, 20],
+                    backgroundColor: '#AC3CFF',
+                    borderColor: '#AC3CFF',
+                    borderWidth: 1
+                }, {
+                    "fill": false,
+                    label: '오프라인',
+                    data: [3, 5, 7, 9, 4, 11, 12, 15, 9, 10, 7, 25],
+                    backgroundColor: '#FFA53C',
+                    borderColor: '#FFA53C',
+                    borderWidth: 1
+                }, {
+                    "fill": false,
+                    label: '총합계',
+                    data: [1, 4, 7, 3, 9, 12, 3, 7, 9, 11, 17, 22],
+                    backgroundColor: '#F04D4D',
+                    borderColor: '#F04D4D',
+                    borderWidth: 1
+                },{
+                    "fill": false,
+                    label: '총재주문',
+                    data: [1, 6, 3, 5, 11, 15, 3, 17, 15, 18, 20, 27],
+                    backgroundColor: '#4D60F0',
+                    borderColor: '#4D60F0',
+                    borderWidth: 1
+                },{
+                    "fill": false,
+                    label: '재가입수',
+                    data: [1, 3, 7, 5, 9, 13, 15, 11, 10, 18, 21, 31],
+                    backgroundColor: '#4DF0D1',
+                    borderColor: '#4DF0D1',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: {
+                    line: {
+                        tension: 0, // disables bezier curves
+                    }
+                },
+                legend: {
+                    position:'left',
+                    labels:{
+                        usePointStyle:true,
+                        boxWidth:5
+                    }
+
+                }
+            }
+        });
+
+        var ctx3 = document.getElementById("myChart3");
+        var myChart3 = new Chart(ctx3, {
+            type: 'line',
+
+            data: {
+                labels: ["01:00", "02:00", "03:00", "04:00", "05:00", "06:00",
+                    "07:00", "08:00", "09:00", "10:00", "11:00", "12:00",
+                    "13:00", "14:00", "15:00", "16:00", "17:00", "18:00",
+                    "19:00", "20:00", "21:00", "22:00", "23:00", "24:00"
+                ],
+                datasets: [{
+                    "fill": false,
+                    label: '여성',
+                    data: [4, 2, 5, 7, 4, 5, 7, 4, 11, 16, 17, 20],
+                    backgroundColor: '#AC3CFF',
+                    borderColor: '#AC3CFF',
+                    borderWidth: 1
+                }, {
+                    "fill": false,
+                    label: '남성',
+                    data: [3, 5, 7, 9, 4, 11, 12, 15, 9, 10, 7, 25],
+                    backgroundColor: '#FFA53C',
+                    borderColor: '#FFA53C',
+                    borderWidth: 1
+                }, {
+                    "fill": false,
+                    label: '10대',
+                    data: [1, 4, 7, 3, 9, 12, 3, 7, 9, 11, 17, 22],
+                    backgroundColor: '#F04D4D',
+                    borderColor: '#F04D4D',
+                    borderWidth: 1
+                },{
+                    "fill": false,
+                    label: '20~30대',
+                    data: [1, 6, 3, 5, 11, 15, 3, 17, 15, 18, 20, 27],
+                    backgroundColor: '#4D60F0',
+                    borderColor: '#4D60F0',
+                    borderWidth: 1
+                },{
+                    "fill": false,
+                    label: '40~50대',
+                    data: [1, 3, 7, 5, 9, 13, 15, 11, 10, 18, 21, 31],
+                    backgroundColor: '#4DF0D1',
+                    borderColor: '#4DF0D1',
+                    borderWidth: 1
+                },{
+                    "fill": false,
+                    label: '60대 이상',
+                    data: [1, 2, 6, 5, 9, 11, 13, 15, 10, 17, 22, 29],
+                    backgroundColor: '#FFBCF5',
+                    borderColor: '#FFBCF5',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: {
+                    line: {
+                        tension: 0, // disables bezier curves
+                    }
+                },
+                legend: {
+                    position:'left',
+                    labels:{
+                        usePointStyle:true,
+                        boxWidth:5
+                    }
+
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
