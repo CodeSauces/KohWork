@@ -37,26 +37,17 @@
             <div class="app-datetime"><span class="app-date">2018-08-24</span> 19:23</div>
         </div>
     </nav>
-
     <div class="container-fluid">
         <div class="relative">
             <ul class="nav nav-tabs faq-cat-tabs">
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a class="no-margin padding-5-10"
-                        href="#faq-cat-1" data-toggle="tab" aria-expanded="false">주문관리</a></li>
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-2"
-                        data-toggle="tab" aria-expanded="false">일정관리</a></li>
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-3"
-                        data-toggle="tab" aria-expanded="false">공지/이벤트</a></li>
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-4"
-                        data-toggle="tab" aria-expanded="false">게시판관리</a></li>
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-5"
-                        data-toggle="tab" aria-expanded="false">회원관리</a></li>
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-6"
-                        data-toggle="tab" aria-expanded="true">직원관리</a></li>
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-7"
-                        data-toggle="tab">매출관리</a></li>
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-8"
-                        data-toggle="tab" aria-expanded="false">실시간상담</a></li>
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active"><a class="no-margin padding-5-10" href="#faq-cat-1" data-toggle="tab" aria-expanded="false">주문관리</a></li>
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-2" data-toggle="tab" aria-expanded="false">일정관리</a></li>
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-3" data-toggle="tab" aria-expanded="false">공지/이벤트</a></li>
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-4" data-toggle="tab" aria-expanded="false">게시판관리</a></li>
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-5" data-toggle="tab" aria-expanded="false">회원관리</a></li>
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-6" data-toggle="tab" aria-expanded="true">직원관리</a></li>
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-7" data-toggle="tab">매출관리</a></li>
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-8" data-toggle="tab" aria-expanded="false">실시간상담</a></li>
             </ul>
 
             <div class="searchicon absolute bottom-5">
@@ -95,10 +86,8 @@
                     <div class="txt-area-btn-container">
                         <textarea class="width-100p form-input-field" name="" id="" cols="53" rows="5"></textarea>
 
-                        <button type="button" class="btn btn-default btn-cancel btn-bg-border padding-10 width-100"
-                            data-dismiss="modal">취소</button>
-                        <button type="button" class="btn btn-default btn-save form-input-field padding-10 width-100"
-                            data-dismiss="modal">메세지전송</button>
+                        <button type="button" class="btn btn-default btn-cancel btn-bg-border padding-10 width-100" data-dismiss="modal">취소</button>
+                        <button type="button" class="btn btn-default btn-save form-input-field padding-10 width-100" data-dismiss="modal">메세지전송</button>
                     </div>
 
 
@@ -147,8 +136,7 @@
                                     <td class="bg-gray text-center white vertical-align-middle">상 태</td>
                                     <td class="noPadding">
                                         <div class="form-group width-70p  table-dropdown-container no-margin">
-                                            <select class="form-control border-radius-5 width-0 padding-top-bottom-0"
-                                                id="sel1">
+                                            <select class="form-control border-radius-5 width-0 padding-top-bottom-0" id="sel1">
                                                 <option>직원번호</option>
                                                 <option>주문대기</option>
                                                 <option>주문접수</option>
@@ -175,28 +163,8 @@
                             <thead>
                                 <tr>
                                     <td class="bg-gray text-center white vertical-align-middle ">수거일시</td>
-                                    <td class="width-348px noPadding">
-                                        <div class="form-group no-margin table-dropdown-container">
-                                            <div class="datepicker-container">
-                                                <span class="prev"></span>
-                                                <input class="form-control datepicker pull-left black" placeholder="2018-08-24"
-                                                    type="text">
-                                                <span class="next"></span>
-                                            </div>
-
-                                            <select class="form-control border-radius-5 width-0" id="sel1">
-                                                <option>09:00~11:00</option>
-                                                <option>11:00~13:00</option>
-                                                <option class="bold" selected="selected">13:00~15:00 </option>
-                                                <option>15:00~17:00</option>
-                                                <option>17:00~19:00</option>
-                                                <option>19:00~21:00</option>
-                                                <option>21:00~23:00</option>
-                                                <option>23:00~24:00</option>
-                                            </select>
-
-
-                                        </div>
+                                    <td class="width-348px ">
+                                        2018-08-24 13:00~15:00
                                     </td>
                                     <td class="bg-gray text-center white vertical-align-middle">주문금액</td>
                                     <td class="text-right">37,000</td>
@@ -212,26 +180,9 @@
                                 </tr>
                                 <tr>
                                     <td class="bg-gray text-center white vertical-align-middle">배송일시</td>
-                                    <td class="noPadding">
+                                    <td>
 
-                                        <div class="form-group table-dropdown-container no-margin">
-                                            <div class="datepicker-container">
-                                                <span class="prev"></span>
-                                                <input class="form-control datepicker pull-left black" placeholder="2018-08-24"
-                                                    type="text">
-                                                <span class="next"></span>
-                                            </div>
-                                            <select class="form-control border-radius-5 width-0" id="sel1">
-                                                <option>09:00~11:00</option>
-                                                <option class="bold" selected="selected">11:00~13:00</option>
-                                                <option>13:00~15:00 </option>
-                                                <option>15:00~17:00</option>
-                                                <option>17:00~19:00</option>
-                                                <option>19:00~21:00</option>
-                                                <option>21:00~23:00</option>
-                                                <option>23:00~24:00</option>
-                                            </select>
-                                        </div>
+                                        2018-08-27 11:00~13:00
                                     </td>
                                     <td class="bg-gray text-center white vertical-align-middle">적 립 금</td>
                                     <td class="text-right">3,000</td>
@@ -258,16 +209,11 @@
                 <div class="col-md-12 noPadding flex-400">
                     <div class="col-md-3  height-100p noPadding border-black border-top0">
                         <ul class="nav nav-tabs faq-cat-tabs custom">
-                            <li class="active"><a href="#faq-cat2-1" onclick="AssessoriesFunction.handleTabsClick(event,this)"
-                                    data-toggle="tab">상/하의</a></li>
-                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-2"
-                                    data-toggle="tab">신발/가방</a></li>
-                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-3"
-                                    data-toggle="tab">침구류</a></li>
-                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-4"
-                                    data-toggle="tab">기타</a></li>
-                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-5"
-                                    data-toggle="tab" class="search-icon red-color">품목검색</a></li>
+                            <li class="active"><a href="#faq-cat2-1" onclick="AssessoriesFunction.handleTabsClick(event,this)" data-toggle="tab">상/하의</a></li>
+                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-2" data-toggle="tab">신발/가방</a></li>
+                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-3" data-toggle="tab">침구류</a></li>
+                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-4" data-toggle="tab">기타</a></li>
+                            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a href="#faq-cat2-5" data-toggle="tab" class="search-icon red-color">품목검색</a></li>
 
                         </ul>
                         <div class="tab-pane fade in" id="faq-cat2-1" style="overflow: auto; height: calc(100% - 32px);">
@@ -536,18 +482,14 @@
                                             6,000
                                         </td>
                                         <td>
-                                            <input style="width:40px; text-align:right;" data-elemttype="Textbox" type="text"
-                                                class="form-control padding-0-10-0-0 no-margin ams-item-parts-text inline-block form-input-field"
-                                                value="1" id="45">
+                                            <input style="width:40px; text-align:right;" data-elemttype="Textbox" type="text" class="form-control padding-0-10-0-0 no-margin ams-item-parts-text inline-block form-input-field" value="1" id="45">
                                         </td>
 
                                         <td>
-                                            <input width="150px" data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field"
-                                                value="" id="45">
+                                            <input width="150px" data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block form-input-field" value="" id="45">
                                         </td>
                                         <td>
-                                            <input data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block width-85 form-input-field"
-                                                value="" id="45">
+                                            <input data-elemttype="Textbox" type="text" class="form-control noPadding no-margin ams-item-parts-text inline-block width-85 form-input-field" value="" id="45">
                                         </td>
                                         <td>18-08-24</td>
 
@@ -576,8 +518,7 @@
                                                 </th>
                                                 <th style="border: 0;">
                                                     <label class="width-100">
-                                                        <select class="form-control form-input-field pad-left-align-left padding-top-bottom-0 font-weight-100"
-                                                            id="sel1">
+                                                        <select class="form-control form-input-field pad-left-align-left padding-top-bottom-0 font-weight-100" id="sel1">
                                                             <option>직원번호</option>
                                                             <option>2</option>
                                                             <option>3</option>
@@ -585,8 +526,7 @@
                                                         </select>
                                                     </label>
                                                     <label class="width-100" style="margin-left: 4px;">
-                                                        <select placeholder="신발/가방 선택" class="form-control form-input-field pad-left-align-left margin-left-10 width-140 padding-top-bottom-0 font-weight-100"
-                                                            id="sel1">
+                                                        <select placeholder="신발/가방 선택" class="form-control form-input-field pad-left-align-left margin-left-10 width-140 padding-top-bottom-0 font-weight-100" id="sel1">
                                                             <option value="" disabled="" selected="">신발/가방 선택</option>
                                                             <option>직원번호</option>
                                                             <option>2</option>
@@ -607,13 +547,8 @@
 
                                                 <td style="padding-top: 0;padding-bottom: 0;">
                                                     <span style="padding-right: 10px;">
-                                                        <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block form-input-field"
-                                                            value="" id="45"><span class="padding-10px inline-block">%</span></span><span
-                                                        style="padding-right: 10px;">
-                                                        <input data-elemttype="Textbox" type="text" class="form-control width-100 ams-item-parts-text inline-block form-input-field"
-                                                            value="" id="45"><span class="padding-10px inline-block">원</span></span><span
-                                                        class="font-12" style="float: right;line-height: 3;"><label
-                                                            class="checkbox no-margin" style="margin-left: 26px !important;">
+                                                        <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block form-input-field" value="" id="45"><span class="padding-10px inline-block">%</span></span><span style="padding-right: 10px;">
+                                                        <input data-elemttype="Textbox" type="text" class="form-control width-100 ams-item-parts-text inline-block form-input-field" value="" id="45"><span class="padding-10px inline-block">원</span></span><span class="font-12" style="float: right;line-height: 3;"><label class="checkbox no-margin" style="margin-left: 26px !important;">
                                                             <input type="checkbox" checked="checked"><span> 마스터</span>
                                                         </label><label class="checkbox no-margin" style="margin-left: 26px !important;">
                                                             <input type="checkbox" checked="checked"><span> 마스터</span>
@@ -630,8 +565,7 @@
                             </div>
 
                             <div class="col-md-3 noPadding-right fullheight relative">
-                                <textarea rows="4" cols="50" placeholder="메모 입력" style="resize: none;" class="form-control fullheight form-input-field "
-                                    rows="2" id="comment"></textarea>
+                                <textarea rows="4" cols="50" placeholder="메모 입력" style="resize: none;" class="form-control fullheight form-input-field " id="comment"></textarea>
                                 <span class="img-svg"></span>
 
 
@@ -714,7 +648,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

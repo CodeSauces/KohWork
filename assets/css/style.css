@@ -309,7 +309,12 @@ Accessories
 .height-40 {
   height: 40px !important;
 }
-
+.height-37{
+  height: 37px !important;
+}
+.height-43{
+  height: 43px !important;
+}
 .pad-left-align-left {
   padding-left: 5px;
   text-align: left
@@ -329,6 +334,9 @@ Accessories
 
 .padding-10-5 {
   padding: 10px 5px;
+}
+.padding-2-0{
+  padding: 2px 0px !important;
 }
 
 .padding-10 {
@@ -468,7 +476,7 @@ li.breadcrumb-item a {
 .form-control {
   height: 30px;
   box-shadow: none !important;
-  border-radius: 0;
+  /* border-radius: 0; */
   border-color: #ADADAD;
   margin: 0px 6px;
 }
