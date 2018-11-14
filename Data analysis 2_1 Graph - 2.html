@@ -75,7 +75,9 @@
                 </nav>
                 <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
                     <div class="col-sm-12 faq-cat-content margin-btm-25">
-<div class="dataTables_length"><label>매출분석</label>
+                        <div class="dataTables_length">
+                            <div>
+                                <label>매출분석</label>
                                 <div class="table-filter-checkbox">
                                     <label class="checkbox">
                                         <input type="checkbox"><span>전체보기</span>
@@ -95,19 +97,29 @@
                                     <label class="checkbox">
                                         <input type="checkbox"><span>총합계</span>
                                     </label>
-                                </div><div class="table-filter-checkbox">
+                                </div>
+                                <div class="table-filter-checkbox">
                                     <label class="checkbox">
                                         <input type="checkbox"><span>총재주문</span>
                                     </label>
                                 </div>
-                                <div class="option-buttons-container height-auto absolute">
+                            </div>
+                            <div class="item-center">
+                                    <div class="datepicker-container" style="margin-top: -31px;">
+                                            <select class="form-control padding-top-bottom-0" id="sel1">
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                </select>
+                                        </div>
+                            </div>
+                            <div class="option-buttons-container height-auto absolute">
 
 
 
                                 <button class="option-button">엑셀다운</button>
                                 <button class="option-button">인쇄</button>
                             </div>
-                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-12 noPadding data-analy-top-row" style="height:400px">
                         <canvas id="myChart0" class="cstm-charts" width="400" height="400"></canvas>
@@ -133,7 +145,8 @@
                                 <label class="checkbox">
                                     <input type="checkbox"><span>총합계</span>
                                 </label>
-                            </div><div class="table-filter-checkbox">
+                            </div>
+                            <div class="table-filter-checkbox">
                                 <label class="checkbox">
                                     <input type="checkbox"><span>총재주문</span>
                                 </label>
@@ -164,7 +177,8 @@
                                 <label class="checkbox">
                                     <input type="checkbox"><span>총합계</span>
                                 </label>
-                            </div><div class="table-filter-checkbox">
+                            </div>
+                            <div class="table-filter-checkbox">
                                 <label class="checkbox">
                                     <input type="checkbox"><span>총재주문</span>
                                 </label>
@@ -196,15 +210,18 @@
                                 <label class="checkbox">
                                     <input type="checkbox"><span>10대</span>
                                 </label>
-                            </div><div class="table-filter-checkbox">
+                            </div>
+                            <div class="table-filter-checkbox">
                                 <label class="checkbox">
                                     <input type="checkbox"><span>20~30대</span>
                                 </label>
-                            </div><div class="table-filter-checkbox">
+                            </div>
+                            <div class="table-filter-checkbox">
                                 <label class="checkbox">
                                     <input type="checkbox"><span>40~50대</span>
                                 </label>
-                            </div><div class="table-filter-checkbox">
+                            </div>
+                            <div class="table-filter-checkbox">
                                 <label class="checkbox">
                                     <input type="checkbox"><span>60대 이상</span>
                                 </label>
@@ -233,6 +250,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
     <script>
+  
         var ctx0 = document.getElementById("myChart0");
         var myChart0 = new Chart(ctx0, {
             type: 'line',
@@ -275,15 +293,15 @@
                     }
                 },
                 legend: {
-                    position:'left',
-                    labels:{
-                        usePointStyle:true,
-                        boxWidth:5
+                    position: 'left',
+                    labels: {
+                        usePointStyle: true,
+                        boxWidth: 5
                     }
 
                 }
             }
-        });       
+        });
 
         var ctx1 = document.getElementById("myChart1");
         var myChart1 = new Chart(ctx1, {
@@ -316,7 +334,7 @@
                     backgroundColor: '#F04D4D',
                     borderColor: '#F04D4D',
                     borderWidth: 1
-                },{
+                }, {
                     "fill": false,
                     label: '총재주문',
                     data: [1, 6, 3, 5, 11, 15, 3, 17, 15, 18, 20, 27],
@@ -334,10 +352,10 @@
                     }
                 },
                 legend: {
-                    position:'left',
-                    labels:{
-                        usePointStyle:true,
-                        boxWidth:5
+                    position: 'left',
+                    labels: {
+                        usePointStyle: true,
+                        boxWidth: 5
                     }
 
                 }
@@ -354,7 +372,7 @@
                     "13:00", "14:00", "15:00", "16:00", "17:00", "18:00",
                     "19:00", "20:00", "21:00", "22:00", "23:00", "24:00"
                 ],
-                datasets:  [{
+                datasets: [{
                     "fill": false,
                     label: '온라인',
                     data: [4, 2, 5, 7, 4, 5, 7, 4, 11, 16, 17, 20],
@@ -375,14 +393,14 @@
                     backgroundColor: '#F04D4D',
                     borderColor: '#F04D4D',
                     borderWidth: 1
-                },{
+                }, {
                     "fill": false,
                     label: '총재주문',
                     data: [1, 6, 3, 5, 11, 15, 3, 17, 15, 18, 20, 27],
                     backgroundColor: '#4D60F0',
                     borderColor: '#4D60F0',
                     borderWidth: 1
-                },{
+                }, {
                     "fill": false,
                     label: '재가입수',
                     data: [1, 3, 7, 5, 9, 13, 15, 11, 10, 18, 21, 31],
@@ -400,10 +418,10 @@
                     }
                 },
                 legend: {
-                    position:'left',
-                    labels:{
-                        usePointStyle:true,
-                        boxWidth:5
+                    position: 'left',
+                    labels: {
+                        usePointStyle: true,
+                        boxWidth: 5
                     }
 
                 }
@@ -441,21 +459,21 @@
                     backgroundColor: '#F04D4D',
                     borderColor: '#F04D4D',
                     borderWidth: 1
-                },{
+                }, {
                     "fill": false,
                     label: '20~30대',
                     data: [1, 6, 3, 5, 11, 15, 3, 17, 15, 18, 20, 27],
                     backgroundColor: '#4D60F0',
                     borderColor: '#4D60F0',
                     borderWidth: 1
-                },{
+                }, {
                     "fill": false,
                     label: '40~50대',
                     data: [1, 3, 7, 5, 9, 13, 15, 11, 10, 18, 21, 31],
                     backgroundColor: '#4DF0D1',
                     borderColor: '#4DF0D1',
                     borderWidth: 1
-                },{
+                }, {
                     "fill": false,
                     label: '60대 이상',
                     data: [1, 2, 6, 5, 9, 11, 13, 15, 10, 17, 22, 29],
@@ -473,10 +491,10 @@
                     }
                 },
                 legend: {
-                    position:'left',
-                    labels:{
-                        usePointStyle:true,
-                        boxWidth:5
+                    position: 'left',
+                    labels: {
+                        usePointStyle: true,
+                        boxWidth: 5
                     }
 
                 }
