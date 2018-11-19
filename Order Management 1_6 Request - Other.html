@@ -807,8 +807,8 @@
                     $('.form-control.datepicker').removeClass('datepicker-open')
                 });
                 var TableCells = $('table tbody td');
-                TableCells.click(function() {
-
+                TableCells.mouseover(function() {
+                    $('.popover').popover('destroy');
                 var Body = $('body');
                 var contentData = $(this);
                 contentData.popover({
@@ -822,11 +822,11 @@
                 });
                 contentData.popover('show');
                 $('.popover').addClass('custom-popover');
-                Body.append('<div class="temp-overly" onclick="handleRemovePopover()"></div>');
-                handleRemovePopover = function(){
+                $('.popover').mouseout(function(){
                     $('.popover').popover('destroy');
                     $('.temp-overly').remove();
-                }
+                })
+            
               
             })
         })
