@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Working Theme</title>
+    <title>4. Board Management 1_3 Preview</title>
 
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css?_cacheOverride=1540809569852">
-    <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
 
 <body class="container-fluid">
@@ -47,9 +45,9 @@
                         data-toggle="tab" aria-expanded="false">주문관리</a></li>
                 <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-2"
                         data-toggle="tab" aria-expanded="false">일정관리</a></li>
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-3"
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active "><a class="no-margin padding-5-10" href="#faq-cat-3"
                         data-toggle="tab" aria-expanded="false">공지/이벤트</a></li>
-                <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active "><a class="no-margin padding-5-10"
+                <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a class="no-margin padding-5-10"
                         href="#faq-cat-4" data-toggle="tab" aria-expanded="false">게시판관리</a></li>
                 <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-5"
                         data-toggle="tab" aria-expanded="false">회원관리</a></li>
@@ -81,7 +79,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Tab panes -->
         <div class="tab-content faq-cat-content">
             <div class="tab-pane " id="faq-cat-1">
@@ -90,72 +87,74 @@
             <div class="tab-pane fade" id="faq-cat-2">
                 TAb2 content
             </div>
-            <div class="tab-pane fade" id="faq-cat-3">
-                TAb3 content
-            </div>
-            <div class="tab-pane  active fade in" id="faq-cat-4">
-                <div class="col-md-8 noPadding">
-
-                    <nav aria-label="breadcrumb" class="relative">
-                        <ol class="breadcrumb noPadding-right custom-heading">
-                            <li class="breadcrumb-item">
-                                <p class="bold no-margin">공지사항</p>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <p class="bold no-margin">이벤트</p>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <p class="bold no-margin">쿠폰</p>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <p class="bold no-margin">상품권</p>
-                            </li>
-
-                            <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
-                        </ol>
-
-                    </nav>
-                </div>
-                <div class="col-md-4">
-                    <div class="option-buttons-container absolute">
-                        <button class="option-button width-70">수정</button><button class="option-button width-70">삭제</button>
-                    </div>
-                </div>
-                <div class="col-md-12 bull-content-container noPadding height-auto">
-                    <div class="col-md-12 padding-10-all bltn-list bg-light-gray">
-                        <p class="margin-btm-4 bold inline-block">배송 가능한 지역은 어떻게 되나요?</p>
-                        <div class="float-right">
-                                <span data-elemttype="Textbox" style="background-color: #F8F8F8 !important; width: auto; text-align: center; border: 1px solid #CBCBCB "
-                                    class="form-control gray-box-angle ams-item-parts-text " data-toggle="modal"
-                                    data-target="#myModal" value="" id="45">팝업창</span>
-                                <span data-elemttype="Textbox" style="background-color: #F8F8F8 !important; width: auto; border: 1px solid #CBCBCB"
-                                    class="form-control gray-box-angle ams-item-parts-text margin-top-4" data-toggle="modal"
-                                    data-target="#myModal" value="" id="45">메인이미지</span>
+            <div class="tab-pane active fade in" id="faq-cat-3">
+                    <div class="col-md-8 noPadding">
+                            <nav aria-label="breadcrumb" class="relative">
+                                <ol class="breadcrumb noPadding-right">
+                                    <li class="breadcrumb-item">
+                                        <p class="bold no-margin">글쓰기</p>
+                                    </li>
+        
+                                    <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                                </ol>
+        
+                            </nav>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="option-buttons-container absolute">
+                                <button class="option-button">미리보기</button><button class="option-button">임시저장</button>
                             </div>
-                        <p class="gainsboro">
-                            <span>2018-08-24
-                                22:34</span>|<span>280</span>
-                            </p>
-                       
-                    </div>
-                    <div class="col-md-12 padding-10-all">
-                        <div class="col-md-12 noPadding">
-                            <div class="col-md-4 noPadding" data-toggle="modal" data-target="#myModal" value="" id="45">
-                                <img src="./assets/images/Group 1476.png" alt="" srcset="" class="img-responsive width-220"></div>
-
                         </div>
-                        <div class="col-md-12 padding-10-all">
-                            <p>입력 입력 입력</p>
+                        <table class="table table-bordered ">
+                            <thead>
+                                <tr>
+                                    <th class="bg-gray text-center white">제목</th>
+                                    <td>제목 입력</td>
+        
+        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bg-gray text-center white width-100">첨부파일</td>
+                                    <td><span data-elemttype="Textbox" style="background-color: #eee !important;" class="form-control width-120 gray-box-angle ams-item-parts-text inline-block"
+                                            data-toggle="modal" data-target="#myModal" value="" id="45">첨부파일 찾기</span>마우스로 파일을
+                                        끌어오세요. </td>
+        
+        
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="b-mngt-writing-bdy " data-toggle="modal" data-target="#myModal" >
+                                            <div class="col-md-12 noPadding">
+                                                <p>
+                                                    현재 제주시 (서쪽 하귀동 ~ 동쪽 삼양동) 지역을 대상으로 수거/배송 서비스를 제공하고 있습니다.</p>
+                                                <p>앞으로 배송 가능한 지역을 확장할 예정이니 조금만 기다려주세요!</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+        
+        
+        
+        
+                            </tbody>
+                        </table>
+                        <div class="modal-footer text-center">
+                            <button type="button" class="btn btn-default btn-save form-input-field padding-10 width-100"
+                                data-dismiss="modal">수정하기</button>
+                            <button type="button" class="btn btn-default btn-cancel btn-bg-border padding-10 width-100"
+                                data-dismiss="modal">취소</button>
                         </div>
-                    </div>
-                </div>
-
+            </div>
+            <div class="tab-pane fade " id="faq-cat-4">
+                    TAb4 content
             </div>
             <div class="tab-pane fade" id="faq-cat-5">
                 TAb5 content
             </div>
-            <div class="tab-pane hide fade" id="faq-cat-6">
-
+            <div class="tab-pane  fade" id="faq-cat-6">
+                    TAb6 content
             </div>
             <div class="tab-pane fade" id="faq-cat-7">
                 TAb7 content
@@ -167,36 +166,41 @@
     </div>
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog" style="display: none;">
-        <div class="modal-dialog" style="height: 93%;width: 364px;">
+        <div class="modal-dialog modal-lg" style="height: 93%;">
 
             <!-- Modal content-->
-            <div class="modal-content" style="top: 150px;">
+            <div class="modal-content" style="
+    top: 30%;
+">
                 <div class="modal-header">
 
                     <h4 class="modal-title text-center">미리보기</h4>
                 </div>
-                <div class="modal-body inline-block">
-                    <div class="col-md-12 noPadding">
-                        <div class="noPadding" data-toggle="modal" data-target="#myModal" value="" id="45">
-                            <img src="./assets/images/Group 1476.png" alt="" srcset="" class="img-responsive"></div>
-
-                    </div>
-                    <div class="col-md-12 padding-10-all">
-                        <p>입력 입력 입력</p>
+                <div class="modal-body">
+                    <div class="b-mngt-writing-modal-info" style="
+   
+    ">
+                        <h4 class="bold">배송 가능한 지역은 어떻게 되나요?</h4>
+                        <p>현재 제주시 (서쪽 하귀동 ~ 동쪽 삼양동) 지역을 대상으로 수거/배송 서비스를 제공하고 있습니다.
+                        </p>
+                        <p>앞으로 배송 가능한 지역을 확장할 예정이니 조금만 기다려주세요!</p>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-save block" data-dismiss="modal" style="width: 100%;">닫기</button>
+                <div class="modal-footer noBorder">
+                    <button type="button" class="btn btn-default btn-save" data-dismiss="modal">닫기</button>
                 </div>
             </div>
 
         </div>
     </div>
 
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
     <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>

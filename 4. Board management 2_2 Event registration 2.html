@@ -1,0 +1,211 @@
+<html lang="en" coupert-item="mfidniedemcgceagapgdekdbmanojomk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4. Board management 2_2 Event registration 2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container-fluid">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style=" width: 200px;padding-top: 10px;">
+                        <img src="assets/logo-lg.svg" alt="ME" class="mypic">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">제휴세탁소</a></li>
+                        <li><a href="#">관리자정보</a></li>
+                        <li><a href="#">데이터분석</a></li>
+                        <li><a class="red-color" href="#">로그아웃</a></li>
+                    </ul>
+                </div>
+                <div class="app-datetime"><span class="app-date">2018-08-24</span> 19:23</div>
+            </div>
+        </nav>
+    
+        <div class="container-fluid">
+                 <div class="relative">
+  <ul class="nav nav-tabs faq-cat-tabs">
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-1"
+                    data-toggle="tab" aria-expanded="false">주문관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-2"
+                    data-toggle="tab" aria-expanded="false">일정관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active" ><a class="no-margin padding-5-10" href="#faq-cat-3"
+                    data-toggle="tab" aria-expanded="false">공지/이벤트</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a class="no-margin padding-5-10" href="#faq-cat-4"
+                    data-toggle="tab" aria-expanded="false">게시판관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10"
+                    href="#faq-cat-5" data-toggle="tab" aria-expanded="false">회원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a class="no-margin padding-5-10" href="#faq-cat-6"
+                    data-toggle="tab" aria-expanded="true">직원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-7"
+                    data-toggle="tab" >매출관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-8"
+                    data-toggle="tab" aria-expanded="false">실시간상담</a></li>
+        </ul>
+
+            <div class="searchicon absolute bottom-5">
+                <div class="form-group">
+
+                    <select class="form-control padding-top-bottom-0" id="sel1">
+                        <option>직원번호</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="input-group pull-right stylish-input-group width-250 ">
+                    <input type="text" class="form-control" placeholder="직원 검색">
+                    <span class="input-group-addon padding-5px">
+                        <a type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+    </div>
+            <!-- Tab panes -->
+            <div class="tab-content faq-cat-content">
+                <div class="tab-pane " id="faq-cat-1">
+                    tab 1
+                </div>
+                <div class="tab-pane fade" id="faq-cat-2">
+                    TAb2 content
+                </div>
+                <div class="tab-pane fade active in" id="faq-cat-3">
+                        <nav aria-label="breadcrumb" class="relative">
+                                <ol class="breadcrumb noPadding-right">
+                                    <li class="breadcrumb-item">
+                                        <p class="bold no-margin">이벤트등록</p>
+                                    </li>
+                                   
+                                    <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                                </ol>
+                                 <div class="option-buttons-container absolute">
+                                        <button class="option-button">미리보기</button><button class="option-button">임시저장</button>
+            
+            
+                                    </div>
+                            </nav>
+            
+                            <table class="table table-bordered ">
+                                <thead>
+                                    <tr>
+                                        <th class="bg-gray text-center white">이벤트명</th>
+                                        <td>수건 맡기면 포인트 두 배 적립!</td>
+            
+            
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="bg-gray text-center white width-100">팝업창</td>
+                                        <td><span data-elemttype="Textbox" style="background-color: #eee !important;" class="form-control width-120 gray-box-angle ams-item-parts-text inline-block">첨부파일 찾기</span>0c9ac210b06840b6e336567731db3e09.jpg <span data-elemttype="Textbox" style="background-color: #eee !important;" class="form-control width-85 gray-box-angle ams-item-parts-text inline-block float-right">미리보기</span></td>
+            
+            
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray text-center white width-100">메인이미지</td>
+                                        <td><span data-elemttype="Textbox" style="background-color: #eee !important;" class="form-control width-120 gray-box-angle ams-item-parts-text inline-block">첨부파일 찾기</span>
+                                            0c9ac210b06840b6e336567731db3e09.jpg <span data-elemttype="Textbox" style="background-color: #eee !important;" class="form-control width-85 gray-box-angle ams-item-parts-text inline-block float-right">미리보기</span></td>
+            
+            
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-gray text-center white width-100">첨부파일</td>
+                                        <td><span data-elemttype="Textbox" style="background-color: #eee !important;" class="form-control width-120 gray-box-angle ams-item-parts-text inline-block">첨부파일 찾기</span>
+                                            0c9ac210b06840b6e336567731db3e09.jpg,  0c9ac210b06840b6e336567731db3e09.jpg,  0c9ac210b06840b6e336567731db3e09.jpg,  </td>
+            
+            
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="b-mngt-writing-bdy">
+                                                <div class="col-md-12 noPadding">
+                                                    <div class="col-md-4 noPadding" data-toggle="modal" data-target="#myModal" value="" id="45">
+                                                        <img src="./assets/images/Group 1155.png" alt="" srcset="" class="img-responsive col-md-7 width-220"></div>
+                                                    
+                                                </div><div class="col-md-12 padding-10-all">
+                                                        <p>입력 입력 입력</p>
+                                                    </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+            
+            
+            
+            
+                                </tbody>
+                            </table>
+                            <div class="modal-footer text-center">
+                                <button type="button" class="btn btn-default btn-save form-input-field padding-10 width-100" data-dismiss="modal">등록하기</button>
+                                <button type="button" class="btn btn-default btn-cancel btn-bg-border padding-10 width-100" data-dismiss="modal">취소</button>
+                            </div>
+                </div>
+                <div class="tab-pane   fade " id="faq-cat-4">
+                Tab4 content
+                </div>
+                <div class="tab-pane fade" id="faq-cat-5">
+                    TAb5 content
+                </div>
+                <div class="tab-pane hide fade" id="faq-cat-6">
+    
+                </div>
+                <div class="tab-pane fade" id="faq-cat-7">
+                    TAb7 content
+                </div>
+                <div class="tab-pane fade" id="faq-cat-8">
+                    TAb8 content
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog" style="display: none;">
+            <div class="modal-dialog" style="height: 93%;width: 364px;">
+    
+                <!-- Modal content-->
+                <div class="modal-content" style="top: 150px;">
+                    <div class="modal-header">
+    
+                        <h4 class="modal-title text-center">미리보기</h4>
+                    </div>
+                    <div class="modal-body inline-block">
+                        <div class="col-md-12 noPadding">
+                                            <div class="noPadding" data-toggle="modal" data-target="#myModal" value="" id="45">
+                                                <img src="./assets/images/Group 1155.png" alt="" srcset="" class="img-responsive"></div>
+                                            
+                                        </div><div class="col-md-12 padding-10-all">
+                                                <p>입력 입력 입력</p>
+                                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-save block" data-dismiss="modal" style="width: 100%;">닫기</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+        <script src="./assets/js/main.js"></script>
+    
+    </body>
+
+</html>
