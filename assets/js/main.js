@@ -52,4 +52,32 @@ $(document).ready(function () {
         }
         
         });
+
+        var clickcount =0;
+        $(window).click(function () {
+            clickcount += 1;
+            if(clickcount > 1){
+                clickcount= 0;
+                $('.selected-itm').removeClass('active')
+            }
+           
+
+        })
+        $('.selected-itm').click(function (e) {
+            debugger
+            e.stopPropagation();
+           
+            var thatElement = $(this);
+            thatElement.addClass('active')
+           
+            thatElement.next().find('span').click(function (ev) {
+                ev.stopPropagation();
+                clickcount += 1;
+                var item = $(this);
+                item.parents('ul').find('.active').removeClass('active');
+                item.addClass('active');
+                thatElement.text(item.text())
+                thatElement.data('val', item.data().val)
+            });
+        })
 })
