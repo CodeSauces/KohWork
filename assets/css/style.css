@@ -1407,3 +1407,25 @@ Charts
     height:300px !important;
     padding-left: 10px;
 }
+
+.temp-overly{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1001;
+  left: 0;
+}
+
+.custom-popover {
+  margin-top: -40px !important;
+}
+
+.custom-popover .arrow {
+  display: none;
+}
+.custom-popover {
+  margin-top: -40px !important;
+  border: 2px solid red;
+}
