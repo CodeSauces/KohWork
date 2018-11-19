@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Working Theme</title>
+    <title>5. Member Management 2_1 Member Selection</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -39,7 +39,7 @@
     </nav>
 
     <div class="container-fluid">
-         <div class="relative">
+          <div class="relative">
   <ul class="nav nav-tabs faq-cat-tabs">
             <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-1"
                     data-toggle="tab" aria-expanded="false">주문관리</a></li>
@@ -84,7 +84,8 @@
         <!-- Tab panes -->
         <div class="tab-content faq-cat-content">
             <div class="tab-pane fade hide" id="faq-cat-1">
-                tab1
+
+             tab1
 
             </div>
             <div class="tab-pane fade hide " id="faq-cat-2">
@@ -97,28 +98,45 @@
             <div class="tab-pane fade hide" id="faq-cat-4">
                 TAb4 content
             </div>
-            <div class="tab-pane active in fade" id="faq-cat-5">
-
+            <div class="tab-pane active in fade " id="faq-cat-5">
                 <nav aria-label="breadcrumb" class="relative bordered ">
                     <ol class="breadcrumb noPadding-right">
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">주문번호순</p>
+                            <p class="bold no-margin">회원번호순</p>
 
                         </li>
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">그룹명순</p>
+                            <p class="bold no-margin">닉네임순</p>
 
                         </li>
                         <li class="breadcrumb-item">
-                            <p class="bold no-margin">멤버수순</p>
+                            <p class="bold no-margin">주소순</p>
 
                         </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">포인트순</p>
 
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">포인트순</p>
 
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">총결제액순</p>
+
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">가입일자순</p>
+
+                        </li>
+                        <li class="breadcrumb-item">
+                            <p class="bold no-margin">최근주문순</p>
+
+                        </li>
+                        
                         <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
                     </ol>
-                    
-                        <div class="option-buttons-container absolute item-center">
+                    <div class="option-buttons-container absolute item-center">
                             <label class="checkbox">
                                 <input type="checkbox"><span>역순</span>
                             </label>
@@ -127,21 +145,51 @@
 
 
                 <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
-                    <div class="col-md-12" style="
-    text-align: center;
-">
-                        
-                    </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <h5>그룹관리</h5>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="option-buttons-container">
+                        <div class="col-sm-3">
+                            <div class="dataTables_length" id="example_length"><label>
+                                <select name="example_length"
+                                        aria-controls="example" class="form-control input-sm border-radius-5">
+                                        <option value="10">10</option>
+                                        <option selected="selected" value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select></label>
+                                    <select class="form-control relative top-2 padding-left-5 inline-block border-radius-5 width-100 padding-top-bottom-0" id="sel1">
+                                            <option>전체그룹</option>
+                                            <option>text</option>
+                                            <option>text</option>
+                                            <option>text</option>
+                                        </select>
+                                <div class="table-filter-checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span> 미수금</span>
+                                    </label>
+                                </div>
                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="stats-container ">
+                                <div>총회원수</div>
+                                <div class="margin-left-10"><span class="red-color bold">23,052</span>명</div>
+                                <div class="margin-left-10 stats-border-div">신규 <span class="bold margin-left-10">39</span>명</div>
+                                <div class="margin-left-10">탈퇴</div>
+                                <div class="margin-left-10"><span class="bold">0</span>명</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="option-buttons-container">
                                 <button class="option-button">
-                                    메세지전송
+                                        그룹이동
                                 </button>
+                                <button class="option-button">
+                                        포인트지급
+                                </button>
+                                <button class="option-button">
+                                        메세지전송
+                                </button>
+                               
                             </div>
                         </div>
                     </div>
@@ -154,91 +202,163 @@
                                     </label>
                                 </th>
                                 <th class="bg-gray  white">
-                                    <label class="width-150">그룹명</label>
+                                    <label class="width-70">회원번호</label>
                                 </th>
                                 <th class="bg-gray  white">
-                                    <label class="">멤버수</label>
-                                </th>
-                                <th class="bg-gray  white">
-                                    <label class="width-800">메모</label>
+                                    <label class="width-70">그룹</label>
                                 </th>
                                 <th class="bg-gray  white">
                                     <label class="width-100">닉네임</label>
                                 </th>
-                                <th class="bg-gray white">
-                                    <label class="width-100 ">수거일시</label>
+                                <th class="bg-gray  white">
+                                    <label class=" width-400">주소</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label class="width-90">연락처</label>
                                 </th>
 
-                               
+                                <th class="bg-gray  white">
+                                    <label class="width-70">포인트</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label class="width-70">미수금</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label class="width-70">총결제액</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label class="width-85">가입일자</label>
+                                </th>
+                                <th class="bg-gray  white">
+                                    <label class="width-85">최근주문</label>
+                                </th>
+                            
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="active">
                                 <td>
                                     <label class="checkbox grid-checkbox">
-                                        <input class="form-input-field" type="checkbox" ><span></span>
+                                        <input class="form-input-field" type="checkbox" checked="checked"><span></span>
                                     </label>
                                 </td>
                                 <td>
-                                    <div class="underline">
-                                        애월 펜션 거래처 그룹
+                                    <div>
+                                        0000001
                                     </div>
                                 </td>
                                 <td>
                                     <div>
-                                        6,234
+                                        그룹1
                                     </div>
                                 </td>
                                 <td>
                                     <div>
-                                        제주특별자치도 제주시 신광로4길 25-1 산고을칼국수
+                                        옷빠는오빠들
                                     </div>
                                 </td>
                                 <td>
                                     <div>
-                                        2018-05-01
+                                        제주특별자치도 제주시 광양13길 6-18 아띠빌 201호
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        010-8392-3045
                                     </div>
                                 </td>
                                 <td>
                                     <div >
-                                        2018-07-21
+                                        200P
                                     </div>
                                 </td>
-                             
+
+                                <td>
+                                    <div>
+                                        0원
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        50,000원
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        2017-12-01
+                                    </div>
+                                </td>
+
+
+                                <td>
+                                    <div>
+                                        2018-08-01
+                                    </div>
+                                </td>
+                              
                             </tr>
-                            <tr>
+                            <tr >
                                 <td>
                                     <label class="checkbox grid-checkbox">
-                                        <input class="form-input-field" type="checkbox" ><span></span>
+                                        <input class="form-input-field" type="checkbox"><span></span>
                                     </label>
                                 </td>
                                 <td>
-                                    <div class="underline">
-                                        애월 펜션 거래처 그룹
+                                    <div>
+                                        0000001
                                     </div>
                                 </td>
                                 <td>
                                     <div>
-                                        6,234
+                                        그룹1
                                     </div>
                                 </td>
                                 <td>
                                     <div>
-                                        제주특별자치도 제주시 신광로4길 25-1 산고을칼국수
+                                        옷빠는오빠들
                                     </div>
                                 </td>
                                 <td>
                                     <div>
-                                        2018-05-01
+                                        제주특별자치도 제주시 광양13길 6-18 아띠빌 201호
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        010-8392-3045
                                     </div>
                                 </td>
                                 <td>
                                     <div >
-                                        2018-07-21
+                                        200P
                                     </div>
                                 </td>
-                             
+
+                                <td>
+                                    <div>
+                                        0원
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        50,000원
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        2017-12-01
+                                    </div>
+                                </td>
+
+
+                                <td>
+                                    <div>
+                                        2018-08-01
+                                    </div>
+                                </td>
+                              
                             </tr>
+
                         </tbody>
                     </table>
                     <div class="row">
@@ -246,31 +366,48 @@
 
                             <div class="dataTables_length" id="example_length">
 
+                                <div class="col-sm-10 noPadding">
+                                    <select class="form-control padding-left-5 inline-block border-radius-5 width-100 padding-top-bottom-0"
+                                        id="sel1">
+                                        <option value="주문관리">주문관리</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
 
                             </div>
                         </div>
                         <div class="col-sm-6 flex-center">
                             <ul class="pagination no-margin">
                                 <li class="paginate_button previous disabled" id="example_previous"><a href="#"
-                                        aria-controls="example" data-dt-idx="0" tabindex="0">«</a></li>
+                                        aria-controls="example" data-dt-idx="0" tabindex="0">&#xab;</a></li>
                                 <li class="paginate_button previous disabled" id="example_previous"><a href="#"
-                                        aria-controls="example" data-dt-idx="0" tabindex="0">‹</a></li>
+                                        aria-controls="example" data-dt-idx="0" tabindex="0">&#x2039;</a></li>
                                 <li class="paginate_button active"><a href="#" aria-controls="example" data-dt-idx="1"
                                         tabindex="0">1</a></li>
-                              
-                                <li class="paginate_button next disabled" id="example_next"><a href="#" aria-controls="example"
-                                        data-dt-idx="7" tabindex="0">›</a></li>
-                                <li class="paginate_button next disabled" id="example_next"><a href="#" aria-controls="example"
-                                        data-dt-idx="7" tabindex="0">»</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="2"
+                                        tabindex="0">2</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="3"
+                                        tabindex="0">3</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="4"
+                                        tabindex="0">4</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="5"
+                                        tabindex="0">5</a></li>
+                             
+                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"
+                                        data-dt-idx="7" tabindex="0">&#x203A;</a></li>
+                                <li class="paginate_button next" id="example_next"><a href="#" aria-controls="example"
+                                        data-dt-idx="7" tabindex="0">&#xbb;</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-3">
                             <div class="option-buttons-container flex-end">
                                 <button class="option-button bg-gray white border-radius-5 table-btm-btn">
-                                    그룹수정
+                                    그룹관리
                                 </button>
                                 <button class="option-button bg-gray white border-radius-5 table-btm-btn">
-                                    그룹생성
+                                    회원등록
                                 </button>
 
                             </div>
