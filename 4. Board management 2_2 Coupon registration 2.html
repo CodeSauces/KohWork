@@ -12,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid noPadding">
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -38,25 +38,17 @@
         </div>
     </nav>
 
-    <div class="container-fluid noPadding">
-           <div class="relative">
+    <div class="container-fluid">
+              <div class="relative">
   <ul class="nav nav-tabs faq-cat-tabs">
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-1"
-                    data-toggle="tab" aria-expanded="false">주문관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-2"
-                    data-toggle="tab" aria-expanded="false">일정관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"  class="active "><a class="no-margin padding-5-10" href="#faq-cat-3"
-                    data-toggle="tab" aria-expanded="false">공지/이벤트</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a class="no-margin padding-5-10" href="#faq-cat-4"
-                    data-toggle="tab" aria-expanded="false">게시판관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10"
-                    href="#faq-cat-5" data-toggle="tab" aria-expanded="false">회원관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" ><a class="no-margin padding-5-10" href="#faq-cat-6"
-                    data-toggle="tab" aria-expanded="true">직원관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-7"
-                    data-toggle="tab" >매출관리</a></li>
-            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-8"
-                    data-toggle="tab" aria-expanded="false">실시간상담</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-1" data-toggle="tab" aria-expanded="false">주문관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-2" data-toggle="tab" aria-expanded="false">일정관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)" class="active "><a class="no-margin padding-5-10" href="#faq-cat-3" data-toggle="tab" aria-expanded="false">공지/이벤트</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-4" data-toggle="tab" aria-expanded="false">게시판관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-5" data-toggle="tab" aria-expanded="false">회원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-6" data-toggle="tab" aria-expanded="true">직원관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-7" data-toggle="tab">매출관리</a></li>
+            <li onclick="AssessoriesFunction.handleTabsClick(event,this)"><a class="no-margin padding-5-10" href="#faq-cat-8" data-toggle="tab" aria-expanded="false">실시간상담</a></li>
         </ul>
 
             <div class="searchicon absolute bottom-5">
@@ -101,8 +93,8 @@
                         <label for="Password" class="col-sm-2 control-label">쿠폰코드</label>
                         <div class="col-sm-10">
                             <label class="checkbox">
-                               <span>  <input type="checkbox" ><span> 임의설정</span>
-                            </label>
+                               <span>  <input type="checkbox"><span> 임의설정</span>
+                            </span></label>
                             <label class="checkbox">
                                 <input type="checkbox" checked="checked"><span>직접설정 </span> 
                             </label>
@@ -132,13 +124,7 @@
                     <div class="form-group">
                         <label for="Last Name" class="col-sm-2 control-label">적용내용</label>
                         <div class="col-sm-10">
-                            <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block border-radius-5"
-                                value="" id="45">
-                            <span class="padding-10px inline-block">%</span>
-                            <input data-elemttype="Textbox" type="text" class="form-control width-70 ams-item-parts-text inline-block border-radius-5"
-                               value="" id="45">
-                            <span class="padding-10px inline-block">원</span>
-                        
+                            <p class="padding-left-5">배송비무료</p>
 
                         </div>
                     </div>
@@ -151,24 +137,67 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="First Name" class="col-sm-2 control-label">비밀번호 확인</label>
+                        <label for="First Name" class="col-sm-2 control-label">적용일시</label>
                         <div class="col-sm-10">
                             <div class="form-group table-dropdown-container no-margin noBorder">
                                 <div class="datepicker-container">
                                         <span class="prev"></span>
-                                            <input class="form-control datepicker pull-left black border-radius-5"  placeholder="2018-08-24" type="text">
+                                            <input class="form-control datepicker pull-left black border-radius-5" placeholder="2018-08-24" type="text">
                                             <span class="next"></span>
                                     </div>
-                            <select class="form-control border-radius-5 width-0" id="sel1">
-                                <option selected="selected">24:00</option>
-                                <option  >23:00</option>
-                                <option>22:00</option>
-                                <option>21:00</option>
-                                <option>20:00</option>
-                                <option>19:00</option>
-                                <option>18:00</option>
-                                <option>17:00</option>
-                            </select>
+                            <div class="cstm-timepicker">
+                        <div class="selected-itm" data-val="19">09:00</div>
+                        <ul>
+                            <li>
+                                <span data-val="1">01:00</span>
+                                <span data-val="13">13:00</span>
+                            </li>
+                            <li>
+                                <span data-val="2">02:00</span>
+                                <span data-val="14">14:00</span>
+                            </li>
+                            <li>
+                                <span data-val="3">03:00</span>
+                                <span data-val="15">15:00</span>
+                            </li>
+                            <li>
+                                <span data-val="4">04:00</span>
+                                <span data-val="16">16:00</span>
+                            </li>
+                            <li>
+                                <span data-val="05" class="">05:00</span>
+                                <span data-val="17">17:00</span>
+                            </li>
+                            <li>
+                                <span data-val="06">06:00</span>
+                                <span data-val="18">18:00</span>
+                            </li>
+                            <li>
+                                <span data-val="07">07:00</span>
+                                <span data-val="19" class="">19:00</span>
+                            </li>
+                            <li>
+                                <span data-val="08">08:00</span>
+                                <span data-val="20">20:00</span>
+                            </li>
+                            <li>
+                                <span data-val="09" class="active">09:00</span>
+                                <span data-val="21">21:00</span>
+                            </li>
+                            <li>
+                                <span data-val="10">10:00</span>
+                                <span data-val="22">22:00</span>
+                            </li>
+                            <li>
+                                <span data-val="11">11:00</span>
+                                <span data-val="23">23:00</span>
+                            </li>
+                            <li>
+                                <span data-val="12">12:00</span>
+                                <span data-val="24">24:00</span>
+                            </li>
+                        </ul>
+                    </div>
                         </div>
                         </div>
                     </div>
@@ -181,16 +210,59 @@
                                             <input class="form-control datepicker pull-left black border-radius-5" placeholder="2018-08-24" type="text">
                                             <span class="next"></span>
                                     </div>
-                            <select class="form-control border-radius-5 width-0" id="sel1">
-                                <option selected="selected">24:00</option>
-                                <option  >23:00</option>
-                                <option>22:00</option>
-                                <option>21:00</option>
-                                <option>20:00</option>
-                                <option>19:00</option>
-                                <option>18:00</option>
-                                <option>17:00</option>
-                            </select>
+                            <div class="cstm-timepicker">
+                        <div class="selected-itm" data-val="19">09:00</div>
+                        <ul>
+                            <li>
+                                <span data-val="1">01:00</span>
+                                <span data-val="13">13:00</span>
+                            </li>
+                            <li>
+                                <span data-val="2">02:00</span>
+                                <span data-val="14">14:00</span>
+                            </li>
+                            <li>
+                                <span data-val="3">03:00</span>
+                                <span data-val="15">15:00</span>
+                            </li>
+                            <li>
+                                <span data-val="4">04:00</span>
+                                <span data-val="16">16:00</span>
+                            </li>
+                            <li>
+                                <span data-val="05" class="">05:00</span>
+                                <span data-val="17">17:00</span>
+                            </li>
+                            <li>
+                                <span data-val="06">06:00</span>
+                                <span data-val="18">18:00</span>
+                            </li>
+                            <li>
+                                <span data-val="07">07:00</span>
+                                <span data-val="19" class="">19:00</span>
+                            </li>
+                            <li>
+                                <span data-val="08">08:00</span>
+                                <span data-val="20">20:00</span>
+                            </li>
+                            <li>
+                                <span data-val="09" class="active">09:00</span>
+                                <span data-val="21">21:00</span>
+                            </li>
+                            <li>
+                                <span data-val="10">10:00</span>
+                                <span data-val="22">22:00</span>
+                            </li>
+                            <li>
+                                <span data-val="11">11:00</span>
+                                <span data-val="23">23:00</span>
+                            </li>
+                            <li>
+                                <span data-val="12">12:00</span>
+                                <span data-val="24">24:00</span>
+                            </li>
+                        </ul>
+                    </div>
                         </div>
                         </div>
                     </div>
@@ -208,8 +280,8 @@
             <div class="tab-pane fade" id="faq-cat-5">
                 TAb5 content
             </div>
-            <div class="tab-pane fade" id="faq-cat-6">
-                   tab 6
+            <div class="tab-pane  fade" id="faq-cat-6">
+                tab 6
             </div>
             <div class="tab-pane fade" id="faq-cat-7">
                 TAb7 content
@@ -224,6 +296,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
     <script src="./assets/js/main.js"></script>
+
+
 </body>
 
 </html>

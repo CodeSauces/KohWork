@@ -449,6 +449,11 @@ Accessories
   text-align: center !important;
 }
 
+.tab-content>.active {
+  display: inline-block;
+  width: 100%;
+}
+
 .btn {
   padding: 3px 10px;
 }
@@ -1274,7 +1279,9 @@ Custom Dropdown
   display: inline-block;
   width: 50%;
 }
-
+.cstm-timepicker.single li span {
+  width: 100%;
+}
 .cstm-timepicker ul span:nth-child(2) {
   padding: 5px;
   display: inline-block;
