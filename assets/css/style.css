@@ -220,6 +220,9 @@ Accessories
 .width-348px {
   width: 348px;
 }
+.width-815px {
+  width: 815px;
+}
 
 .width-87 {
   width: 87px;
@@ -296,6 +299,9 @@ Accessories
 .width-400 {
   width: 400px !important;
 }
+.width-500 {
+  width: 500px !important;
+}
 
 .width-800 {
   width: 800px !important;
@@ -324,7 +330,7 @@ Accessories
 }
 .pad-left-align-left {
   padding-left: 5px;
-  text-align: left
+  text-align: left;
 }
 
 .padding-h-25p {
@@ -606,7 +612,9 @@ ul.nav-tabs.custom {
 .top-105 {
   top: 105px !important;
 }
-
+.top--27{
+  top:-27px !important;
+}
 .flex {
   display: flex;
 }
@@ -1435,4 +1443,12 @@ Charts
 .custom-popover {
   margin-top: -40px !important;
   border: 2px solid red;
+}
+.above-breadcrumb-links{
+  margin-bottom: 5px;
+}
+.above-breadcrumb-links a{
+  text-decoration: none;
+  padding: 0 10px;
+  color: #707070;
 }
