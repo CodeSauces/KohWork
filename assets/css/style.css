@@ -218,12 +218,14 @@ Accessories
 }
 
 .width-348px {
-  width: 348px;
+  width: 348px !important;
 }
 .width-815px {
   width: 815px;
 }
-
+.width-890px {
+  width: 890px;
+}
 .width-87 {
   width: 87px;
 }
@@ -584,6 +586,9 @@ ul.nav-tabs.custom {
 
 .overflow-auto {
   overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden !important;
 }
 
 .fullheight {
@@ -1451,4 +1456,8 @@ Charts
   text-decoration: none;
   padding: 0 10px;
   color: #707070;
+}
+.table-heading {
+  border-top: 1px solid gray;
+  padding-top: 24px;
 }
