@@ -287,7 +287,7 @@ Accessories
 }
 
 .width-220 {
-  width: 220 !important;
+  width: 220px !important;
 }
 
 .width-250 {
@@ -1460,4 +1460,11 @@ Charts
 .table-heading {
   border-top: 1px solid gray;
   padding-top: 24px;
+}
+
+.label-center-105 {
+  display: flex;
+  height: 105px;
+  justify-content: left;
+  align-items: center;
 }
