@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Working Theme</title>
+    <title>9. Data Analysis 2_1 Graph - 1</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -75,57 +76,56 @@
                 </nav>
                 <div class="col-md-12 noPadding" style="height: 75%;padding-bottom: 15px !important;">
                     <div class="col-sm-12 faq-cat-content margin-btm-25">
-                        <div class="dataTables_length">
-                            <div>
-                                <label>매출분석</label>
-                                <div class="table-filter-checkbox">
-                                    <label class="checkbox">
-                                        <input type="checkbox"><span>전체보기</span>
-                                    </label>
-                                </div>
-                                <div class="table-filter-checkbox">
-                                    <label class="checkbox">
-                                        <input type="checkbox"><span>온라인</span>
-                                    </label>
-                                </div>
-                                <div class="table-filter-checkbox">
-                                    <label class="checkbox">
-                                        <input type="checkbox"><span>오프라인</span>
-                                    </label>
-                                </div>
-                                <div class="table-filter-checkbox">
-                                    <label class="checkbox">
-                                        <input type="checkbox"><span>총합계</span>
-                                    </label>
-                                </div>
-                                <div class="table-filter-checkbox">
-                                    <label class="checkbox">
-                                        <input type="checkbox"><span>총재주문</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="item-center">
-                                    <div class="datepicker-container" style="margin-top: -31px;">
-                                            <select class="form-control padding-top-bottom-0" id="sel1">
-                                                    <option>2018</option>
-                                                    <option>2017</option>
-                                                </select>
+                            <div class="dataTables_length">
+                                    <div>
+                                        <label>매출분석</label>
+                                        <div class="table-filter-checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox"><span>전체보기</span>
+                                            </label>
                                         </div>
-                            </div>
-                            <div class="option-buttons-container height-auto absolute">
-
-
-
-                                <button class="option-button">엑셀다운</button>
-                                <button class="option-button">인쇄</button>
-                            </div>
-                        </div>
+                                        <div class="table-filter-checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox"><span>온라인</span>
+                                            </label>
+                                        </div>
+                                        <div class="table-filter-checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox"><span>오프라인</span>
+                                            </label>
+                                        </div>
+                                        <div class="table-filter-checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox"><span>총합계</span>
+                                            </label>
+                                        </div>
+                                        <div class="table-filter-checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox"><span>총재주문</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="item-center">
+                                            <div class="datepicker-container" style="margin-top: -31px;">
+                                                    <span class="prev"></span>
+                                                    <input class="form-control datepicker pull-left black datepicker-open" placeholder="2018-08-24" type="text">
+                                                    <span class="next"></span>
+                                                </div>
+                                    </div>
+                                    <div class="option-buttons-container height-auto absolute">
+        
+        
+        
+                                        <button class="option-button">엑셀다운</button>
+                                        <button class="option-button">인쇄</button>
+                                    </div>
+                                </div>
                     </div>
                     <div class="col-sm-12 noPadding data-analy-top-row" style="height:400px">
                         <canvas id="myChart0" class="cstm-charts" width="400" height="400"></canvas>
                     </div>
                     <div class="col-sm-12 faq-cat-content margin-btm-25">
-                        <div class="dataTables_length"><label>매출분석</label>
+                        <div class="dataTables_length"><label>주문분석</label>
                             <div class="table-filter-checkbox">
                                 <label class="checkbox">
                                     <input type="checkbox"><span>전체보기</span>
@@ -157,7 +157,7 @@
                         <canvas id="myChart1" class="cstm-charts" width="400" height="400"></canvas>
                     </div>
                     <div class="col-sm-12 faq-cat-content margin-btm-25">
-                        <div class="dataTables_length"><label>매출분석</label>
+                        <div class="dataTables_length"><label>회원분석</label>
                             <div class="table-filter-checkbox">
                                 <label class="checkbox">
                                     <input type="checkbox"><span>전체보기</span>
@@ -180,7 +180,7 @@
                             </div>
                             <div class="table-filter-checkbox">
                                 <label class="checkbox">
-                                    <input type="checkbox"><span>총재주문</span>
+                                    <input type="checkbox"><span>탈퇴수</span>
                                 </label>
                             </div>
                         </div>
@@ -190,7 +190,11 @@
                     </div>
                     <div class="col-sm-12 faq-cat-content margin-btm-25">
 
-                        <div class="dataTables_length"><label>매출분석</label>
+                        <div class="dataTables_length">
+                            <div class="col-md-1">
+                            <label>회원분석 <br> (성별)</label><br>
+                        </div>
+                        <div class="col-md-10">
                             <div class="table-filter-checkbox">
                                 <label class="checkbox">
                                     <input type="checkbox"><span>전체보기</span>
@@ -227,6 +231,7 @@
                                 </label>
                             </div>
                         </div>
+                        </div>
                     </div>
                     <div class="col-sm-12 noPadding data-analy-top-row" style="height:400px">
                         <canvas id="myChart3" class="cstm-charts" width="400" height="400"></canvas>
@@ -249,8 +254,43 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
     <script>
-  
+        $(document).ready(function () {
+            $.fn.datepicker.dates['en'] = {
+                days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                daysShort: ["일", "월", "화", "수", "목", "금", "토"],
+                daysMin: ["일", "월", "화", "수", "목", "금", "토"],
+                months: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+                monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                today: "Today",
+                clear: "Clear",
+                format: "yyyy-mm-dd",
+                titleFormat: "yyyy-MM", /* Leverages same syntax as 'format' */
+                weekStart: 0
+            };
+
+            $('.datepicker').datepicker({
+                language: "en",
+
+            });
+            $('.datepicker').datepicker()
+                .on('show', function (e) {
+                    $('.datepicker-days .next,.datepicker-days .prev').html('');
+                    var prev = $('.datepicker-days .prev');
+                    prev.attr('colspan', 2);
+                    prev.next().attr('colspan', 3);
+                    $('.form-control.datepicker').addClass('datepicker-open')
+
+                });
+
+            $('.datepicker').datepicker()
+                .on('hide', function (e) {
+                    $('.form-control.datepicker').removeClass('datepicker-open')
+
+                });
+        })
+
         var ctx0 = document.getElementById("myChart0");
         var myChart0 = new Chart(ctx0, {
             type: 'line',
