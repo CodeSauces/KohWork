@@ -35,7 +35,9 @@ body {
 .active-faq {
   border-left: 5px solid #888888;
 }
-
+.active-gray{
+  background-color: #F2F2F2;
+}
 .panel-faq .panel-heading .panel-title span {
   font-size: 13px;
   font-weight: normal;
@@ -1102,6 +1104,7 @@ ul.pagination.no-margin li a {
   margin: 0 2px;
   font-size: 13px;
   font-weight: bold;
+  color: #000000ba;
 }
 
 ul.pagination.no-margin li.paginate_button.active a {
