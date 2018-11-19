@@ -159,6 +159,11 @@ input[type='checkbox']+span {
   padding-left: 23px;
   margin-left: -18px;
 }
+input[type='checkbox']+span.cross {
+  background: url(../images/cancel-music.svg) no-repeat center left !important;
+  padding-left: 23px;
+  margin-left: -18px;
+}
 
 input[type='checkbox']:checked+span {
   background: url(../check.svg) no-repeat center left !important;
