@@ -774,38 +774,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+    <script src="./assets/js/main.js"></script>
     <script>
         $(document).ready(function () {
-            $.fn.datepicker.dates['en'] = {
-                days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-                daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
-                months: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
-                monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov",
-                    "Dec"
-                ],
-                today: "Today",
-                clear: "Clear",
-                format: "yyyy-mm-dd",
-                titleFormat: "yyyy-MM",
-                /* Leverages same syntax as 'format' */
-                weekStart: 0
-            };
-            $('.datepicker').datepicker({
-                language: "en",
-            });
-            $('.datepicker').datepicker()
-                .on('show', function (e) {
-                    $('.datepicker-days .next,.datepicker-days .prev').html('');
-                    var prev = $('.datepicker-days .prev');
-                    prev.attr('colspan', 2);
-                    prev.next().attr('colspan', 3);
-                    $('.form-control.datepicker').addClass('datepicker-open')
-                });
-            $('.datepicker').datepicker()
-                .on('hide', function (e) {
-                    $('.form-control.datepicker').removeClass('datepicker-open')
-                });
+
                 var TableCells = $('table tbody td');
                 TableCells.mouseover(function() {
                     $('.popover').popover('destroy');
@@ -830,18 +802,7 @@
               
             })
         })
-        var AssessoriesFunction = function () {
-            var tabsClick = function (event, $that) {
-                var thatElement = $($that);
-                var Container = thatElement.find('[href]').attr('href');
-                Container.toggle('hide');
-            }
-            return {
-                handleTabsClick: function (event, $that) {
-                    tabsClick(event, $that)
-                }
-            }
-        }();
+
     </script>
 
 
